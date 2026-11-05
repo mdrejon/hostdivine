@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Responsive Check</title>
+<!--
+  Responsive overflow checker for Host Divine pages (see AGENTS.md › Testing).
+
+  Loads a page in an iframe at every breakpoint-edge width and reports any
+  element that sticks out past the right edge of the screen (= horizontal scroll).
+
+  Usage (from the project root):
+    php -S localhost:8000        (or: npx serve .)
+    open http://localhost:8000/tools/responsive-check.html?page=index.html
+
+  Headless (prints the report):
+    chrome --headless=new --allow-file-access-from-files --virtual-time-budget=60000 \
+      --dump-dom "file:///<project>/tools/responsive-check.html?page=index.html"
+
+  Optional params: &widths=320,768,1366   &height=900
+-->
+<style>
+  :root { --bg: #f4f8fd; --ink: #0b1728; --ok: #12854a; --bad: #c62828; }
+  body { margin: 0; padding: 16px; font: 14px/1.5 system-ui, sans-serif; background: var(--bg); color: var(--ink); }
+  h1 { font-size: 18px; margin: 0 0 12px; }
+  pre { white-space: pre-wrap; background: #fff; border: 1px solid #dce6f2; border-radius: 8px; padding: 12px; }
+  .ok { color: var(--ok); } .bad { color: var(--bad); font-weight: 700; }
+  #stage { position: absolute; left: -99999px; top: 0; }
+</style>
+</head>
+<body>
+<h1>Responsive overflow check</h1>
+<pre id="out">Running…</pre>
+<div id="stage"></div>
+<script>
+(function () {
+  var params = new URLSearchParams(location.search);
+  var page = new URL(params.get('page') || 'index.html', new URL('../', location.href)).href;
+  // Breakpoint edges from AGENTS.md (+ common real devices). Widths are CSS px of content.
+  var widths = (params.get('widths') ||
+    '320,360,375,390,414,575,576,767,768,820,991,992,1024,1199,1200,1280,1366,1399,1400,1536,1919,1920,2560')
+    .split(',').map(Number);
+  var height = Number(params.get('height') || 900);
+  var out = document.getElementById('out');
+  var stage = document.getElementById('stage');
+  var lines = ['Page: ' + page, ''];
+  var failures = 0;
+  var i = 0;
+
+  function describe(el) {
+    var cls = typeof el.className === 'string' && el.className.trim() ? '.' + el.className.trim().split(/\s+/)[0] : '';
+    return el.tagName.toLowerCase() + cls;
+  }
+
+  function clippedByAncestor(el, doc, W) {
+    for (var p = el.parentElement; p && p !== doc.body; p = p.parentElement) {
+      var ox = doc.defaultView.getComputedStyle(p).overflowX;
+      if (/(hidden|auto|scroll|clip)/.test(ox) && p.getBoundingClientRect().right <= W + 1) return true;
+    }
+    return false;
+  }
+
+  function next() {
+    if (i >= widths.length) {
+      lines.push('', failures ? failures + ' width(s) FAILED' : 'All widths passed');
+      out.innerHTML = lines.join('\n');
+      document.title = failures ? 'FAIL' : 'PASS';
+      return;
+    }
+    var w = widths[i++];
+    var frame = document.createElement('iframe');
+    frame.style.cssText = 'width:' + w + 'px;height:' + height + 'px;border:0';
+    frame.onload = function () {
+      // Phones/tablets use overlay scrollbars: hide the frame's classic
+      // scrollbar so content width == device width.
+      try {
+        var hide = frame.contentDocument.createElement('style');
+        hide.textContent = 'html{scrollbar-width:none!important}::-webkit-scrollbar{display:none!important;width:0!important;height:0!important}';
+        frame.contentDocument.head.appendChild(hide);
+      } catch (e) { /* reported below */ }
+      setTimeout(function () {
+        try {
+          var doc = frame.contentDocument;
+          var W = doc.documentElement.clientWidth;
+          var bad = {};
+          doc.querySelectorAll('body *').forEach(function (el) {
+            var r = el.getBoundingClientRect();
+            if (!r.width || r.right <= W + 1) return;
+            if (doc.defaultView.getComputedStyle(el).visibility === 'hidden') return;
+            if (clippedByAncestor(el, doc, W)) return;
+            bad[describe(el) + ' (+' + Math.round(r.right - W) + 'px)'] = 1;
+          });
+          var keys = Object.keys(bad);
+          if (keys.length) {
+            failures++;
+            lines.push('<span class="bad">✖ ' + w + 'px (content ' + W + 'px): ' + keys.slice(0, 8).join(', ') + '</span>');
+          } else {
+            lines.push('<span class="ok">✔ ' + w + 'px (content ' + W + 'px)</span>');
+          }
+        } catch (e) {
+          failures++;
+          lines.push('<span class="bad">✖ ' + w + 'px: ' + e.message + ' — serve over http or pass --allow-file-access-from-files</span>');
+        }
+        frame.remove();
+        out.innerHTML = lines.join('\n') + '\n…';
+        next();
+      }, 700);
+    };
+    frame.src = page;
+    stage.appendChild(frame);
+  }
+
+  next();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" role="img" aria-label="Host Divine">
+  <title>Host Divine</title>
+  <defs>
+    <linearGradient id="hdi-bg" x1="0" y1="0" x2="56" y2="56" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0A2450"/>
+      <stop offset="1" stop-color="#155CC5"/>
+    </linearGradient>
+    <linearGradient id="hdi-or" x1="0" y1="0" x2="56" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F47C20"/>
+      <stop offset="1" stop-color="#FFB06B"/>
+    </linearGradient>
+  </defs>
+  <rect width="56" height="56" rx="15" fill="url(#hdi-bg)"/>
+  <ellipse cx="28" cy="13.5" rx="11.5" ry="3.6" fill="none" stroke="url(#hdi-or)" stroke-width="3"/>
+  <rect x="15" y="21" width="8" height="25" rx="3" fill="#FFFFFF"/>
+  <rect x="33" y="21" width="8" height="25" rx="3" fill="#FFFFFF"/>
+  <rect x="23" y="30.5" width="10" height="6" fill="#FFFFFF"/>
+  <circle cx="19" cy="25.5" r="1.6" fill="#F47C20"/>
+  <circle cx="37" cy="25.5" r="1.6" fill="#28D17C"/>
+  <rect x="17" y="40" width="4" height="1.6" rx=".8" fill="#9CC6FF"/>
+  <rect x="35" y="40" width="4" height="1.6" rx=".8" fill="#9CC6FF"/>
+</svg>

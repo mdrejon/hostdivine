@@ -99,7 +99,8 @@ Many laptops show only 550–700px of page height, especially at 125% or 150% Wi
 7. **Scroll containers clip their children's shadows.** A horizontally scrolling track also clips vertically. Give the track padding and cancel it with negative margins (see `.slider-track`), and keep hover shadows inside that padding.
 8. **Motion:** every animation needs a `prefers-reduced-motion: reduce` fallback (a global one exists at the end of `style.css`).
 9. **Accessibility:** keep the skip link, landmarks, `aria-*` on tabs and sliders, visible `:focus-visible` outlines, and AA colour contrast on both the navy and white backgrounds.
-10. **Brand assets:** use only Host Divine's own or properly licensed assets. Never ship imagery that carries another company's name or logo (a "HOSTSEO" photo had to be replaced for this reason).
+10. **Fixed overlays need a clean parent chain.** Never put `backdrop-filter`, `filter`, `transform`, `perspective`, `contain` or `will-change: transform` on an **ancestor** of a `position: fixed` element (mobile nav panel, modals, drawers). Any of these makes the ancestor the panel's positioning box, so the panel gets squashed to the ancestor's size. For a frosted header, put the blur on a `::before` layer instead (see `.site-header::before`).
+11. **Brand assets:** use only Host Divine's own or properly licensed assets. Never ship imagery that carries another company's name or logo (a "HOSTSEO" photo had to be replaced for this reason).
 
 ---
 

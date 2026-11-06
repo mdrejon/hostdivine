@@ -148,10 +148,21 @@ button, input, select, textarea {
   position: sticky;
   top: 0;
   z-index: 1000;
+  box-shadow: 0 1px 0 rgba(6, 23, 53, 0.09);
+}
+
+/* Frosted background lives on a pseudo-element: backdrop-filter on the
+   header itself would become the containing block for the position:fixed
+   mobile nav panel and squash it to the header's height. */
+.site-header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
   background: rgba(255, 255, 255, 0.94);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
-  box-shadow: 0 1px 0 rgba(6, 23, 53, 0.09);
+  pointer-events: none;
 }
 
 /* Top Strip */

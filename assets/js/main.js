@@ -205,6 +205,7 @@
   if (hero) {
     var slides = hero.querySelectorAll('.hero-slide');
     var tabs = hero.querySelectorAll('[data-hero-goto]');
+    var bgImages = hero.querySelectorAll('.hero-bg-image');
     var viewport = hero.querySelector('[data-hero-viewport]');
     var current = 0;
     var autoplay = !reduceMotion && slides.length > 1;
@@ -213,11 +214,17 @@
       var total = slides.length;
       current = (index + total) % total;
 
+      hero.setAttribute('data-active-slide', String(current));
+
       slides.forEach(function (slide, i) {
         var active = i === current;
         slide.classList.toggle('is-active', active);
         slide.setAttribute('aria-hidden', String(!active));
         if ('inert' in slide) slide.inert = !active;
+      });
+
+      bgImages.forEach(function (bg, i) {
+        bg.classList.toggle('is-active', i === current);
       });
 
       tabs.forEach(function (tab, i) {

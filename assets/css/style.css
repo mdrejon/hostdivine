@@ -1649,7 +1649,7 @@ select:focus-visible {
     linear-gradient(90deg, rgba(4, 12, 25, 0.94) 0%, rgba(4, 12, 25, 0.82) 48%, rgba(4, 12, 25, 0.6) 100%),
     radial-gradient(circle at 82% 24%, rgba(0, 102, 255, 0.32), transparent 54%),
     radial-gradient(circle at 15% 85%, rgba(0, 102, 255, 0.18), transparent 45%),
-    url("../img/header-home.png");
+    url("../img/header-home.webp");
 }
 
 .hero-bg-img-2 {
@@ -1657,7 +1657,7 @@ select:focus-visible {
     linear-gradient(90deg, rgba(4, 12, 25, 0.94) 0%, rgba(4, 12, 25, 0.82) 48%, rgba(4, 12, 25, 0.6) 100%),
     radial-gradient(circle at 82% 24%, rgba(0, 102, 255, 0.32), transparent 54%),
     radial-gradient(circle at 15% 85%, rgba(0, 102, 255, 0.18), transparent 45%),
-    url("../img/header-home-1.png");
+    url("../img/header-home-1.webp");
 }
 
 .hero-bg-img-3 {
@@ -1665,7 +1665,7 @@ select:focus-visible {
     linear-gradient(90deg, rgba(4, 12, 25, 0.94) 0%, rgba(4, 12, 25, 0.82) 48%, rgba(4, 12, 25, 0.6) 100%),
     radial-gradient(circle at 82% 24%, rgba(0, 102, 255, 0.32), transparent 54%),
     radial-gradient(circle at 15% 85%, rgba(0, 102, 255, 0.18), transparent 45%),
-    url("../img/header-home-2.png");
+    url("../img/header-home-2.webp");
 }
 
 .hero-bg-img-4 {
@@ -1673,7 +1673,7 @@ select:focus-visible {
     linear-gradient(90deg, rgba(4, 12, 25, 0.94) 0%, rgba(4, 12, 25, 0.82) 48%, rgba(4, 12, 25, 0.6) 100%),
     radial-gradient(circle at 82% 24%, rgba(0, 102, 255, 0.32), transparent 54%),
     radial-gradient(circle at 15% 85%, rgba(0, 102, 255, 0.18), transparent 45%),
-    url("../img/header-home.png");
+    url("../img/header-home.webp");
 }
 
 .hero-grid {

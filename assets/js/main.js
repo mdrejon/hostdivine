@@ -625,4 +625,14 @@
     }, { threshold: 0.5 });
     counters.forEach(function (el) { countObserver.observe(el); });
   }
+
+  // Floating dock: back-to-top button visibility
+  var dockTop = document.querySelector('.dock-top');
+  if (dockTop) {
+    var checkDockScroll = function () {
+      dockTop.classList.toggle('is-visible', window.scrollY > 350);
+    };
+    window.addEventListener('scroll', checkDockScroll, { passive: true });
+    checkDockScroll();
+  }
 })();

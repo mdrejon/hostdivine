@@ -3,13 +3,14 @@
 <head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>Windows ASP.NET Hosting | Plesk &amp; MSSQL 2022 — Host Divine</title>
-  <meta content="Enterprise Windows web hosting powered by Windows Server 2022, Plesk Obsidian, ASP.NET 8, .NET Core, IIS 10, and Microsoft SQL Server 2022 with 24/7 support." name="description"/>
+  <title>Windows Hosting — ASP.NET, .NET Core &amp; MSSQL | Host Divine™</title>
+  <meta content="Windows Server 2022 hosting for ASP.NET, .NET 8 and classic ASP with MSSQL 2022, Plesk Obsidian and isolated IIS application pools." name="description"/>
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
   <link href="assets/img/favicon.svg" rel="icon" type="image/svg+xml"/>
   <link href="assets/img/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
   <link href="assets/img/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
   <link href="assets/img/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+  <link href="assets/img/header-home-2.webp" rel="preload" as="image" fetchpriority="high"/>
   <link href="assets/css/style.css" rel="stylesheet"/>
   <script>document.documentElement.classList.add('js');</script>
 </head>
@@ -21,10 +22,13 @@
     <div class="header-strip">
       <div class="container strip-inner">
         <p><strong>Host Divine Networks</strong> — Managed cloud, VPS, and reseller hosting solutions from the world's top co-locations</p>
-        <div aria-label="Quick support links" class="strip-links">
-          <a href="https://robot.hostdivine.com/serverstatus.php">Network Status</a>
-          <a href="https://robot.hostdivine.com/knowledgebase.php">Knowledge Base</a>
-          <a href="https://robot.hostdivine.com/submitticket.php">Submit Ticket</a>
+        <div class="strip-right">
+          <div aria-label="Quick support links" class="strip-links">
+            <a href="https://robot.hostdivine.com/serverstatus.php">Network Status</a>
+            <a href="https://robot.hostdivine.com/knowledgebase.php">Knowledge Base</a>
+            <a href="https://robot.hostdivine.com/submitticket.php">Submit Ticket</a>
+          </div>
+          <div class="strip-social" aria-label="Follow Host Divine"><a class="strip-social-link" href="#" aria-label="Host Divine on Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a><a class="strip-social-link" href="#" aria-label="Host Divine on X"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a><a class="strip-social-link" href="https://wa.me/" aria-label="Host Divine on WhatsApp" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a><a class="strip-social-link" href="#" aria-label="Host Divine on Telegram"><i class="fa-brands fa-telegram" aria-hidden="true"></i></a><a class="strip-social-link" href="#" aria-label="Host Divine on IMO"><i class="fa-solid fa-comment-dots" aria-hidden="true"></i></a></div>
         </div>
       </div>
     </div>
@@ -38,370 +42,345 @@
         </button>
         <div class="nav-panel" id="navPanel">
           <ul class="nav-menu">
-            <li class="nav-item has-menu">
-              <button class="nav-link" type="button">Hosting</button>
+            <li class="nav-item has-menu is-current">
+              <button class="nav-link" type="button" aria-expanded="false">Hosting</button>
               <div class="mega-menu mega-wide">
                 <div class="mega-card intro-card">
                   <span>Web &amp; Cloud Hosting</span>
-                  <strong>High-speed SSD hosting tailored for growth.</strong>
-                  <p>Reliable cPanel, multi-tier reseller platforms and Windows hosting built on NVMe infrastructure with 99.9% uptime SLA.</p>
+                  <strong>High-speed NVMe hosting tailored for growth.</strong>
+                  <p>cPanel and Windows hosting plus developer platforms for PHP, Node.js, Python, Ruby and Java — all on LiteSpeed and pure NVMe.</p>
                 </div>
                 <div class="mega-column">
                   <p class="mega-title">Web Hosting</p>
-                  <a href="cpanel-hosting.html">cPanel Hosting<span>Fast, secure cPanel hosting with SSD storage</span></a>
-                  <a href="reseller-hosting.html">Reseller Web Hosting<span>White-label WHM hosting for agencies &amp; startups</span></a>
-                  <a href="reseller-hosting.html#master">Master Reseller<span>Create and manage multiple reseller accounts</span></a>
-                  <a href="reseller-hosting.html#alpha">Alpha Reseller<span>Top-tier master &amp; alpha reseller control</span></a>
+                  <a href="cpanel-hosting.html">Web Hosting<span>Fast cPanel hosting on LiteSpeed &amp; NVMe</span></a>
+                  <a href="windows-hosting.html" aria-current="page">Windows Hosting<span>ASP.NET, .NET Core, IIS &amp; MSSQL</span></a>
+                  <div class="mega-promo-box">
+                    <i class="fa-solid fa-code" aria-hidden="true"></i>
+                    <div><strong>Developer friendly</strong><p>SSH, Git, MultiPHP, Node.js and Python selectors on every plan.</p></div>
+                  </div>
                 </div>
                 <div class="mega-column">
-                  <p class="mega-title">Windows Hosting</p>
-                  <a href="windows-hosting.html">Windows Hosting<span>ASP.NET, .NET Core, IIS &amp; MSSQL database support</span></a>
-                  <div class="mega-promo-box">
-                    <i class="fa-brands fa-windows" aria-hidden="true"></i>
-                    <div>
-                      <strong>Enterprise Windows</strong>
-                      <p>Full support for ASP.NET 8, MVC and dedicated MSSQL databases.</p>
-                    </div>
-                  </div>
+                  <p class="mega-title">Language Platforms</p>
+                  <a href="php-hosting.html">PHP Hosting<span>PHP 7.4 – 8.3 with Laravel &amp; WordPress</span></a>
+                  <a href="nodejs-hosting.html">Node.js Hosting<span>Express, Next.js &amp; NestJS apps</span></a>
+                  <a href="python-hosting.html">Python Hosting<span>Django, Flask &amp; FastAPI apps</span></a>
+                  <a href="ruby-hosting.html">Ruby Hosting<span>Rails &amp; Sinatra on Passenger</span></a>
+                  <a href="java-hosting.html">Java / Tomcat Hosting<span>JSP, Servlets &amp; Spring Boot</span></a>
+                  <a href="languages.html">All Supported Languages<span>Compare every runtime we support</span></a>
                 </div>
               </div>
             </li>
             <li class="nav-item has-menu">
-              <button class="nav-link" type="button">Server</button>
+              <button class="nav-link" type="button" aria-expanded="false">Reseller</button>
+              <div class="mega-menu compact-menu">
+                <div class="mega-column">
+                  <p class="mega-title">cPanel Powered Reseller</p>
+                  <a href="reseller-hosting.html">cPanel Reseller<span>White-label WHM reseller plans</span></a>
+                  <a href="master-reseller.html">Master Reseller<span>Create and sell reseller accounts</span></a>
+                  <a href="alpha-reseller.html">Alpha Reseller<span>Top-tier multi-level reseller control</span></a>
+                  <a href="flex-reseller.html">Flex Reseller<span>Pay-as-you-grow reseller resources</span></a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item has-menu">
+              <button class="nav-link" type="button" aria-expanded="false">Server</button>
               <div class="mega-menu compact-menu">
                 <div class="mega-column">
                   <p class="mega-title">Managed Servers</p>
-                  <a href="vps-server.html">VPS Server<span>Scalable virtual private servers with full root access</span></a>
-                  <a href="dedicated-server.html">Dedicated Server<span>High-performance bare metal servers for production workloads</span></a>
+                  <a href="vps-server.html">VPS Server<span>KVM cloud servers with full root access</span></a>
+                  <a href="dedicated-server.html">Dedicated Server<span>Bare metal servers for production</span></a>
                 </div>
               </div>
             </li>
             <li class="nav-item has-menu">
-              <button class="nav-link" type="button">Domain</button>
+              <button class="nav-link" type="button" aria-expanded="false">Domain</button>
+              <div class="mega-menu mega-two">
+                <div class="mega-column">
+                  <p class="mega-title">Register</p>
+                  <a href="domain-registration.html">Domain Registration<span>Register from 400+ extensions</span></a>
+                  <a href="domain-registration.html#search">Domain Search<span>Instant name &amp; price lookup</span></a>
+                  <a href="bd-domain.html">.BD Domain<span>Official BTCL .bd registration</span></a>
+                </div>
+                <div class="mega-column">
+                  <p class="mega-title">Manage</p>
+                  <a href="domain-transfer.html">Domain Transfer<span>Move domains with zero downtime</span></a>
+                  <a href="domain-renew.html">Domain Renew<span>Renew early, keep your brand safe</span></a>
+                  <a href="domain-pricing.html">Domain Pricing<span>Full TLD price list in BDT</span></a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item has-menu">
+              <button class="nav-link" type="button" aria-expanded="false">Services</button>
               <div class="mega-menu compact-menu">
                 <div class="mega-column">
-                  <p class="mega-title">Domain Services</p>
-                  <a href="domain-registration.html">Domain Registration<span>Register your ideal domain name across 500+ extensions</span></a>
-                  <a href="bd-domain.html">.BD Domain Registration<span>Official BTCL .bd domain registration in Bangladesh</span></a>
-                  <a href="domain-transfer.html#renew">Domain Renew<span>Renew existing domains and keep your brand protected</span></a>
-                  <a href="domain-transfer.html">Domain Transfer<span>Transfer domains to Host Divine with zero downtime</span></a>
-                  <a href="domain-registration.html#search">Domain Search<span>Instant WHOIS lookup &amp; smart domain suggestions</span></a>
+                  <p class="mega-title">Business Services</p>
+                  <a href="ssl-certificates.html">SSL Certificates<span>DV, OV, EV &amp; wildcard SSL</span></a>
+                  <a href="business-email.html">Business Email<span>Professional email with spam defense</span></a>
+                  <a href="seo-service.html">SEO Service<span>Technical SEO &amp; growth campaigns</span></a>
                 </div>
               </div>
             </li>
             <li class="nav-item has-menu">
-              <button class="nav-link" type="button">About Us</button>
+              <button class="nav-link" type="button" aria-expanded="false">Company</button>
               <div class="mega-menu compact-menu">
                 <div class="mega-column">
                   <p class="mega-title">About Host Divine</p>
-                  <a href="about-us.html">Company Overview<span>Learn about Host Divine infrastructure and mission</span></a>
-                  <a href="about-us.html#timeline">Timeline<span>Our journey, milestones and technological growth</span></a>
-                  <a href="faq.html">FAQ<span>Frequently asked questions and support answers</span></a>
-                  <a href="blog.html">Blog<span>Hosting, cloud, server tips and tech updates</span></a>
-                  <a href="contact.html">Contact Us<span>Sales, technical support and migration inquiries</span></a>
+                  <a href="about-us.html">Company Overview<span>Our infrastructure and mission</span></a>
+                  <a href="timeline.html">Timeline<span>Milestones since 2004</span></a>
+                  <a href="faq.html">FAQ<span>Answers to common questions</span></a>
+                  <a href="blog.html">Blog<span>Hosting, cloud and server guides</span></a>
+                  <a href="contact.html">Contact Us<span>Sales, support and migration</span></a>
                 </div>
               </div>
             </li>
           </ul>
           <div class="nav-actions">
-            <a class="nav-phone" href="#">Sales Contact</a>
+            <a class="nav-phone" href="contact.html">Sales Contact</a>
             <a class="nav-login" href="https://panel.hostdivine.com/">Domain Login</a>
             <a class="nav-cta" href="https://robot.hostdivine.com/clientarea.php">Client Area</a>
           </div>
+          <div class="nav-social" aria-label="Follow Host Divine"><a class="nav-social-link" href="#" aria-label="Host Divine on Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a><a class="nav-social-link" href="#" aria-label="Host Divine on X"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a><a class="nav-social-link" href="https://wa.me/" aria-label="Host Divine on WhatsApp" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a><a class="nav-social-link" href="#" aria-label="Host Divine on Telegram"><i class="fa-brands fa-telegram" aria-hidden="true"></i></a><a class="nav-social-link" href="#" aria-label="Host Divine on IMO"><i class="fa-solid fa-comment-dots" aria-hidden="true"></i></a></div>
         </div>
       </div>
     </nav>
   </header>
 
   <!-- Main Content -->
-  <main id="main">
+  <main id="main" data-hero="3">
 
-    <!-- Page Hero Banner -->
     <section class="page-hero">
+      <div class="page-hero-bg" aria-hidden="true"><span class="page-hero-grid-lines"></span><span class="page-hero-glow"></span></div>
       <div class="container">
-        <ul class="breadcrumb">
-          <li><a href="index.html">Home</a></li>
-          <li class="breadcrumb-sep"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></li>
-          <li><span>Hosting</span></li>
-          <li class="breadcrumb-sep"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></li>
-          <li class="breadcrumb-current">Windows ASP.NET Hosting</li>
-        </ul>
-
+        <nav aria-label="Breadcrumb"><ol class="breadcrumb"><li><a href="index.html">Home</a></li><li><span>Hosting</span></li><li aria-current="page">Windows Hosting</li></ol></nav>
         <div class="page-hero-grid">
-          <div>
-            <span class="eyebrow"><span class="eyebrow-dot"></span>Windows Server 2022</span>
-            <h1 class="page-hero-title">Enterprise Windows Hosting Powered by Plesk &amp; MSSQL</h1>
-            <p class="page-hero-lead">High-performance Windows cloud hosting engineered for .NET 8, ASP.NET Core, classic ASP, and MSSQL Server 2022. Includes IIS 10 isolated application pools, remote SSMS access, and 24/7 engineer support.</p>
-            <div class="page-hero-badges">
-              <span class="page-badge-item"><i class="fa-brands fa-windows" aria-hidden="true"></i> Windows Server 2022</span>
-              <span class="page-badge-item"><i class="fa-solid fa-code" aria-hidden="true"></i> ASP.NET 8 &amp; .NET Core</span>
-              <span class="page-badge-item"><i class="fa-solid fa-database" aria-hidden="true"></i> MSSQL 2022 Included</span>
-              <span class="page-badge-item"><i class="fa-solid fa-sliders" aria-hidden="true"></i> Plesk Obsidian Panel</span>
-              <span class="page-badge-item"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> Isolated App Pools</span>
-            </div>
-            <div class="page-hero-actions">
-              <a class="btn btn-primary" href="#plans">View Windows Plans <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
-              <a class="btn btn-outline" href="contact.html">Request Custom Setup</a>
-            </div>
+          <div class="page-hero-copy">
+            <span class="eyebrow is-dark"><span class="eyebrow-dot"></span>Windows Server 2022</span>
+            <h1 class="page-hero-title">Enterprise <span class="text-gradient">Windows hosting</span> with Plesk &amp; MSSQL</h1>
+            <p class="page-hero-lead">Windows cloud hosting built for .NET 8, ASP.NET Core, classic ASP and MSSQL Server 2022 — with isolated IIS application pools and remote SSMS access.</p>
+            <div class="page-hero-actions"><a class="btn btn-primary" href="#plans">View Windows Plans <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+              <a class="btn btn-ghost" href="contact.html">Talk to a Windows Engineer</a></div>
+            <ul class="page-hero-badges"><li><i class="fa-brands fa-windows" aria-hidden="true"></i>Windows Server 2022</li><li><i class="fa-solid fa-code" aria-hidden="true"></i>.NET 8 &amp; ASP.NET</li><li><i class="fa-solid fa-database" aria-hidden="true"></i>MSSQL 2022</li><li><i class="fa-solid fa-sliders" aria-hidden="true"></i>Plesk Obsidian</li></ul>
+            
           </div>
-
-          <div class="page-hero-visual">
+          <div class="page-hero-visual" aria-label="Platform summary">
             <div class="hero-console-head">
-              <div class="hero-console-dots">
-                <span></span><span></span><span></span>
-              </div>
+              <div class="hero-console-dots" aria-hidden="true"><span></span><span></span><span></span></div>
               <span class="hero-console-badge"><i class="fa-solid fa-circle" aria-hidden="true"></i> Windows Online</span>
             </div>
             <div class="hero-console-row">
-              <span class="hero-console-label"><i class="fa-brands fa-windows" aria-hidden="true"></i> Operating Environment</span>
-              <span class="hero-console-val">Windows Server 2022 64-bit</span>
+              <span class="hero-console-label"><i class="fa-brands fa-windows" aria-hidden="true"></i> Environment</span>
+              <span class="hero-console-val">Windows Server 2022</span>
             </div>
             <div class="hero-console-row">
-              <span class="hero-console-label"><i class="fa-solid fa-layer-group" aria-hidden="true"></i> Control Interface</span>
-              <span class="hero-console-val">Plesk Obsidian 18.x</span>
+              <span class="hero-console-label"><i class="fa-solid fa-sliders" aria-hidden="true"></i> Control Panel</span>
+              <span class="hero-console-val">Plesk Obsidian 18</span>
             </div>
             <div class="hero-console-row">
-              <span class="hero-console-label"><i class="fa-solid fa-cubes" aria-hidden="true"></i> .NET Frameworks</span>
-              <span class="hero-console-val">.NET 8, 7, 6 &amp; ASP.NET 4.8</span>
+              <span class="hero-console-label"><i class="fa-solid fa-code" aria-hidden="true"></i> .NET Frameworks</span>
+              <span class="hero-console-val">.NET 8, 7, 6 &amp; 4.8</span>
             </div>
             <div class="hero-console-row">
-              <span class="hero-console-label"><i class="fa-solid fa-database" aria-hidden="true"></i> Database Engine</span>
-              <span class="hero-console-val">Microsoft SQL Server 2022</span>
+              <span class="hero-console-label"><i class="fa-solid fa-database" aria-hidden="true"></i> Database</span>
+              <span class="hero-console-val">MS SQL Server 2022</span>
             </div>
-            <div class="hero-console-row">
-              <span class="hero-console-label"><i class="fa-solid fa-globe" aria-hidden="true"></i> Web Daemon</span>
-              <span class="hero-console-val">IIS 10 with HTTP/3 &amp; QUIC</span>
+            <div class="hero-console-foot">
+              <p>Starting at <strong>$6.50</strong><span>/month</span></p>
+              <a class="btn btn-primary" href="#plans">Order Now</a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Key Highlights -->
-    <section class="section">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="eyebrow"><span class="eyebrow-dot"></span>Microsoft Ecosystem</span>
-          <h2 class="section-title">Built specifically for Microsoft web technologies</h2>
-          <p class="section-sub">Zero compatibility friction. Run modern Blazor, MVC, and Web API applications alongside mission-critical MSSQL databases.</p>
-        </div>
-
-        <div class="highlights-grid reveal">
-          <div class="highlight-card">
-            <div class="highlight-icon"><i class="fa-solid fa-code" aria-hidden="true"></i></div>
-            <h3>Full .NET Runtime Support</h3>
-            <p>From modern .NET 8, .NET 7, and .NET Core down to classic ASP.NET 4.8 and legacy ASP 3.0. Full support for Razor, MVC, and Web API.</p>
-          </div>
-          <div class="highlight-card">
-            <div class="highlight-icon"><i class="fa-solid fa-database" aria-hidden="true"></i></div>
-            <h3>Microsoft SQL Server 2022</h3>
-            <p>Dedicated high-performance MSSQL databases. Connect locally or remotely using SQL Server Management Studio (SSMS) from your desktop.</p>
-          </div>
-          <div class="highlight-card">
-            <div class="highlight-icon"><i class="fa-solid fa-sliders" aria-hidden="true"></i></div>
-            <h3>Plesk Obsidian Control Panel</h3>
-            <p>The industry benchmark for Windows hosting. Manage IIS bindings, virtual directories, SSL certificates, and database users effortlessly.</p>
-          </div>
-          <div class="highlight-card">
-            <div class="highlight-icon"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></div>
-            <h3>Dedicated Application Pools</h3>
-            <p>Each website runs in its own isolated 64-bit IIS application pool, preventing memory leaks and cross-tenant resource contamination.</p>
-          </div>
-          <div class="highlight-card">
-            <div class="highlight-icon"><i class="fa-solid fa-hard-drive" aria-hidden="true"></i></div>
-            <h3>Enterprise NVMe PCIe Storage</h3>
-            <p>PCIe NVMe drives ensure fast I/O throughput for transaction-heavy database operations and complex ORM query execution.</p>
-          </div>
-          <div class="highlight-card">
-            <div class="highlight-icon"><i class="fa-solid fa-user-gear" aria-hidden="true"></i></div>
-            <h3>Microsoft-Certified Engineers</h3>
-            <p>Direct assistance from certified Windows administrators for connection strings, permissions, web.config tweaks, and assembly debugging.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Plans Section -->
-    <section class="section" id="plans" style="background: #f7faff;">
+    <section class="section bg-waves" id="plans">
       <div class="container">
         <div class="section-head reveal">
           <span class="eyebrow"><span class="eyebrow-dot"></span>Windows Plans</span>
           <h2 class="section-title">Transparent Windows hosting pricing</h2>
-          <p class="section-sub">Choose the ideal package for your ASP.NET websites and business database applications.</p>
+          <p class="section-sub">Choose the right package for your ASP.NET websites and database applications.</p>
         </div>
+          <div class="pricing-grid pricing-grid-3 reveal">
+            <article class="plan-card">
+              <div class="plan-top"><span class="plan-cat">Windows Cloud</span></div>
+              <h3 class="plan-name">Win-Starter</h3>
+              <p class="plan-desc">Budget-friendly package for single .NET applications and APIs.</p>
+              <div class="plan-price"><sup>$</sup><span>6.50</span><small>/mo</small></div>
+              <p class="plan-billed">Billed monthly or $78.00/yr</p>
+              <a class="btn btn-outline plan-btn" href="https://robot.hostdivine.com/cart.php?a=add">Order Now</a>
+              <ul class="plan-features">
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i>1 Hosted Website</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i>10 GB Pure NVMe SSD</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i>100 GB Monthly Bandwidth</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i>1 MSSQL 2022 DB (500 MB)</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i>5 MySQL Databases</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i>Plesk Obsidian Panel</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i>Free AutoSSL</li>
+              </ul>
+            </article>
+            <article class="plan-card is-featured">
+              <div class="plan-top"><span class="plan-cat">Windows Cloud</span><span class="plan-badge">Recommended</span></div>
+              <h3 class="plan-name">Win-Pro</h3>
+              <p class="plan-desc">Ample headroom for commercial ASP.NET portals and shops.</p>
+              <div class="plan-price"><sup>$</sup><span>12.90</span><small>/mo</small></div>
+              <p class="plan-billed">Billed monthly or $154.80/yr</p>
+              <a class="btn btn-primary plan-btn" href="https://robot.hostdivine.com/cart.php?a=add">Order Now</a>
+              <ul class="plan-features">
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i>5 Hosted Websites</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i>30 GB Pure NVMe SSD</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i>300 GB Monthly Bandwidth</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i>5 MSSQL 2022 DBs (1 GB each)</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i>Unlimited MySQL Databases</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i>Dedicated IIS App Pool</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i>Daily Automated Backups</li>
+              </ul>
+            </article>
+            <article class="plan-card">
+              <div class="plan-top"><span class="plan-cat">Windows Cloud</span><span class="plan-badge is-blue">Ultimate</span></div>
+              <h3 class="plan-name">Win-Enterprise</h3>
+              <p class="plan-desc">Maximum performance with unmetered site hosting.</p>
+              <div class="plan-price"><sup>$</sup><span>24.50</span><small>/mo</small></div>
+              <p class="plan-billed">Billed monthly or $294.00/yr</p>
+              <a class="btn btn-outline plan-btn" href="https://robot.hostdivine.com/cart.php?a=add">Order Now</a>
+              <ul class="plan-features">
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i>Unlimited Hosted Websites</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i>80 GB Enterprise NVMe SSD</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i>1,000 GB Monthly Bandwidth</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i>Unlimited MSSQL &amp; MySQL</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i>Free Dedicated IP Address</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i>Priority CPU &amp; RAM</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i>24/7 Priority Hotline</li>
+              </ul>
+            </article>
+          </div>
+      </div>
+    </section>
 
-        <div class="pricing-grid-3 reveal">
-          <!-- Win-Starter -->
-          <article class="plan-card">
-            <div class="plan-top"><span class="plan-cat">Windows Cloud</span></div>
-            <h3 class="plan-name">Win-Starter</h3>
-            <p class="plan-desc">Budget-friendly package for single .NET applications and APIs.</p>
-            <div class="plan-price"><sup>$</sup><span>6.50</span><small>/mo</small></div>
-            <p class="plan-billed">Billed monthly or $78.00/yr</p>
-            <a class="btn btn-outline plan-btn" href="https://robot.hostdivine.com/cart.php?a=add">Order Win-Starter</a>
-            <ul class="plan-features">
-              <li><i class="fa-solid fa-check"></i>1 Hosted Website</li>
-              <li><i class="fa-solid fa-check"></i>10 GB Pure NVMe SSD</li>
-              <li><i class="fa-solid fa-check"></i>100 GB Monthly Bandwidth</li>
-              <li><i class="fa-solid fa-check"></i>1 MSSQL 2022 DB (500 MB)</li>
-              <li><i class="fa-solid fa-check"></i>5 MySQL Databases</li>
-              <li><i class="fa-solid fa-check"></i>Plesk Obsidian Control Panel</li>
-              <li><i class="fa-solid fa-check"></i>Free AutoSSL Included</li>
-            </ul>
+    <section class="section bg-grid">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow"><span class="eyebrow-dot"></span>Microsoft Ecosystem</span>
+          <h2 class="section-title">Built for Microsoft web technologies</h2>
+          <p class="section-sub">Run Blazor, MVC and Web API applications alongside MSSQL databases.</p>
+        </div>
+        <div class="highlights-grid cols-3">
+          <article class="highlight-card reveal">
+            <div class="highlight-icon"><i class="fa-solid fa-layer-group" aria-hidden="true"></i></div>
+            <h3>Full .NET Runtime</h3>
+            <p>From .NET 8 and .NET Core down to ASP.NET 4.8 and classic ASP 3.0, including Razor, MVC and Web API.</p>
           </article>
-
-          <!-- Win-Pro (Recommended) -->
-          <article class="plan-card is-featured">
-            <div class="plan-top"><span class="plan-cat">Windows Cloud</span><span class="plan-badge">Recommended</span></div>
-            <h3 class="plan-name">Win-Pro</h3>
-            <p class="plan-desc">Ample headroom for commercial ASP.NET portals and shops.</p>
-            <div class="plan-price"><sup>$</sup><span>12.90</span><small>/mo</small></div>
-            <p class="plan-billed">Billed monthly or $154.80/yr</p>
-            <a class="btn btn-primary plan-btn" href="https://robot.hostdivine.com/cart.php?a=add">Order Win-Pro</a>
-            <ul class="plan-features">
-              <li><i class="fa-solid fa-check"></i>5 Hosted Websites</li>
-              <li><i class="fa-solid fa-check"></i>30 GB Pure NVMe SSD</li>
-              <li><i class="fa-solid fa-check"></i>300 GB Monthly Bandwidth</li>
-              <li><i class="fa-solid fa-check"></i>5 MSSQL 2022 DBs (1 GB each)</li>
-              <li><i class="fa-solid fa-check"></i>Unlimited MySQL Databases</li>
-              <li><i class="fa-solid fa-check"></i>Dedicated IIS App Pool</li>
-              <li><i class="fa-solid fa-check"></i>Daily Automated Backups</li>
-            </ul>
+          <article class="highlight-card reveal">
+            <div class="highlight-icon"><i class="fa-solid fa-database" aria-hidden="true"></i></div>
+            <h3>Microsoft SQL Server 2022</h3>
+            <p>High-performance MSSQL databases you can manage remotely with SQL Server Management Studio.</p>
           </article>
-
-          <!-- Win-Enterprise -->
-          <article class="plan-card">
-            <div class="plan-top"><span class="plan-cat is-cloud">Windows Cloud</span><span class="plan-badge is-blue">Ultimate</span></div>
-            <h3 class="plan-name">Win-Enterprise</h3>
-            <p class="plan-desc">Maximum performance with unmetered site hosting and resources.</p>
-            <div class="plan-price"><sup>$</sup><span>24.50</span><small>/mo</small></div>
-            <p class="plan-billed">Billed monthly or $294.00/yr</p>
-            <a class="btn btn-outline plan-btn" href="https://robot.hostdivine.com/cart.php?a=add">Order Win-Enterprise</a>
-            <ul class="plan-features">
-              <li><i class="fa-solid fa-check"></i>Unlimited Hosted Websites</li>
-              <li><i class="fa-solid fa-check"></i>80 GB Enterprise NVMe SSD</li>
-              <li><i class="fa-solid fa-check"></i>1,000 GB Monthly Bandwidth</li>
-              <li><i class="fa-solid fa-check"></i>Unlimited MSSQL &amp; MySQL DBs</li>
-              <li><i class="fa-solid fa-check"></i>Free Dedicated IP Address</li>
-              <li><i class="fa-solid fa-check"></i>Priority CPU &amp; RAM Guarantee</li>
-              <li><i class="fa-solid fa-check"></i>24/7 Priority Engineer Hotline</li>
-            </ul>
+          <article class="highlight-card reveal">
+            <div class="highlight-icon"><i class="fa-solid fa-sliders" aria-hidden="true"></i></div>
+            <h3>Plesk Obsidian</h3>
+            <p>Manage IIS bindings, virtual directories, SSL certificates and database users with ease.</p>
+          </article>
+          <article class="highlight-card reveal">
+            <div class="highlight-icon"><i class="fa-solid fa-cubes" aria-hidden="true"></i></div>
+            <h3>Isolated App Pools</h3>
+            <p>Each site runs in its own 64-bit IIS application pool to prevent cross-tenant issues.</p>
+          </article>
+          <article class="highlight-card reveal">
+            <div class="highlight-icon"><i class="fa-solid fa-hard-drive" aria-hidden="true"></i></div>
+            <h3>Enterprise NVMe</h3>
+            <p>PCIe NVMe storage keeps transaction-heavy databases and ORM queries fast.</p>
+          </article>
+          <article class="highlight-card reveal">
+            <div class="highlight-icon"><i class="fa-solid fa-user-gear" aria-hidden="true"></i></div>
+            <h3>Certified Engineers</h3>
+            <p>Help with connection strings, permissions, web.config tweaks and assembly debugging.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Technical Specifications Grid -->
-    <section class="section">
+    <section class="section bg-circuit">
       <div class="container">
         <div class="section-head reveal">
           <span class="eyebrow"><span class="eyebrow-dot"></span>Windows Stack</span>
-          <h2 class="section-title">Technical Specifications</h2>
+          <h2 class="section-title">Technical specifications</h2>
           <p class="section-sub">Standard features across all Windows hosting servers.</p>
         </div>
-
         <div class="specs-grid reveal">
           <div class="spec-group">
             <h3 class="spec-group-title"><i class="fa-brands fa-windows" aria-hidden="true"></i> OS &amp; Web Server</h3>
-            <div class="spec-row"><span class="spec-label">Windows OS</span><span class="spec-value">Windows Server 2022 Datacenter</span></div>
-            <div class="spec-row"><span class="spec-label">Web Server</span><span class="spec-value">Microsoft IIS 10.0</span></div>
-            <div class="spec-row"><span class="spec-label">Control Panel</span><span class="spec-value">Plesk Obsidian 18.x</span></div>
-            <div class="spec-row"><span class="spec-label">Application Pool</span><span class="spec-value">Isolated 64-bit Integrated Pipeline</span></div>
-            <div class="spec-row"><span class="spec-label">HTTP Protocols</span><span class="spec-value">HTTP/2, HTTP/3 (QUIC)</span></div>
+            <div class="spec-row"><span class="spec-label">Windows OS</span><span class="spec-value">Server 2022 Datacenter</span></div>
+            <div class="spec-row"><span class="spec-label">Web Server</span><span class="spec-value">IIS 10.0</span></div>
+            <div class="spec-row"><span class="spec-label">Protocols</span><span class="spec-value">HTTP/2, HTTP/3</span></div>
+            <div class="spec-row"><span class="spec-label">URL Rewrite</span><span class="spec-value">IIS Rewrite 2.1</span></div>
           </div>
-
           <div class="spec-group">
             <h3 class="spec-group-title"><i class="fa-solid fa-code" aria-hidden="true"></i> .NET &amp; Scripting</h3>
-            <div class="spec-row"><span class="spec-label">.NET Runtimes</span><span class="spec-value">.NET 8.0, 7.0, 6.0</span></div>
-            <div class="spec-row"><span class="spec-label">ASP.NET Framework</span><span class="spec-value">ASP.NET 4.8, 4.7, 3.5</span></div>
-            <div class="spec-row"><span class="spec-label">Legacy Support</span><span class="spec-value">Classic ASP 3.0 Enabled</span></div>
-            <div class="spec-row"><span class="spec-label">Additional Runtimes</span><span class="spec-value">Node.js, PHP 8.x for Windows</span></div>
-            <div class="spec-row"><span class="spec-label">URL Rewriting</span><span class="spec-value">IIS URL Rewrite Module 2.1</span></div>
+            <div class="spec-row"><span class="spec-label">.NET Runtimes</span><span class="spec-value">8.0, 7.0, 6.0</span></div>
+            <div class="spec-row"><span class="spec-label">ASP.NET</span><span class="spec-value">4.8, 4.7, 3.5</span></div>
+            <div class="spec-row"><span class="spec-label">Classic ASP</span><span class="spec-value">3.0 enabled</span></div>
+            <div class="spec-row"><span class="spec-label">Extra</span><span class="spec-value">Node.js, PHP 8.x</span></div>
           </div>
-
           <div class="spec-group">
-            <h3 class="spec-group-title"><i class="fa-solid fa-database" aria-hidden="true"></i> Databases</h3>
-            <div class="spec-row"><span class="spec-label">Microsoft SQL</span><span class="spec-value">MS SQL Server 2022 Standard</span></div>
-            <div class="spec-row"><span class="spec-label">Open Source DB</span><span class="spec-value">MySQL 8.0 / MariaDB 10.x</span></div>
-            <div class="spec-row"><span class="spec-label">Remote SSMS Access</span><span class="spec-value">Supported with Encrypted Port</span></div>
-            <div class="spec-row"><span class="spec-label">Web Database Tools</span><span class="spec-value">myLittleAdmin &amp; phpMyAdmin</span></div>
-            <div class="spec-row"><span class="spec-label">Backup Architecture</span><span class="spec-value">Native .BAK Export &amp; Import</span></div>
-          </div>
-
-          <div class="spec-group">
-            <h3 class="spec-group-title"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> Security &amp; Uptime</h3>
-            <div class="spec-row"><span class="spec-label">Antivirus Protection</span><span class="spec-value">Windows Defender ATP Enterprise</span></div>
-            <div class="spec-row"><span class="spec-label">SSL Certificate</span><span class="spec-value">Free Let's Encrypt / Sectigo AutoSSL</span></div>
-            <div class="spec-row"><span class="spec-label">Firewall</span><span class="spec-value">Plesk Advanced Firewall</span></div>
-            <div class="spec-row"><span class="spec-label">Storage RAID</span><span class="spec-value">Pure NVMe SSD RAID-10</span></div>
-            <div class="spec-row"><span class="spec-label">Service Level</span><span class="spec-value">99.9% Network Uptime Guarantee</span></div>
+            <h3 class="spec-group-title"><i class="fa-solid fa-database" aria-hidden="true"></i> Databases &amp; Security</h3>
+            <div class="spec-row"><span class="spec-label">MSSQL</span><span class="spec-value">SQL Server 2022</span></div>
+            <div class="spec-row"><span class="spec-label">MySQL</span><span class="spec-value">8.0 / MariaDB</span></div>
+            <div class="spec-row"><span class="spec-label">Remote SSMS</span><span class="spec-value">Supported</span></div>
+            <div class="spec-row"><span class="spec-label">SSL</span><span class="spec-value">Free AutoSSL</span></div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- FAQ Accordion -->
-    <section class="section" style="background: #f7faff;">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="eyebrow"><span class="eyebrow-dot"></span>Windows Hosting FAQ</span>
-          <h2 class="section-title">Frequently Asked Questions</h2>
-          <p class="section-sub">Helpful answers regarding our Windows hosting and MSSQL databases.</p>
+    <section class="section bg-soft" id="faq">
+      <div class="container faq-layout">
+        <div class="faq-intro reveal">
+          <span class="eyebrow"><span class="eyebrow-dot"></span>FAQ</span>
+          <h2 class="section-title">Windows hosting questions</h2>
+          
+          <div class="faq-help">
+            <span class="faq-help-icon"><i class="fa-solid fa-headset" aria-hidden="true"></i></span>
+            <div><strong>Still have questions?</strong><p>Our engineers reply in under 15 minutes, 24/7.</p></div>
+          </div>
+          <a class="btn btn-outline" href="contact.html">Contact support <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
         </div>
-
-        <div class="faq-accordion reveal">
-          <details class="faq-item" open>
-            <summary class="faq-summary">
-              <span>Which versions of ASP.NET and .NET Core are supported?</span>
-              <i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i>
-            </summary>
-            <p class="faq-content">We support the entire modern and legacy .NET spectrum, including .NET 8.0, 7.0, 6.0, ASP.NET Core, ASP.NET 4.8, 4.7, 3.5, and classic ASP 3.0. You can configure runtime versions individually per domain via Plesk.</p>
-          </details>
-
-          <details class="faq-item">
-            <summary class="faq-summary">
-              <span>Can I connect to my MSSQL database using SQL Server Management Studio (SSMS)?</span>
-              <i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i>
-            </summary>
-            <p class="faq-content">Yes! Remote database management via SQL Server Management Studio (SSMS) is fully supported on all our Windows plans. You will receive dedicated host credentials and port settings upon signup.</p>
-          </details>
-
-          <details class="faq-item">
-            <summary class="faq-summary">
-              <span>Do you provide dedicated IIS application pools?</span>
-              <i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i>
-            </summary>
-            <p class="faq-content">Yes, every website on our platform is assigned its own dedicated 64-bit IIS application pool running in Integrated pipeline mode. This guarantees process isolation and robust stability.</p>
-          </details>
-
-          <details class="faq-item">
-            <summary class="faq-summary">
-              <span>Can I import existing .BAK database backups?</span>
-              <i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i>
-            </summary>
-            <p class="faq-content">Yes, you can easily restore and export native MSSQL .BAK database backup files directly through the Plesk database manager or by opening a ticket with our support team.</p>
-          </details>
+        <div class="reveal">
+          <div class="faq-accordion">
+            <details class="faq-item" open>
+              <summary class="faq-summary"><span>Which versions of ASP.NET and .NET are supported?</span><i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i></summary>
+              <div class="faq-content"><p>We support .NET 8.0, 7.0, 6.0, ASP.NET Core, ASP.NET 4.8, 4.7, 3.5 and classic ASP 3.0. You can set the runtime per domain in Plesk.</p></div>
+            </details>
+            <details class="faq-item">
+              <summary class="faq-summary"><span>Can I connect to MSSQL with SSMS?</span><i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i></summary>
+              <div class="faq-content"><p>Yes. Remote management with SQL Server Management Studio is supported on all Windows plans.</p></div>
+            </details>
+            <details class="faq-item">
+              <summary class="faq-summary"><span>Do you provide dedicated IIS application pools?</span><i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i></summary>
+              <div class="faq-content"><p>Yes. Every website gets its own 64-bit IIS application pool in Integrated pipeline mode.</p></div>
+            </details>
+            <details class="faq-item">
+              <summary class="faq-summary"><span>Can I import existing .BAK backups?</span><i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i></summary>
+              <div class="faq-content"><p>Yes. Restore native MSSQL .BAK files through the Plesk database manager or ask our support team.</p></div>
+            </details>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Page CTA Banner -->
-    <section class="section">
+    <section class="cta-section">
       <div class="container">
         <div class="page-cta-banner reveal">
-          <h2>Ready to deploy your .NET application on enterprise Windows?</h2>
-          <p>Instant provisioning, free automated SSL, and 24/7 Microsoft-certified engineer support. Risk-free for 30 days.</p>
-          <div class="page-hero-actions" style="justify-content: center;">
-            <a class="btn btn-primary" href="#plans">Order Windows Hosting Now <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
-            <a class="btn btn-outline" href="contact.html">Consult with a Windows Engineer</a>
+          <div class="page-cta-bg" aria-hidden="true"></div>
+          <div class="page-cta-copy">
+            <span class="eyebrow is-dark"><span class="eyebrow-dot"></span>Get started today</span>
+            <h2>Deploy your .NET application today</h2>
+            <p>Instant provisioning, free SSL and Microsoft-certified engineers. Risk-free for 30 days.</p>
           </div>
+          <div class="page-cta-actions"><a class="btn btn-primary" href="#plans">Order Windows Hosting <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a><a class="btn btn-ghost" href="contact.html">Consult an Engineer</a></div>
         </div>
       </div>
     </section>
-
   </main>
 
-    <!-- Footer Section -->
+  <!-- Footer Section -->
   <footer class="site-footer">
     <div aria-hidden="true" class="footer-orbit"></div>
     <div class="container footer-hero">
@@ -425,45 +404,52 @@
     </div>
     <div class="container footer-grid">
       <div>
-        <h3>Hosting Services</h3>
-        <a href="cpanel-hosting.html">cPanel Hosting</a>
-        <a href="reseller-hosting.html">Reseller Web Hosting</a>
-        <a href="reseller-hosting.html#master">Master Reseller</a>
-        <a href="reseller-hosting.html#alpha">Alpha Reseller</a>
+        <h3>Hosting</h3>
+        <a href="cpanel-hosting.html">Web Hosting</a>
         <a href="windows-hosting.html">Windows Hosting</a>
+        <a href="php-hosting.html">PHP Hosting</a>
+        <a href="nodejs-hosting.html">Node.js Hosting</a>
+        <a href="python-hosting.html">Python Hosting</a>
+        <a href="languages.html">All Languages</a>
       </div>
       <div>
-        <h3>Servers</h3>
+        <h3>Reseller &amp; Servers</h3>
+        <a href="reseller-hosting.html">cPanel Reseller</a>
+        <a href="master-reseller.html">Master Reseller</a>
+        <a href="alpha-reseller.html">Alpha Reseller</a>
+        <a href="flex-reseller.html">Flex Reseller</a>
         <a href="vps-server.html">VPS Server</a>
         <a href="dedicated-server.html">Dedicated Server</a>
       </div>
       <div>
-        <h3>Domain Services</h3>
+        <h3>Domains</h3>
         <a href="domain-registration.html">Domain Registration</a>
-        <a href="bd-domain.html">.BD Domain Registration</a>
-        <a href="domain-transfer.html#renew">Domain Renew</a>
+        <a href="bd-domain.html">.BD Domain</a>
         <a href="domain-transfer.html">Domain Transfer</a>
-        <a href="domain-registration.html#search">Domain Search</a>
+        <a href="domain-renew.html">Domain Renew</a>
+        <a href="domain-pricing.html">Domain Pricing</a>
       </div>
       <div>
-        <h3>About Us</h3>
+        <h3>Services</h3>
+        <a href="ssl-certificates.html">SSL Certificates</a>
+        <a href="business-email.html">Business Email</a>
+        <a href="seo-service.html">SEO Service</a>
+      </div>
+      <div>
+        <h3>Company</h3>
         <a href="about-us.html">Company Overview</a>
-        <a href="about-us.html#timeline">Timeline</a>
+        <a href="timeline.html">Timeline</a>
         <a href="faq.html">FAQ</a>
         <a href="blog.html">Blog</a>
         <a href="contact.html">Contact Us</a>
       </div>
     </div>
     <div class="container footer-bottom">
-      <p>© 2004 – <span data-current-year="">2026</span> <a class="brand-footer-link" href="#">Host Divine™</a> — A brand label of ZELT, UAE — All Rights ® Reserved</p>
+      <p>© 2004 – <span data-current-year="">2026</span> <a class="brand-footer-link" href="index.html">Host Divine™</a> — A brand label of ZELT, UAE — All Rights ® Reserved</p>
       <div class="footer-bottom-links">
         <a href="https://robot.hostdivine.com/announcements.php"><i aria-hidden="true" class="fa-solid fa-bullhorn"></i><span>Announcements</span></a>
-        <a href="#"><i aria-hidden="true" class="fa-solid fa-file-shield"></i><span>Terms &amp; Policies</span></a>
-        <a aria-label="Host Divine Facebook" class="footer-social-link" href="#" rel="noopener noreferrer" target="_blank"><i aria-hidden="true" class="fa-brands fa-facebook-f"></i></a>
-        <a aria-label="Host Divine X" class="footer-social-link" href="#" rel="noopener noreferrer" target="_blank"><i aria-hidden="true" class="fa-brands fa-x-twitter"></i></a>
-        <a aria-label="Host Divine WhatsApp" class="footer-social-link" href="#" rel="noopener noreferrer" target="_blank"><i aria-hidden="true" class="fa-brands fa-whatsapp"></i></a>
-        <a aria-label="Host Divine Telegram" class="footer-social-link" href="#" rel="noopener noreferrer" target="_blank"><i aria-hidden="true" class="fa-brands fa-telegram"></i></a>
-        <a aria-label="Host Divine IMO" class="footer-social-link" href="#"><i aria-hidden="true" class="fa-solid fa-comment-dots"></i></a>
+        <a href="faq.html"><i aria-hidden="true" class="fa-solid fa-file-shield"></i><span>Terms &amp; Policies</span></a>
+        <a href="https://robot.hostdivine.com/serverstatus.php"><i aria-hidden="true" class="fa-solid fa-signal"></i><span>Network Status</span></a>
       </div>
     </div>
   </footer>
@@ -472,6 +458,7 @@
   <aside class="quick-dock" aria-label="Quick contact and navigation">
     <a class="dock-btn dock-top" href="#top" aria-label="Scroll to top of page" title="Scroll to Top">
       <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+      <span class="dock-tooltip">Scroll to Top</span>
     </a>
     <a class="dock-btn dock-support" href="https://robot.hostdivine.com/submitticket.php" target="_blank" rel="noopener noreferrer" aria-label="24/7 Support Desk" title="24/7 Support Desk">
       <i class="fa-solid fa-headset" aria-hidden="true"></i>

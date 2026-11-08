@@ -3,13 +3,14 @@
 <head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>Domain Registration &amp; Search | Register Domain Names — Host Divine</title>
-  <meta content="Register and search domain names across 500+ extensions including .com, .net, .org, .xyz. Free DNS management, domain lock, and 24/7 support." name="description"/>
+  <title>Domain Registration — Search &amp; Register Domains | Host Divine™</title>
+  <meta content="Search and register domain names from 400+ extensions. Free DNS management, theft protection and domain forwarding. .com from ৳1,600/year." name="description"/>
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
   <link href="assets/img/favicon.svg" rel="icon" type="image/svg+xml"/>
   <link href="assets/img/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
   <link href="assets/img/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
   <link href="assets/img/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+  <link href="assets/img/header-home.webp" rel="preload" as="image" fetchpriority="high"/>
   <link href="assets/css/style.css" rel="stylesheet"/>
   <script>document.documentElement.classList.add('js');</script>
 </head>
@@ -21,10 +22,13 @@
     <div class="header-strip">
       <div class="container strip-inner">
         <p><strong>Host Divine Networks</strong> — Managed cloud, VPS, and reseller hosting solutions from the world's top co-locations</p>
-        <div aria-label="Quick support links" class="strip-links">
-          <a href="https://robot.hostdivine.com/serverstatus.php">Network Status</a>
-          <a href="https://robot.hostdivine.com/knowledgebase.php">Knowledge Base</a>
-          <a href="https://robot.hostdivine.com/submitticket.php">Submit Ticket</a>
+        <div class="strip-right">
+          <div aria-label="Quick support links" class="strip-links">
+            <a href="https://robot.hostdivine.com/serverstatus.php">Network Status</a>
+            <a href="https://robot.hostdivine.com/knowledgebase.php">Knowledge Base</a>
+            <a href="https://robot.hostdivine.com/submitticket.php">Submit Ticket</a>
+          </div>
+          <div class="strip-social" aria-label="Follow Host Divine"><a class="strip-social-link" href="#" aria-label="Host Divine on Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a><a class="strip-social-link" href="#" aria-label="Host Divine on X"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a><a class="strip-social-link" href="https://wa.me/" aria-label="Host Divine on WhatsApp" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a><a class="strip-social-link" href="#" aria-label="Host Divine on Telegram"><i class="fa-brands fa-telegram" aria-hidden="true"></i></a><a class="strip-social-link" href="#" aria-label="Host Divine on IMO"><i class="fa-solid fa-comment-dots" aria-hidden="true"></i></a></div>
         </div>
       </div>
     </div>
@@ -39,336 +43,352 @@
         <div class="nav-panel" id="navPanel">
           <ul class="nav-menu">
             <li class="nav-item has-menu">
-              <button class="nav-link" type="button">Hosting</button>
+              <button class="nav-link" type="button" aria-expanded="false">Hosting</button>
               <div class="mega-menu mega-wide">
                 <div class="mega-card intro-card">
                   <span>Web &amp; Cloud Hosting</span>
-                  <strong>High-speed SSD hosting tailored for growth.</strong>
-                  <p>Reliable cPanel, multi-tier reseller platforms and Windows hosting built on NVMe infrastructure with 99.9% uptime SLA.</p>
+                  <strong>High-speed NVMe hosting tailored for growth.</strong>
+                  <p>cPanel and Windows hosting plus developer platforms for PHP, Node.js, Python, Ruby and Java — all on LiteSpeed and pure NVMe.</p>
                 </div>
                 <div class="mega-column">
                   <p class="mega-title">Web Hosting</p>
-                  <a href="cpanel-hosting.html">cPanel Hosting<span>Fast, secure cPanel hosting with SSD storage</span></a>
-                  <a href="reseller-hosting.html">Reseller Web Hosting<span>White-label WHM hosting for agencies &amp; startups</span></a>
-                  <a href="reseller-hosting.html#master">Master Reseller<span>Create and manage multiple reseller accounts</span></a>
-                  <a href="reseller-hosting.html#alpha">Alpha Reseller<span>Top-tier master &amp; alpha reseller control</span></a>
+                  <a href="cpanel-hosting.html">Web Hosting<span>Fast cPanel hosting on LiteSpeed &amp; NVMe</span></a>
+                  <a href="windows-hosting.html">Windows Hosting<span>ASP.NET, .NET Core, IIS &amp; MSSQL</span></a>
+                  <div class="mega-promo-box">
+                    <i class="fa-solid fa-code" aria-hidden="true"></i>
+                    <div><strong>Developer friendly</strong><p>SSH, Git, MultiPHP, Node.js and Python selectors on every plan.</p></div>
+                  </div>
                 </div>
                 <div class="mega-column">
-                  <p class="mega-title">Windows Hosting</p>
-                  <a href="windows-hosting.html">Windows Hosting<span>ASP.NET, .NET Core, IIS &amp; MSSQL database support</span></a>
-                  <div class="mega-promo-box">
-                    <i class="fa-brands fa-windows" aria-hidden="true"></i>
-                    <div>
-                      <strong>Enterprise Windows</strong>
-                      <p>Full support for ASP.NET 8, MVC and dedicated MSSQL databases.</p>
-                    </div>
-                  </div>
+                  <p class="mega-title">Language Platforms</p>
+                  <a href="php-hosting.html">PHP Hosting<span>PHP 7.4 – 8.3 with Laravel &amp; WordPress</span></a>
+                  <a href="nodejs-hosting.html">Node.js Hosting<span>Express, Next.js &amp; NestJS apps</span></a>
+                  <a href="python-hosting.html">Python Hosting<span>Django, Flask &amp; FastAPI apps</span></a>
+                  <a href="ruby-hosting.html">Ruby Hosting<span>Rails &amp; Sinatra on Passenger</span></a>
+                  <a href="java-hosting.html">Java / Tomcat Hosting<span>JSP, Servlets &amp; Spring Boot</span></a>
+                  <a href="languages.html">All Supported Languages<span>Compare every runtime we support</span></a>
                 </div>
               </div>
             </li>
             <li class="nav-item has-menu">
-              <button class="nav-link" type="button">Server</button>
+              <button class="nav-link" type="button" aria-expanded="false">Reseller</button>
+              <div class="mega-menu compact-menu">
+                <div class="mega-column">
+                  <p class="mega-title">cPanel Powered Reseller</p>
+                  <a href="reseller-hosting.html">cPanel Reseller<span>White-label WHM reseller plans</span></a>
+                  <a href="master-reseller.html">Master Reseller<span>Create and sell reseller accounts</span></a>
+                  <a href="alpha-reseller.html">Alpha Reseller<span>Top-tier multi-level reseller control</span></a>
+                  <a href="flex-reseller.html">Flex Reseller<span>Pay-as-you-grow reseller resources</span></a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item has-menu">
+              <button class="nav-link" type="button" aria-expanded="false">Server</button>
               <div class="mega-menu compact-menu">
                 <div class="mega-column">
                   <p class="mega-title">Managed Servers</p>
-                  <a href="vps-server.html">VPS Server<span>Scalable virtual private servers with full root access</span></a>
-                  <a href="dedicated-server.html">Dedicated Server<span>High-performance bare metal servers for production workloads</span></a>
+                  <a href="vps-server.html">VPS Server<span>KVM cloud servers with full root access</span></a>
+                  <a href="dedicated-server.html">Dedicated Server<span>Bare metal servers for production</span></a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item has-menu is-current">
+              <button class="nav-link" type="button" aria-expanded="false">Domain</button>
+              <div class="mega-menu mega-two">
+                <div class="mega-column">
+                  <p class="mega-title">Register</p>
+                  <a href="domain-registration.html" aria-current="page">Domain Registration<span>Register from 400+ extensions</span></a>
+                  <a href="domain-registration.html#search">Domain Search<span>Instant name &amp; price lookup</span></a>
+                  <a href="bd-domain.html">.BD Domain<span>Official BTCL .bd registration</span></a>
+                </div>
+                <div class="mega-column">
+                  <p class="mega-title">Manage</p>
+                  <a href="domain-transfer.html">Domain Transfer<span>Move domains with zero downtime</span></a>
+                  <a href="domain-renew.html">Domain Renew<span>Renew early, keep your brand safe</span></a>
+                  <a href="domain-pricing.html">Domain Pricing<span>Full TLD price list in BDT</span></a>
                 </div>
               </div>
             </li>
             <li class="nav-item has-menu">
-              <button class="nav-link" type="button">Domain</button>
+              <button class="nav-link" type="button" aria-expanded="false">Services</button>
               <div class="mega-menu compact-menu">
                 <div class="mega-column">
-                  <p class="mega-title">Domain Services</p>
-                  <a href="domain-registration.html">Domain Registration<span>Register your ideal domain name across 500+ extensions</span></a>
-                  <a href="bd-domain.html">.BD Domain Registration<span>Official BTCL .bd domain registration in Bangladesh</span></a>
-                  <a href="domain-transfer.html#renew">Domain Renew<span>Renew existing domains and keep your brand protected</span></a>
-                  <a href="domain-transfer.html">Domain Transfer<span>Transfer domains to Host Divine with zero downtime</span></a>
-                  <a href="domain-registration.html#search">Domain Search<span>Instant WHOIS lookup &amp; smart domain suggestions</span></a>
+                  <p class="mega-title">Business Services</p>
+                  <a href="ssl-certificates.html">SSL Certificates<span>DV, OV, EV &amp; wildcard SSL</span></a>
+                  <a href="business-email.html">Business Email<span>Professional email with spam defense</span></a>
+                  <a href="seo-service.html">SEO Service<span>Technical SEO &amp; growth campaigns</span></a>
                 </div>
               </div>
             </li>
             <li class="nav-item has-menu">
-              <button class="nav-link" type="button">About Us</button>
+              <button class="nav-link" type="button" aria-expanded="false">Company</button>
               <div class="mega-menu compact-menu">
                 <div class="mega-column">
                   <p class="mega-title">About Host Divine</p>
-                  <a href="about-us.html">Company Overview<span>Learn about Host Divine infrastructure and mission</span></a>
-                  <a href="about-us.html#timeline">Timeline<span>Our journey, milestones and technological growth</span></a>
-                  <a href="faq.html">FAQ<span>Frequently asked questions and support answers</span></a>
-                  <a href="blog.html">Blog<span>Hosting, cloud, server tips and tech updates</span></a>
-                  <a href="contact.html">Contact Us<span>Sales, technical support and migration inquiries</span></a>
+                  <a href="about-us.html">Company Overview<span>Our infrastructure and mission</span></a>
+                  <a href="timeline.html">Timeline<span>Milestones since 2004</span></a>
+                  <a href="faq.html">FAQ<span>Answers to common questions</span></a>
+                  <a href="blog.html">Blog<span>Hosting, cloud and server guides</span></a>
+                  <a href="contact.html">Contact Us<span>Sales, support and migration</span></a>
                 </div>
               </div>
             </li>
           </ul>
           <div class="nav-actions">
-            <a class="nav-phone" href="#">Sales Contact</a>
+            <a class="nav-phone" href="contact.html">Sales Contact</a>
             <a class="nav-login" href="https://panel.hostdivine.com/">Domain Login</a>
             <a class="nav-cta" href="https://robot.hostdivine.com/clientarea.php">Client Area</a>
           </div>
+          <div class="nav-social" aria-label="Follow Host Divine"><a class="nav-social-link" href="#" aria-label="Host Divine on Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a><a class="nav-social-link" href="#" aria-label="Host Divine on X"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a><a class="nav-social-link" href="https://wa.me/" aria-label="Host Divine on WhatsApp" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a><a class="nav-social-link" href="#" aria-label="Host Divine on Telegram"><i class="fa-brands fa-telegram" aria-hidden="true"></i></a><a class="nav-social-link" href="#" aria-label="Host Divine on IMO"><i class="fa-solid fa-comment-dots" aria-hidden="true"></i></a></div>
         </div>
       </div>
     </nav>
   </header>
 
   <!-- Main Content -->
-  <main id="main">
+  <main id="main" data-hero="1">
 
-    <!-- Page Hero Banner with Domain Search -->
-    <section class="page-hero" id="search">
+    <section class="page-hero is-center" id="search">
+      <div class="page-hero-bg" aria-hidden="true"><span class="page-hero-grid-lines"></span><span class="page-hero-glow"></span></div>
       <div class="container">
-        <ul class="breadcrumb">
-          <li><a href="index.html">Home</a></li>
-          <li class="breadcrumb-sep"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></li>
-          <li><span>Domain</span></li>
-          <li class="breadcrumb-sep"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></li>
-          <li class="breadcrumb-current">Domain Registration</li>
-        </ul>
-
-        <div style="text-align: center; max-width: 820px; margin: 0 auto 34px;">
-          <span class="eyebrow"><span class="eyebrow-dot"></span>Instant Availability Check</span>
-          <h1 class="page-hero-title">Find &amp; Register Your Perfect Domain Name</h1>
-          <p class="page-hero-lead" style="margin: 0 auto 26px;">Secure your online brand across 500+ extensions. Enjoy free automated DNS management, domain lock protection, URL forwarding, and 24/7 assistance.</p>
-        </div>
-
-        <!-- Interactive Domain Search Box -->
-        <div style="max-width: 820px; margin: 0 auto 28px;">
-          <form action="https://robot.hostdivine.com/cart.php" method="GET" class="domain-search-bar" style="background: #fff; box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25);">
+        <nav aria-label="Breadcrumb"><ol class="breadcrumb"><li><a href="index.html">Home</a></li><li><span>Domain</span></li><li aria-current="page">Domain Registration</li></ol></nav>
+        <div class="page-hero-grid is-single">
+          <div class="page-hero-copy">
+            <span class="eyebrow is-dark"><span class="eyebrow-dot"></span>Instant Availability Check</span>
+            <h1 class="page-hero-title">Find &amp; register your <span class="text-gradient">perfect domain name</span></h1>
+            <p class="page-hero-lead">Secure your brand across 400+ extensions with free DNS management, theft protection and domain forwarding.</p>
+            
+            
+                    <div class="ds-card" data-domain-search>
+          <div class="ds-modes" role="radiogroup" aria-label="Choose an action">
+            <button type="button" class="ds-mode is-active" role="radio" aria-checked="true" data-ds-mode="register"><i class="fa-solid fa-circle-plus" aria-hidden="true"></i>Register</button>
+            <button type="button" class="ds-mode" role="radio" aria-checked="false" data-ds-mode="transfer"><i class="fa-solid fa-right-left" aria-hidden="true"></i>Transfer</button>
+          </div>
+          <form class="ds-form" action="https://robot.hostdivine.com/cart.php" method="get" data-ds-form>
             <input type="hidden" name="a" value="add"/>
-            <input type="hidden" name="domain" value="register"/>
-            <i class="fa-solid fa-magnifying-glass search-bar-icon" aria-hidden="true"></i>
-            <input class="domain-search-input" name="query" placeholder="Type your desired domain name (e.g. mybrand)" required type="text"/>
-            <div class="domain-select-wrapper">
-              <select class="domain-tld-select" name="tld">
-                <option value=".com">.com</option>
-                <option value=".net">.net</option>
-                <option value=".org">.org</option>
-                <option value=".xyz">.xyz</option>
-                <option value=".info">.info</option>
-                <option value=".co">.co</option>
-              </select>
-              <i class="fa-solid fa-chevron-down select-chevron" aria-hidden="true"></i>
+            <input type="hidden" name="domain" value="register" data-ds-action/>
+            <div class="ds-bar">
+              <span class="ds-bar-icon" aria-hidden="true"><i class="fa-solid fa-globe" aria-hidden="true"></i></span>
+              <label class="sr-only" for="reg-ds-input">Domain name</label>
+              <input class="ds-input" id="reg-ds-input" name="query" type="text" inputmode="url" placeholder="Find your perfect domain name…" autocomplete="off" autocapitalize="off" spellcheck="false" required data-ds-input/>
+              <div class="ds-select">
+                <label class="sr-only" for="reg-ds-tld">Extension</label>
+                <select id="reg-ds-tld" data-ds-tld>
+                  <option value=".com">.com</option>
+                  <option value=".net">.net</option>
+                  <option value=".org">.org</option>
+                  <option value=".info">.info</option>
+                  <option value=".xyz">.xyz</option>
+                  <option value=".co">.co</option>
+                  <option value=".biz">.biz</option>
+                  <option value=".io">.io</option>
+                  <option value=".online">.online</option>
+                  <option value=".store">.store</option>
+                  <option value=".tech">.tech</option>
+                  <option value=".app">.app</option>
+                  <option value=".dev">.dev</option>
+                  <option value=".ai">.ai</option>
+                  <option value=".me">.me</option>
+                  <option value=".asia">.asia</option>
+                  <option value=".us">.us</option>
+                  <option value=".uk">.uk</option>
+                </select>
+                <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+              </div>
+              <button type="submit" class="ds-submit"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i><span data-ds-label>Search</span></button>
             </div>
-            <button class="btn btn-primary domain-search-btn" type="submit">Search Domain</button>
           </form>
+          <div class="ds-preview" data-ds-preview hidden>
+            <p class="ds-preview-title">Popular extensions for <strong data-ds-name></strong></p>
+            <div class="ds-preview-list" data-ds-preview-list></div>
+          </div>
+          <div class="ds-tlds" role="list" aria-label="Popular extensions and yearly prices">
+            <button type="button" class="ds-tld is-active" role="listitem" data-tld=".com" data-price="1,600"><em>Hot</em><span class="ds-tld-name">.com</span><span class="ds-tld-price"><span class="tk">৳</span>1,600<small>/yr</small></span></button>
+            <button type="button" class="ds-tld" role="listitem" data-tld=".net" data-price="1,600"><span class="ds-tld-name">.net</span><span class="ds-tld-price"><span class="tk">৳</span>1,600<small>/yr</small></span></button>
+            <button type="button" class="ds-tld" role="listitem" data-tld=".org" data-price="1,650"><span class="ds-tld-name">.org</span><span class="ds-tld-price"><span class="tk">৳</span>1,650<small>/yr</small></span></button>
+            <button type="button" class="ds-tld" role="listitem" data-tld=".info" data-price="2,300"><span class="ds-tld-name">.info</span><span class="ds-tld-price"><span class="tk">৳</span>2,300<small>/yr</small></span></button>
+            <button type="button" class="ds-tld" role="listitem" data-tld=".xyz" data-price="1,700"><span class="ds-tld-name">.xyz</span><span class="ds-tld-price"><span class="tk">৳</span>1,700<small>/yr</small></span></button>
+            <button type="button" class="ds-tld" role="listitem" data-tld=".co" data-price="2,596"><span class="ds-tld-name">.co</span><span class="ds-tld-price"><span class="tk">৳</span>2,596<small>/yr</small></span></button>
+            <button type="button" class="ds-tld" role="listitem" data-tld=".biz" data-price="2,454"><span class="ds-tld-name">.biz</span><span class="ds-tld-price"><span class="tk">৳</span>2,454<small>/yr</small></span></button>
+            <button type="button" class="ds-tld" role="listitem" data-tld=".io" data-price="5,446"><span class="ds-tld-name">.io</span><span class="ds-tld-price"><span class="tk">৳</span>5,446<small>/yr</small></span></button>
+          </div>
+          <div class="ds-foot">
+            <ul class="ds-perks">
+              <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i>Free DNS management</li>
+              <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i>Domain theft protection</li>
+              <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i>Instant activation</li>
+              <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i>24/7 expert support</li>
+            </ul>
+            <div class="ds-links">
+              <a href="domain-pricing.html">All 400+ extensions <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+              <a href="bd-domain.html">.BD domain <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </div>
         </div>
+          </div>
 
-        <!-- Featured TLD Highlights -->
-        <div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; margin-top: 20px;">
-          <div style="background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.12); padding: 8px 18px; border-radius: 999px; font-size: 13px; color: #fff; display: flex; align-items: center; gap: 8px;">
-            <strong style="color: #ffbd85;">.COM</strong> <span>$9.99/yr</span>
-          </div>
-          <div style="background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.12); padding: 8px 18px; border-radius: 999px; font-size: 13px; color: #fff; display: flex; align-items: center; gap: 8px;">
-            <strong style="color: #5bb3ff;">.NET</strong> <span>$12.99/yr</span>
-          </div>
-          <div style="background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.12); padding: 8px 18px; border-radius: 999px; font-size: 13px; color: #fff; display: flex; align-items: center; gap: 8px;">
-            <strong style="color: #27c93f;">.XYZ</strong> <span>$2.99/yr</span>
-          </div>
-          <div style="background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.12); padding: 8px 18px; border-radius: 999px; font-size: 13px; color: #fff; display: flex; align-items: center; gap: 8px;">
-            <strong style="color: #ffd4b8;">.ORG</strong> <span>$11.99/yr</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Key Highlights -->
-    <section class="section">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="eyebrow"><span class="eyebrow-dot"></span>Domain Management</span>
-          <h2 class="section-title">Features included with every registered domain</h2>
-          <p class="section-sub">Comprehensive domain utilities at no additional charge.</p>
-        </div>
-
-        <div class="highlights-grid reveal">
-          <div class="highlight-card">
-            <div class="highlight-icon"><i class="fa-solid fa-network-wired" aria-hidden="true"></i></div>
-            <h3>Free DNS Management</h3>
-            <p>Full control over your DNS records. Easily configure A, AAAA, MX, CNAME, TXT, SRV, and SPF/DKIM verification records.</p>
-          </div>
-          <div class="highlight-card">
-            <div class="highlight-icon"><i class="fa-solid fa-lock" aria-hidden="true"></i></div>
-            <h3>Domain Theft Lock</h3>
-            <p>Registrar lock is activated by default on all domains to prevent unauthorized transfers, domain hijacking, and accidental lapses.</p>
-          </div>
-          <div class="highlight-card">
-            <div class="highlight-icon"><i class="fa-solid fa-envelope" aria-hidden="true"></i></div>
-            <h3>Free Email Forwarding</h3>
-            <p>Create professional aliases like hello@yourbrand.com and have them automatically forwarded to your personal Gmail or Outlook inbox.</p>
-          </div>
-          <div class="highlight-card">
-            <div class="highlight-icon"><i class="fa-solid fa-arrow-turn-up" aria-hidden="true"></i></div>
-            <h3>URL / Web Forwarding</h3>
-            <p>Redirect your domain or subdomains directly to any existing website, social media profile, or online store with or without masking.</p>
-          </div>
-          <div class="highlight-card">
-            <div class="highlight-icon"><i class="fa-solid fa-bolt" aria-hidden="true"></i></div>
-            <h3>Instant DNS Propagation</h3>
-            <p>Our distributed Anycast nameserver network pushes DNS changes across global nodes in minutes instead of waiting 48 hours.</p>
-          </div>
-          <div class="highlight-card">
-            <div class="highlight-icon"><i class="fa-solid fa-rotate" aria-hidden="true"></i></div>
-            <h3>Auto-Renew Protection</h3>
-            <p>Never lose your valuable brand or search engine rankings. Our automated renewal system alerts you well ahead of expiration.</p>
-          </div>
         </div>
       </div>
     </section>
 
-    <!-- TLD Pricing Table -->
-    <section class="section" style="background: #f7faff;">
+    <section class="section bg-waves" id="popular">
       <div class="container">
         <div class="section-head reveal">
-          <span class="eyebrow"><span class="eyebrow-dot"></span>Extension Rates</span>
-          <h2 class="section-title">Complete Domain Pricing Table</h2>
-          <p class="section-sub">Transparent pricing for new registrations, yearly renewals, and incoming transfers.</p>
+          <span class="eyebrow"><span class="eyebrow-dot"></span>Popular Extensions</span>
+          <h2 class="section-title">Popular domain prices</h2>
+          <p class="section-sub">Registration and transfer prices for our most popular extensions.</p>
         </div>
 
-        <div class="tld-table-container reveal">
-          <table class="tld-table">
-            <thead>
-              <tr>
-                <th>TLD Extension</th>
-                <th>1st Year Registration</th>
-                <th>Annual Renewal</th>
-                <th>Transfer Price</th>
-                <th>Action</th>
-              </tr>
-            </thead>
+        <div class="tld-table-container reveal" tabindex="0" role="region" aria-label="Popular domain prices in BDT">
+          <table class="tld-table" data-tld-table>
+            <caption class="sr-only">Popular domain prices in BDT</caption>
+            <thead><tr><th scope="col">Extension</th><th scope="col">Register 1 yr</th><th scope="col">Register 2 yrs</th><th scope="col">Transfer</th><th scope="col"><span class="sr-only">Action</span></th></tr></thead>
             <tbody>
-              <tr>
-                <td><span class="tld-badge">.com</span></td>
-                <td>$9.99</td>
-                <td>$13.99</td>
-                <td>$9.99</td>
-                <td><a class="btn btn-primary" style="padding: 6px 16px; min-height: 36px; font-size: 13px;" href="https://robot.hostdivine.com/cart.php?a=add&amp;domain=register">Register</a></td>
-              </tr>
-              <tr>
-                <td><span class="tld-badge">.net</span></td>
-                <td>$12.99</td>
-                <td>$15.99</td>
-                <td>$12.99</td>
-                <td><a class="btn btn-outline" style="padding: 6px 16px; min-height: 36px; font-size: 13px;" href="https://robot.hostdivine.com/cart.php?a=add&amp;domain=register">Register</a></td>
-              </tr>
-              <tr>
-                <td><span class="tld-badge">.org</span></td>
-                <td>$11.99</td>
-                <td>$14.99</td>
-                <td>$11.99</td>
-                <td><a class="btn btn-outline" style="padding: 6px 16px; min-height: 36px; font-size: 13px;" href="https://robot.hostdivine.com/cart.php?a=add&amp;domain=register">Register</a></td>
-              </tr>
-              <tr>
-                <td><span class="tld-badge">.xyz</span></td>
-                <td>$2.99</td>
-                <td>$12.99</td>
-                <td>$10.99</td>
-                <td><a class="btn btn-primary" style="padding: 6px 16px; min-height: 36px; font-size: 13px;" href="https://robot.hostdivine.com/cart.php?a=add&amp;domain=register">Register</a></td>
-              </tr>
-              <tr>
-                <td><span class="tld-badge">.info</span></td>
-                <td>$4.99</td>
-                <td>$19.99</td>
-                <td>$14.99</td>
-                <td><a class="btn btn-outline" style="padding: 6px 16px; min-height: 36px; font-size: 13px;" href="https://robot.hostdivine.com/cart.php?a=add&amp;domain=register">Register</a></td>
-              </tr>
-              <tr>
-                <td><span class="tld-badge">.biz</span></td>
-                <td>$5.99</td>
-                <td>$18.99</td>
-                <td>$14.99</td>
-                <td><a class="btn btn-outline" style="padding: 6px 16px; min-height: 36px; font-size: 13px;" href="https://robot.hostdivine.com/cart.php?a=add&amp;domain=register">Register</a></td>
-              </tr>
-              <tr>
-                <td><span class="tld-badge">.co</span></td>
-                <td>$8.99</td>
-                <td>$28.99</td>
-                <td>$26.99</td>
-                <td><a class="btn btn-outline" style="padding: 6px 16px; min-height: 36px; font-size: 13px;" href="https://robot.hostdivine.com/cart.php?a=add&amp;domain=register">Register</a></td>
-              </tr>
-              <tr>
-                <td><span class="tld-badge">.online</span></td>
-                <td>$3.49</td>
-                <td>$32.99</td>
-                <td>$28.99</td>
-                <td><a class="btn btn-outline" style="padding: 6px 16px; min-height: 36px; font-size: 13px;" href="https://robot.hostdivine.com/cart.php?a=add&amp;domain=register">Register</a></td>
-              </tr>
-              <tr>
-                <td><span class="tld-badge">.store</span></td>
-                <td>$2.99</td>
-                <td>$48.99</td>
-                <td>$42.99</td>
-                <td><a class="btn btn-outline" style="padding: 6px 16px; min-height: 36px; font-size: 13px;" href="https://robot.hostdivine.com/cart.php?a=add&amp;domain=register">Register</a></td>
-              </tr>
+              <tr data-tld=".com"><th scope="row"><span class="tld-badge">.com</span></th><td><span class="tk">৳</span>1,600.00</td><td><span class="tk">৳</span>3,200.00</td><td><span class="tk">৳</span>1,600.00</td><td><a class="tld-action" href="https://robot.hostdivine.com/cart.php?a=add&amp;domain=register">Register</a></td></tr>
+              <tr data-tld=".net"><th scope="row"><span class="tld-badge">.net</span></th><td><span class="tk">৳</span>1,600.00</td><td><span class="tk">৳</span>3,200.00</td><td><span class="tk">৳</span>1,600.00</td><td><a class="tld-action" href="https://robot.hostdivine.com/cart.php?a=add&amp;domain=register">Register</a></td></tr>
+              <tr data-tld=".org"><th scope="row"><span class="tld-badge">.org</span></th><td><span class="tk">৳</span>1,650.00</td><td><span class="tk">৳</span>3,300.00</td><td><span class="tk">৳</span>1,650.00</td><td><a class="tld-action" href="https://robot.hostdivine.com/cart.php?a=add&amp;domain=register">Register</a></td></tr>
+              <tr data-tld=".info"><th scope="row"><span class="tld-badge">.info</span></th><td><span class="tk">৳</span>2,300.00</td><td><span class="tk">৳</span>4,600.00</td><td><span class="tk">৳</span>2,300.00</td><td><a class="tld-action" href="https://robot.hostdivine.com/cart.php?a=add&amp;domain=register">Register</a></td></tr>
+              <tr data-tld=".biz"><th scope="row"><span class="tld-badge">.biz</span></th><td><span class="tk">৳</span>2,454.29</td><td><span class="tk">৳</span>4,908.58</td><td><span class="tk">৳</span>2,454.29</td><td><a class="tld-action" href="https://robot.hostdivine.com/cart.php?a=add&amp;domain=register">Register</a></td></tr>
+              <tr data-tld=".co"><th scope="row"><span class="tld-badge">.co</span></th><td><span class="tk">৳</span>2,596.00</td><td><span class="tk">৳</span>5,192.00</td><td><span class="tk">৳</span>2,596.00</td><td><a class="tld-action" href="https://robot.hostdivine.com/cart.php?a=add&amp;domain=register">Register</a></td></tr>
+              <tr data-tld=".io"><th scope="row"><span class="tld-badge">.io</span></th><td><span class="tk">৳</span>5,446.00</td><td><span class="tk">৳</span>10,892.00</td><td><span class="tk">৳</span>5,671.00</td><td><a class="tld-action" href="https://robot.hostdivine.com/cart.php?a=add&amp;domain=register">Register</a></td></tr>
+              <tr data-tld=".xyz"><th scope="row"><span class="tld-badge">.xyz</span></th><td><span class="tk">৳</span>1,700.10</td><td><span class="tk">৳</span>2,173.54</td><td><span class="tk">৳</span>1,349.10</td><td><a class="tld-action" href="https://robot.hostdivine.com/cart.php?a=add&amp;domain=register">Register</a></td></tr>
+              <tr data-tld=".us"><th scope="row"><span class="tld-badge">.us</span></th><td><span class="tk">৳</span>739.70</td><td><span class="tk">৳</span>1,640.17</td><td><span class="tk">৳</span>739.70</td><td><a class="tld-action" href="https://robot.hostdivine.com/cart.php?a=add&amp;domain=register">Register</a></td></tr>
+              <tr data-tld=".eu"><th scope="row"><span class="tld-badge">.eu</span></th><td><span class="tk">৳</span>739.70</td><td><span class="tk">৳</span>1,685.56</td><td><span class="tk">৳</span>739.70</td><td><a class="tld-action" href="https://robot.hostdivine.com/cart.php?a=add&amp;domain=register">Register</a></td></tr>
+              <tr data-tld=".tv"><th scope="row"><span class="tld-badge">.tv</span></th><td><span class="tk">৳</span>3,700.00</td><td><span class="tk">৳</span>7,400.00</td><td><span class="tk">৳</span>3,700.00</td><td><a class="tld-action" href="https://robot.hostdivine.com/cart.php?a=add&amp;domain=register">Register</a></td></tr>
+              <tr data-tld=".work"><th scope="row"><span class="tld-badge">.work</span></th><td><span class="tk">৳</span>570.90</td><td><span class="tk">৳</span>1,141.80</td><td><span class="tk">৳</span>570.90</td><td><a class="tld-action" href="https://robot.hostdivine.com/cart.php?a=add&amp;domain=register">Register</a></td></tr>
             </tbody>
           </table>
+          <p class="tld-empty" data-tld-empty hidden>No extensions match your search.</p>
         </div>
+        
+        <p class="plans-note"><i class="fa-solid fa-circle-info" aria-hidden="true"></i>Prices are in Bangladeshi Taka (BDT) and include the registry fee. A dash means the term is not offered.</p>
+        <div class="center-actions"><a class="btn btn-primary" href="domain-pricing.html">View all 400+ prices <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></div>
       </div>
     </section>
 
-    <!-- FAQ Accordion -->
-    <section class="section">
+    <section class="section bg-grid">
       <div class="container">
         <div class="section-head reveal">
-          <span class="eyebrow"><span class="eyebrow-dot"></span>Registration FAQs</span>
-          <h2 class="section-title">Frequently Asked Questions</h2>
-          <p class="section-sub">Helpful answers about purchasing and managing your domains.</p>
+          <span class="eyebrow"><span class="eyebrow-dot"></span>Free With Every Domain</span>
+          <h2 class="section-title">Free add-ons with every domain name</h2>
+          <p class="section-sub">Everything you need to manage your domain — at no extra cost.</p>
         </div>
-
-        <div class="faq-accordion reveal">
-          <details class="faq-item" open>
-            <summary class="faq-summary">
-              <span>What happens immediately after I register a domain?</span>
-              <i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i>
-            </summary>
-            <p class="faq-content">Your domain is registered in real-time with the registry. You immediately receive full DNS management capabilities in your Robot Client Area where you can configure nameservers, email forwarding, or point it to your web hosting account.</p>
-          </details>
-
-          <details class="faq-item">
-            <summary class="faq-summary">
-              <span>Can I transfer my domain to another provider in the future?</span>
-              <i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i>
-            </summary>
-            <p class="faq-content">Yes. Under ICANN rules, you can transfer your domain to any registrar after the standard 60-day initial registration lock. You can unlock your domain and request your EPP/Auth code anytime directly from your dashboard.</p>
-          </details>
-
-          <details class="faq-item">
-            <summary class="faq-summary">
-              <span>Why is WHOIS Privacy Protection recommended?</span>
-              <i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i>
-            </summary>
-            <p class="faq-content">When you register a domain, ICANN requires contact details (name, phone, address, email) to be registered in the public WHOIS registry. WHOIS Privacy replaces your personal data with anonymous proxy data, preventing spam and identity harvesting.</p>
-          </details>
-
-          <details class="faq-item">
-            <summary class="faq-summary">
-              <span>Do you offer Bangladeshi .BD domain registration?</span>
-              <i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i>
-            </summary>
-            <p class="faq-content">Yes! We provide official BTCL .bd and .com.bd domain registration with full assistance in document verification. Visit our dedicated <a href="bd-domain.html" style="color: var(--blue); font-weight: 700;">.BD Domain Registration</a> page for full details.</p>
-          </details>
+        <div class="highlights-grid cols-3">
+          <article class="highlight-card reveal">
+            <div class="highlight-icon"><i class="fa-solid fa-sitemap" aria-hidden="true"></i></div>
+            <h3>Free DNS Management</h3>
+            <p>Full control of A, AAAA, MX, CNAME, TXT and SRV records — free for the life of the domain.</p>
+          </article>
+          <article class="highlight-card reveal">
+            <div class="highlight-icon"><i class="fa-solid fa-lock" aria-hidden="true"></i></div>
+            <h3>Domain Theft Protection</h3>
+            <p>Registrar lock is on by default to stop unauthorized transfers and hijacking.</p>
+          </article>
+          <article class="highlight-card reveal">
+            <div class="highlight-icon"><i class="fa-solid fa-diamond-turn-right" aria-hidden="true"></i></div>
+            <h3>Domain Forwarding</h3>
+            <p>Redirect your domain to any site, with or without masking and SEO settings.</p>
+          </article>
+          <article class="highlight-card reveal">
+            <div class="highlight-icon"><i class="fa-solid fa-envelope" aria-hidden="true"></i></div>
+            <h3>Free Email Trial</h3>
+            <p>Two custom-domain mailboxes free for 90 days on new registrations.</p>
+          </article>
+          <article class="highlight-card reveal">
+            <div class="highlight-icon"><i class="fa-solid fa-layer-group" aria-hidden="true"></i></div>
+            <h3>Bulk Tools</h3>
+            <p>Register, renew or transfer many domains in a single step.</p>
+          </article>
+          <article class="highlight-card reveal">
+            <div class="highlight-icon"><i class="fa-solid fa-gauge" aria-hidden="true"></i></div>
+            <h3>Easy Control Panel</h3>
+            <p>Manage domains, DNS, email and renewals from one Robot client area.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- Page CTA Banner -->
-    <section class="section" style="background: #f7faff;">
+    <section class="section bg-photo is-dark">
       <div class="container">
-        <div class="page-cta-banner reveal">
-          <h2>Secure your dream domain before someone else does</h2>
-          <p>Instant setup, transparent renewals with no hidden surprise rate spikes, and 24/7 expert engineer assistance.</p>
-          <div class="page-hero-actions" style="justify-content: center;">
-            <a class="btn btn-primary" href="#search">Search Domain Availability <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
-            <a class="btn btn-outline" href="domain-transfer.html">Transfer An Existing Domain</a>
+        <div class="section-head reveal">
+          <span class="eyebrow is-dark"><span class="eyebrow-dot"></span>How It Works</span>
+          <h2 class="section-title">Register your domain in 3 steps</h2>
+          
+        </div>
+        <ol class="steps-grid">
+          <li class="step-card reveal">
+            <span class="step-num">01</span>
+            <span class="step-icon"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></span>
+            <h3>Search</h3>
+            <p>Type your desired name and choose an extension.</p>
+          </li>
+          <li class="step-card reveal">
+            <span class="step-num">02</span>
+            <span class="step-icon"><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i></span>
+            <h3>Add to cart</h3>
+            <p>Pick 1 to 10 years and add hosting or email if you need it.</p>
+          </li>
+          <li class="step-card reveal">
+            <span class="step-num">03</span>
+            <span class="step-icon"><i class="fa-solid fa-circle-check" aria-hidden="true"></i></span>
+            <h3>Activate</h3>
+            <p>Your domain goes live instantly with free DNS management.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section bg-soft" id="faq">
+      <div class="container faq-layout">
+        <div class="faq-intro reveal">
+          <span class="eyebrow"><span class="eyebrow-dot"></span>FAQ</span>
+          <h2 class="section-title">Domain registration questions</h2>
+          
+          <div class="faq-help">
+            <span class="faq-help-icon"><i class="fa-solid fa-headset" aria-hidden="true"></i></span>
+            <div><strong>Still have questions?</strong><p>Our engineers reply in under 15 minutes, 24/7.</p></div>
+          </div>
+          <a class="btn btn-outline" href="contact.html">Contact support <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+        <div class="reveal">
+          <div class="faq-accordion">
+            <details class="faq-item" open>
+              <summary class="faq-summary"><span>What happens right after I register a domain?</span><i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i></summary>
+              <div class="faq-content"><p>Your domain is registered in real time. You can manage nameservers, DNS records and forwarding straight away from the Robot client area.</p></div>
+            </details>
+            <details class="faq-item">
+              <summary class="faq-summary"><span>Why are prices shown in BDT?</span><i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i></summary>
+              <div class="faq-content"><p>Domain payments are processed in Bangladeshi Taka. You can still pay by international card — your bank converts the amount.</p></div>
+            </details>
+            <details class="faq-item">
+              <summary class="faq-summary"><span>Can I transfer my domain away later?</span><i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i></summary>
+              <div class="faq-content"><p>Yes. After the 60-day ICANN lock you can unlock the domain and request the EPP code from your dashboard at any time.</p></div>
+            </details>
+            <details class="faq-item">
+              <summary class="faq-summary"><span>Do you offer .bd domains?</span><i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i></summary>
+              <div class="faq-content"><p>Yes. We handle official BTCL .bd registration including paperwork. See the .BD Domain page for details.</p></div>
+            </details>
           </div>
         </div>
       </div>
     </section>
 
+    <section class="cta-section">
+      <div class="container">
+        <div class="page-cta-banner reveal">
+          <div class="page-cta-bg" aria-hidden="true"></div>
+          <div class="page-cta-copy">
+            <span class="eyebrow is-dark"><span class="eyebrow-dot"></span>Get started today</span>
+            <h2>Secure your dream domain before someone else does</h2>
+            <p>Instant setup, transparent renewals and 24/7 expert help.</p>
+          </div>
+          <div class="page-cta-actions"><a class="btn btn-primary" href="#search">Search Domains <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a><a class="btn btn-ghost" href="domain-transfer.html">Transfer a Domain</a></div>
+        </div>
+      </div>
+    </section>
   </main>
 
-    <!-- Footer Section -->
+  <!-- Footer Section -->
   <footer class="site-footer">
     <div aria-hidden="true" class="footer-orbit"></div>
     <div class="container footer-hero">
@@ -392,45 +412,52 @@
     </div>
     <div class="container footer-grid">
       <div>
-        <h3>Hosting Services</h3>
-        <a href="cpanel-hosting.html">cPanel Hosting</a>
-        <a href="reseller-hosting.html">Reseller Web Hosting</a>
-        <a href="reseller-hosting.html#master">Master Reseller</a>
-        <a href="reseller-hosting.html#alpha">Alpha Reseller</a>
+        <h3>Hosting</h3>
+        <a href="cpanel-hosting.html">Web Hosting</a>
         <a href="windows-hosting.html">Windows Hosting</a>
+        <a href="php-hosting.html">PHP Hosting</a>
+        <a href="nodejs-hosting.html">Node.js Hosting</a>
+        <a href="python-hosting.html">Python Hosting</a>
+        <a href="languages.html">All Languages</a>
       </div>
       <div>
-        <h3>Servers</h3>
+        <h3>Reseller &amp; Servers</h3>
+        <a href="reseller-hosting.html">cPanel Reseller</a>
+        <a href="master-reseller.html">Master Reseller</a>
+        <a href="alpha-reseller.html">Alpha Reseller</a>
+        <a href="flex-reseller.html">Flex Reseller</a>
         <a href="vps-server.html">VPS Server</a>
         <a href="dedicated-server.html">Dedicated Server</a>
       </div>
       <div>
-        <h3>Domain Services</h3>
+        <h3>Domains</h3>
         <a href="domain-registration.html">Domain Registration</a>
-        <a href="bd-domain.html">.BD Domain Registration</a>
-        <a href="domain-transfer.html#renew">Domain Renew</a>
+        <a href="bd-domain.html">.BD Domain</a>
         <a href="domain-transfer.html">Domain Transfer</a>
-        <a href="domain-registration.html#search">Domain Search</a>
+        <a href="domain-renew.html">Domain Renew</a>
+        <a href="domain-pricing.html">Domain Pricing</a>
       </div>
       <div>
-        <h3>About Us</h3>
+        <h3>Services</h3>
+        <a href="ssl-certificates.html">SSL Certificates</a>
+        <a href="business-email.html">Business Email</a>
+        <a href="seo-service.html">SEO Service</a>
+      </div>
+      <div>
+        <h3>Company</h3>
         <a href="about-us.html">Company Overview</a>
-        <a href="about-us.html#timeline">Timeline</a>
+        <a href="timeline.html">Timeline</a>
         <a href="faq.html">FAQ</a>
         <a href="blog.html">Blog</a>
         <a href="contact.html">Contact Us</a>
       </div>
     </div>
     <div class="container footer-bottom">
-      <p>© 2004 – <span data-current-year="">2026</span> <a class="brand-footer-link" href="#">Host Divine™</a> — A brand label of ZELT, UAE — All Rights ® Reserved</p>
+      <p>© 2004 – <span data-current-year="">2026</span> <a class="brand-footer-link" href="index.html">Host Divine™</a> — A brand label of ZELT, UAE — All Rights ® Reserved</p>
       <div class="footer-bottom-links">
         <a href="https://robot.hostdivine.com/announcements.php"><i aria-hidden="true" class="fa-solid fa-bullhorn"></i><span>Announcements</span></a>
-        <a href="#"><i aria-hidden="true" class="fa-solid fa-file-shield"></i><span>Terms &amp; Policies</span></a>
-        <a aria-label="Host Divine Facebook" class="footer-social-link" href="#" rel="noopener noreferrer" target="_blank"><i aria-hidden="true" class="fa-brands fa-facebook-f"></i></a>
-        <a aria-label="Host Divine X" class="footer-social-link" href="#" rel="noopener noreferrer" target="_blank"><i aria-hidden="true" class="fa-brands fa-x-twitter"></i></a>
-        <a aria-label="Host Divine WhatsApp" class="footer-social-link" href="#" rel="noopener noreferrer" target="_blank"><i aria-hidden="true" class="fa-brands fa-whatsapp"></i></a>
-        <a aria-label="Host Divine Telegram" class="footer-social-link" href="#" rel="noopener noreferrer" target="_blank"><i aria-hidden="true" class="fa-brands fa-telegram"></i></a>
-        <a aria-label="Host Divine IMO" class="footer-social-link" href="#"><i aria-hidden="true" class="fa-solid fa-comment-dots"></i></a>
+        <a href="faq.html"><i aria-hidden="true" class="fa-solid fa-file-shield"></i><span>Terms &amp; Policies</span></a>
+        <a href="https://robot.hostdivine.com/serverstatus.php"><i aria-hidden="true" class="fa-solid fa-signal"></i><span>Network Status</span></a>
       </div>
     </div>
   </footer>
@@ -439,6 +466,7 @@
   <aside class="quick-dock" aria-label="Quick contact and navigation">
     <a class="dock-btn dock-top" href="#top" aria-label="Scroll to top of page" title="Scroll to Top">
       <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+      <span class="dock-tooltip">Scroll to Top</span>
     </a>
     <a class="dock-btn dock-support" href="https://robot.hostdivine.com/submitticket.php" target="_blank" rel="noopener noreferrer" aria-label="24/7 Support Desk" title="24/7 Support Desk">
       <i class="fa-solid fa-headset" aria-hidden="true"></i>

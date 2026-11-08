@@ -52,9 +52,12 @@
         document.querySelectorAll('.has-menu.is-open').forEach(function (openItem) {
           if (openItem !== parentItem) {
             openItem.classList.remove('is-open');
+            var openBtn = openItem.querySelector('.nav-link');
+            if (openBtn) openBtn.setAttribute('aria-expanded', 'false');
           }
         });
-        parentItem.classList.toggle('is-open');
+        var nowOpen = parentItem.classList.toggle('is-open');
+        button.setAttribute('aria-expanded', String(nowOpen));
       }
     });
   });
@@ -69,118 +72,181 @@
   }
 
   // ==========================================================================
-  // Domain Search & Pick Up Area Interactions
+  // Domain Search component (homepage + domain pages) — [data-domain-search]
   // ==========================================================================
-  const domainForm = document.getElementById('domainSearchForm');
-  const domainInput = document.getElementById('domainSearchInput');
-  const tldSelect = document.getElementById('domainTldSelect');
-  const tldCards = document.querySelectorAll('.tld-price-card');
-  const tldTags = document.querySelectorAll('.tld-tag');
-  const viewMoreBtn = document.getElementById('viewMoreTldsBtn');
-  const extraTlds = document.getElementById('extraTlds');
+  var CART_URL = 'https://robot.hostdivine.com/cart.php';
 
-  // Helper to sync TLD across select dropdown and cards
-  function setSelectedTld(tld) {
-    if (!tld) return;
-    const cleanTld = tld.startsWith('.') ? tld : '.' + tld;
+  var cleanDomain = function (value) {
+    return value.trim().toLowerCase()
+      .replace(/^https?:\/\//, '')
+      .replace(/^www\./, '')
+      .replace(/\/.*$/, '')
+      .replace(/[^a-z0-9.\-¡-￿]/g, '');
+  };
 
-    // Update select dropdown if option exists, or add it
-    if (tldSelect) {
-      let optionExists = false;
-      for (let i = 0; i < tldSelect.options.length; i++) {
-        if (tldSelect.options[i].value.toLowerCase() === cleanTld.toLowerCase()) {
-          tldSelect.selectedIndex = i;
-          optionExists = true;
-          break;
-        }
+  document.querySelectorAll('[data-domain-search]').forEach(function (root) {
+    var form = root.querySelector('[data-ds-form]');
+    var input = root.querySelector('[data-ds-input]');
+    var select = root.querySelector('[data-ds-tld]');
+    var action = root.querySelector('[data-ds-action]');
+    var label = root.querySelector('[data-ds-label]');
+    var modes = root.querySelectorAll('[data-ds-mode]');
+    var chips = root.querySelectorAll('.ds-tld');
+    var preview = root.querySelector('[data-ds-preview]');
+    var previewName = root.querySelector('[data-ds-name]');
+    var previewList = root.querySelector('[data-ds-preview-list]');
+    if (!form || !input) return;
+
+    var mode = action ? action.value : 'register';
+
+    var setTld = function (tld) {
+      if (select && tld) {
+        var found = Array.prototype.some.call(select.options, function (opt) {
+          if (opt.value === tld) { select.value = tld; return true; }
+          return false;
+        });
+        if (!found) select.add(new Option(tld, tld, true, true));
       }
-      if (!optionExists) {
-        const newOpt = new Option(cleanTld, cleanTld, true, true);
-        tldSelect.add(newOpt);
-      }
-    }
+      chips.forEach(function (chip) {
+        chip.classList.toggle('is-active', chip.getAttribute('data-tld') === tld);
+      });
+    };
 
-    // Update active state on price cards
-    tldCards.forEach(function (card) {
-      const cardTld = card.getAttribute('data-tld');
-      card.classList.toggle('active', cardTld && cardTld.toLowerCase() === cleanTld.toLowerCase());
-    });
+    var cartLink = function (domain) {
+      return CART_URL + '?a=add&domain=' + mode + '&query=' + encodeURIComponent(domain);
+    };
 
-    // Update active highlight on tags
-    tldTags.forEach(function (tag) {
-      const tagTld = tag.getAttribute('data-tld');
-      tag.classList.toggle('selected', tagTld && tagTld.toLowerCase() === cleanTld.toLowerCase());
-    });
-
-    // Focus input so user can continue typing
-    if (domainInput) {
-      domainInput.focus();
-    }
-  }
-
-  // Handle TLD Price Cards Click (Image 2 Feature)
-  tldCards.forEach(function (card) {
-    card.addEventListener('click', function () {
-      const tld = card.getAttribute('data-tld');
-      setSelectedTld(tld);
-    });
-  });
-
-  // Handle Extension Tags Click (Image 1 Feature)
-  tldTags.forEach(function (tag) {
-    tag.addEventListener('click', function () {
-      const tld = tag.getAttribute('data-tld');
-      setSelectedTld(tld);
-    });
-  });
-
-  // Handle Dropdown Change
-  if (tldSelect) {
-    tldSelect.addEventListener('change', function () {
-      setSelectedTld(tldSelect.value);
-    });
-  }
-
-  // Handle "View More" Toggle for Extra TLD Tags (Image 1 Feature)
-  if (viewMoreBtn && extraTlds) {
-    viewMoreBtn.addEventListener('click', function () {
-      const isHidden = extraTlds.hasAttribute('hidden');
-      if (isHidden) {
-        extraTlds.removeAttribute('hidden');
-        viewMoreBtn.setAttribute('aria-expanded', 'true');
-        viewMoreBtn.innerHTML = '<span>View Less</span> <i class="fa-solid fa-chevron-up" aria-hidden="true"></i>';
-      } else {
-        extraTlds.setAttribute('hidden', '');
-        viewMoreBtn.setAttribute('aria-expanded', 'false');
-        viewMoreBtn.innerHTML = '<span>View More</span> <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>';
-      }
-    });
-  }
-
-  // Domain Search Form Submission Handler
-  if (domainForm && domainInput) {
-    domainForm.addEventListener('submit', function (e) {
-      e.preventDefault();
-      let query = domainInput.value.trim().toLowerCase();
-      if (!query) {
-        domainInput.focus();
+    // Live preview: the typed name with popular extensions and prices
+    var renderPreview = function () {
+      if (!preview || !previewList) return;
+      var name = cleanDomain(input.value).split('.')[0];
+      if (!name || mode !== 'register') {
+        preview.hidden = true;
         return;
       }
+      previewName.textContent = name;
+      previewList.innerHTML = '';
+      Array.prototype.slice.call(chips, 0, 4).forEach(function (chip) {
+        var tld = chip.getAttribute('data-tld');
+        var link = document.createElement('a');
+        link.className = 'ds-preview-item';
+        link.href = cartLink(name + tld);
+        var text = document.createElement('span');
+        text.textContent = name + tld;
+        var price = document.createElement('b');
+        var taka = document.createElement('span');
+        taka.className = 'tk';
+        taka.textContent = '৳';
+        price.appendChild(taka);
+        price.appendChild(document.createTextNode(chip.getAttribute('data-price') + '/yr'));
+        var arrow = document.createElement('i');
+        arrow.className = 'fa-solid fa-cart-plus';
+        arrow.setAttribute('aria-hidden', 'true');
+        link.appendChild(text);
+        link.appendChild(price);
+        link.appendChild(arrow);
+        previewList.appendChild(link);
+      });
+      preview.hidden = false;
+    };
 
-      // Strip http://, https://, www., and trailing slashes
-      query = query.replace(/^https?:\/\//i, '').replace(/^www\./i, '').replace(/\/+$/, '');
+    modes.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        mode = btn.getAttribute('data-ds-mode');
+        modes.forEach(function (b) {
+          var on = b === btn;
+          b.classList.toggle('is-active', on);
+          b.setAttribute('aria-checked', String(on));
+        });
+        if (action) action.value = mode;
+        if (label) label.textContent = mode === 'transfer' ? 'Transfer' : 'Search';
+        input.placeholder = mode === 'transfer' ? 'Enter the domain you want to transfer' : 'Find your perfect domain name…';
+        renderPreview();
+        input.focus();
+      });
+    });
 
-      // Check if user already typed an extension (e.g. example.com or example.co.uk)
-      const selectedTld = tldSelect ? tldSelect.value : '.com';
-      const hasExtension = /\.[a-z0-9\-]{2,}$/i.test(query);
+    chips.forEach(function (chip) {
+      chip.addEventListener('click', function () {
+        setTld(chip.getAttribute('data-tld'));
+        input.focus();
+      });
+    });
 
-      let finalDomain = query;
-      if (!hasExtension) {
-        finalDomain = query + (selectedTld.startsWith('.') ? selectedTld : '.' + selectedTld);
+    if (select) {
+      select.addEventListener('change', function () { setTld(select.value); });
+    }
+
+    input.addEventListener('input', renderPreview);
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var domain = cleanDomain(input.value);
+      if (!domain) {
+        input.focus();
+        return;
       }
+      if (!/\.[a-z0-9\-¡-￿]{2,}$/.test(domain)) {
+        domain += select ? select.value : '.com';
+      }
+      window.location.href = cartLink(domain);
+    });
+  });
 
-      const registerUrl = 'https://robot.hostdivine.com/cart.php?a=add&domain=register&query=' + encodeURIComponent(finalDomain);
-      window.location.href = registerUrl;
+  // ==========================================================================
+  // Domain price table filter — [data-tld-filter] / [data-tld-table]
+  // ==========================================================================
+  var tldTable = document.querySelector('[data-tld-table]');
+  if (tldTable) {
+    var tldRows = Array.prototype.slice.call(tldTable.querySelectorAll('tbody tr'));
+    var tldFilter = document.querySelector('[data-tld-filter]');
+    var tldCount = document.querySelector('[data-tld-count]');
+    var tldEmpty = document.querySelector('[data-tld-empty]');
+    var tldMore = document.querySelector('[data-tld-more]');
+    var limit = parseInt(tldTable.getAttribute('data-tld-limit'), 10) || 0;
+    var expanded = !limit;
+
+    var applyTldFilter = function () {
+      var q = tldFilter ? tldFilter.value.trim().toLowerCase().replace(/^\.?/, '.') : '';
+      var searching = q.length > 1;
+      var shown = 0;
+      var matches = 0;
+      tldRows.forEach(function (row) {
+        var tld = row.getAttribute('data-tld') || '';
+        var match = !searching || tld.indexOf(q) === 0 || tld.indexOf(q.slice(1)) > -1;
+        if (match) matches += 1;
+        var visible = match && (searching || expanded || shown < limit);
+        row.hidden = !visible;
+        if (visible) shown += 1;
+      });
+      if (tldCount) tldCount.textContent = searching ? matches + ' matching extensions' : tldRows.length + ' extensions';
+      if (tldEmpty) tldEmpty.hidden = matches > 0;
+      if (tldMore) tldMore.hidden = expanded || searching;
+    };
+
+    if (tldFilter) tldFilter.addEventListener('input', applyTldFilter);
+    if (tldMore) {
+      tldMore.addEventListener('click', function () {
+        expanded = true;
+        applyTldFilter();
+      });
+    }
+    applyTldFilter();
+  }
+
+  // ==========================================================================
+  // Contact form (no backend yet — shows a confirmation message)
+  // ==========================================================================
+  var contactForm = document.querySelector('[data-contact-form]');
+  if (contactForm) {
+    contactForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var status = contactForm.querySelector('[data-form-status]');
+      if (status) {
+        status.textContent = 'Thank you! Your message has been received. Our team will reply within 15 minutes during office hours.';
+        status.hidden = false;
+      }
+      contactForm.reset();
     });
   }
 })();
@@ -626,13 +692,45 @@
     counters.forEach(function (el) { countObserver.observe(el); });
   }
 
-  // Floating dock: back-to-top button visibility
-  var dockTop = document.querySelector('.dock-top');
-  if (dockTop) {
+  // Floating dock: back-to-top button
+  var dockTops = document.querySelectorAll('.dock-top');
+  if (dockTops.length) {
     var checkDockScroll = function () {
-      dockTop.classList.toggle('is-visible', window.scrollY > 350);
+      var scrolled = (window.pageYOffset || document.documentElement.scrollTop || 0) > 350;
+      dockTops.forEach(function (btn) {
+        btn.classList.toggle('is-visible', scrolled);
+        btn.tabIndex = scrolled ? 0 : -1;
+        btn.setAttribute('aria-hidden', String(!scrolled));
+      });
     };
     window.addEventListener('scroll', checkDockScroll, { passive: true });
     checkDockScroll();
+
+    var scrollToTop = function (e) {
+      if (e) e.preventDefault();
+      try {
+        window.scrollTo({
+          top: 0,
+          left: 0,
+          behavior: reduceMotion ? 'auto' : 'smooth'
+        });
+      } catch (err) {
+        window.scrollTo(0, 0);
+      }
+    };
+
+    dockTops.forEach(function (btn) {
+      btn.addEventListener('click', function (e) {
+        scrollToTop(e);
+        btn.blur();
+      });
+    });
+
+    // Also support any global anchor link pointing to #top
+    document.querySelectorAll('a[href="#top"]').forEach(function (link) {
+      if (!link.classList.contains('dock-top')) {
+        link.addEventListener('click', scrollToTop);
+      }
+    });
   }
 })();

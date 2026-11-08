@@ -3,13 +3,14 @@
 <head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>Frequently Asked Questions (FAQ) — Host Divine Networks</title>
-  <meta content="Find answers to common questions about Host Divine cPanel hosting, reseller WHM, .BD domain registration, VPS cloud, billing, and 24/7 technical support." name="description"/>
+  <title>FAQ — Frequently Asked Questions | Host Divine™</title>
+  <meta content="Answers about Host Divine hosting plans, reseller tiers, domains and .BD registration, VPS and dedicated servers, billing and free migration." name="description"/>
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
   <link href="assets/img/favicon.svg" rel="icon" type="image/svg+xml"/>
   <link href="assets/img/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
   <link href="assets/img/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
   <link href="assets/img/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+  <link href="assets/img/header-home.webp" rel="preload" as="image" fetchpriority="high"/>
   <link href="assets/css/style.css" rel="stylesheet"/>
   <script>document.documentElement.classList.add('js');</script>
 </head>
@@ -21,10 +22,13 @@
     <div class="header-strip">
       <div class="container strip-inner">
         <p><strong>Host Divine Networks</strong> — Managed cloud, VPS, and reseller hosting solutions from the world's top co-locations</p>
-        <div aria-label="Quick support links" class="strip-links">
-          <a href="https://robot.hostdivine.com/serverstatus.php">Network Status</a>
-          <a href="https://robot.hostdivine.com/knowledgebase.php">Knowledge Base</a>
-          <a href="https://robot.hostdivine.com/submitticket.php">Submit Ticket</a>
+        <div class="strip-right">
+          <div aria-label="Quick support links" class="strip-links">
+            <a href="https://robot.hostdivine.com/serverstatus.php">Network Status</a>
+            <a href="https://robot.hostdivine.com/knowledgebase.php">Knowledge Base</a>
+            <a href="https://robot.hostdivine.com/submitticket.php">Submit Ticket</a>
+          </div>
+          <div class="strip-social" aria-label="Follow Host Divine"><a class="strip-social-link" href="#" aria-label="Host Divine on Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a><a class="strip-social-link" href="#" aria-label="Host Divine on X"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a><a class="strip-social-link" href="https://wa.me/" aria-label="Host Divine on WhatsApp" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a><a class="strip-social-link" href="#" aria-label="Host Divine on Telegram"><i class="fa-brands fa-telegram" aria-hidden="true"></i></a><a class="strip-social-link" href="#" aria-label="Host Divine on IMO"><i class="fa-solid fa-comment-dots" aria-hidden="true"></i></a></div>
         </div>
       </div>
     </div>
@@ -39,66 +43,93 @@
         <div class="nav-panel" id="navPanel">
           <ul class="nav-menu">
             <li class="nav-item has-menu">
-              <button class="nav-link" type="button">Hosting</button>
+              <button class="nav-link" type="button" aria-expanded="false">Hosting</button>
               <div class="mega-menu mega-wide">
                 <div class="mega-card intro-card">
                   <span>Web &amp; Cloud Hosting</span>
-                  <strong>High-speed SSD hosting tailored for growth.</strong>
-                  <p>Reliable cPanel, multi-tier reseller platforms and Windows hosting built on NVMe infrastructure with 99.9% uptime SLA.</p>
+                  <strong>High-speed NVMe hosting tailored for growth.</strong>
+                  <p>cPanel and Windows hosting plus developer platforms for PHP, Node.js, Python, Ruby and Java — all on LiteSpeed and pure NVMe.</p>
                 </div>
                 <div class="mega-column">
                   <p class="mega-title">Web Hosting</p>
-                  <a href="cpanel-hosting.html">cPanel Hosting<span>Fast, secure cPanel hosting with SSD storage</span></a>
-                  <a href="reseller-hosting.html">Reseller Web Hosting<span>White-label WHM hosting for agencies &amp; startups</span></a>
-                  <a href="reseller-hosting.html#master">Master Reseller<span>Create and manage multiple reseller accounts</span></a>
-                  <a href="reseller-hosting.html#alpha">Alpha Reseller<span>Top-tier master &amp; alpha reseller control</span></a>
+                  <a href="cpanel-hosting.html">Web Hosting<span>Fast cPanel hosting on LiteSpeed &amp; NVMe</span></a>
+                  <a href="windows-hosting.html">Windows Hosting<span>ASP.NET, .NET Core, IIS &amp; MSSQL</span></a>
+                  <div class="mega-promo-box">
+                    <i class="fa-solid fa-code" aria-hidden="true"></i>
+                    <div><strong>Developer friendly</strong><p>SSH, Git, MultiPHP, Node.js and Python selectors on every plan.</p></div>
+                  </div>
                 </div>
                 <div class="mega-column">
-                  <p class="mega-title">Windows Hosting</p>
-                  <a href="windows-hosting.html">Windows Hosting<span>ASP.NET, .NET Core, IIS &amp; MSSQL database support</span></a>
-                  <div class="mega-promo-box">
-                    <i class="fa-brands fa-windows" aria-hidden="true"></i>
-                    <div>
-                      <strong>Enterprise Windows</strong>
-                      <p>Full support for ASP.NET 8, MVC and dedicated MSSQL databases.</p>
-                    </div>
-                  </div>
+                  <p class="mega-title">Language Platforms</p>
+                  <a href="php-hosting.html">PHP Hosting<span>PHP 7.4 – 8.3 with Laravel &amp; WordPress</span></a>
+                  <a href="nodejs-hosting.html">Node.js Hosting<span>Express, Next.js &amp; NestJS apps</span></a>
+                  <a href="python-hosting.html">Python Hosting<span>Django, Flask &amp; FastAPI apps</span></a>
+                  <a href="ruby-hosting.html">Ruby Hosting<span>Rails &amp; Sinatra on Passenger</span></a>
+                  <a href="java-hosting.html">Java / Tomcat Hosting<span>JSP, Servlets &amp; Spring Boot</span></a>
+                  <a href="languages.html">All Supported Languages<span>Compare every runtime we support</span></a>
                 </div>
               </div>
             </li>
             <li class="nav-item has-menu">
-              <button class="nav-link" type="button">Server</button>
+              <button class="nav-link" type="button" aria-expanded="false">Reseller</button>
+              <div class="mega-menu compact-menu">
+                <div class="mega-column">
+                  <p class="mega-title">cPanel Powered Reseller</p>
+                  <a href="reseller-hosting.html">cPanel Reseller<span>White-label WHM reseller plans</span></a>
+                  <a href="master-reseller.html">Master Reseller<span>Create and sell reseller accounts</span></a>
+                  <a href="alpha-reseller.html">Alpha Reseller<span>Top-tier multi-level reseller control</span></a>
+                  <a href="flex-reseller.html">Flex Reseller<span>Pay-as-you-grow reseller resources</span></a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item has-menu">
+              <button class="nav-link" type="button" aria-expanded="false">Server</button>
               <div class="mega-menu compact-menu">
                 <div class="mega-column">
                   <p class="mega-title">Managed Servers</p>
-                  <a href="vps-server.html">VPS Server<span>Scalable virtual private servers with full root access</span></a>
-                  <a href="dedicated-server.html">Dedicated Server<span>High-performance bare metal servers for production workloads</span></a>
+                  <a href="vps-server.html">VPS Server<span>KVM cloud servers with full root access</span></a>
+                  <a href="dedicated-server.html">Dedicated Server<span>Bare metal servers for production</span></a>
                 </div>
               </div>
             </li>
             <li class="nav-item has-menu">
-              <button class="nav-link" type="button">Domain</button>
+              <button class="nav-link" type="button" aria-expanded="false">Domain</button>
+              <div class="mega-menu mega-two">
+                <div class="mega-column">
+                  <p class="mega-title">Register</p>
+                  <a href="domain-registration.html">Domain Registration<span>Register from 400+ extensions</span></a>
+                  <a href="domain-registration.html#search">Domain Search<span>Instant name &amp; price lookup</span></a>
+                  <a href="bd-domain.html">.BD Domain<span>Official BTCL .bd registration</span></a>
+                </div>
+                <div class="mega-column">
+                  <p class="mega-title">Manage</p>
+                  <a href="domain-transfer.html">Domain Transfer<span>Move domains with zero downtime</span></a>
+                  <a href="domain-renew.html">Domain Renew<span>Renew early, keep your brand safe</span></a>
+                  <a href="domain-pricing.html">Domain Pricing<span>Full TLD price list in BDT</span></a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item has-menu">
+              <button class="nav-link" type="button" aria-expanded="false">Services</button>
               <div class="mega-menu compact-menu">
                 <div class="mega-column">
-                  <p class="mega-title">Domain Services</p>
-                  <a href="domain-registration.html">Domain Registration<span>Register your ideal domain name across 500+ extensions</span></a>
-                  <a href="bd-domain.html">.BD Domain Registration<span>Official BTCL .bd domain registration in Bangladesh</span></a>
-                  <a href="domain-transfer.html#renew">Domain Renew<span>Renew existing domains and keep your brand protected</span></a>
-                  <a href="domain-transfer.html">Domain Transfer<span>Transfer domains to Host Divine with zero downtime</span></a>
-                  <a href="domain-registration.html#search">Domain Search<span>Instant WHOIS lookup &amp; smart domain suggestions</span></a>
+                  <p class="mega-title">Business Services</p>
+                  <a href="ssl-certificates.html">SSL Certificates<span>DV, OV, EV &amp; wildcard SSL</span></a>
+                  <a href="business-email.html">Business Email<span>Professional email with spam defense</span></a>
+                  <a href="seo-service.html">SEO Service<span>Technical SEO &amp; growth campaigns</span></a>
                 </div>
               </div>
             </li>
-            <li class="nav-item has-menu">
-              <button class="nav-link" type="button">About Us</button>
+            <li class="nav-item has-menu is-current">
+              <button class="nav-link" type="button" aria-expanded="false">Company</button>
               <div class="mega-menu compact-menu">
                 <div class="mega-column">
                   <p class="mega-title">About Host Divine</p>
-                  <a href="about-us.html">Company Overview<span>Learn about Host Divine infrastructure and mission</span></a>
-                  <a href="about-us.html#timeline">Timeline<span>Our journey, milestones and technological growth</span></a>
-                  <a href="faq.html">FAQ<span>Frequently asked questions and support answers</span></a>
-                  <a href="blog.html">Blog<span>Hosting, cloud, server tips and tech updates</span></a>
-                  <a href="contact.html">Contact Us<span>Sales, technical support and migration inquiries</span></a>
+                  <a href="about-us.html">Company Overview<span>Our infrastructure and mission</span></a>
+                  <a href="timeline.html">Timeline<span>Milestones since 2004</span></a>
+                  <a href="faq.html" aria-current="page">FAQ<span>Answers to common questions</span></a>
+                  <a href="blog.html">Blog<span>Hosting, cloud and server guides</span></a>
+                  <a href="contact.html">Contact Us<span>Sales, support and migration</span></a>
                 </div>
               </div>
             </li>
@@ -108,372 +139,205 @@
             <a class="nav-login" href="https://panel.hostdivine.com/">Domain Login</a>
             <a class="nav-cta" href="https://robot.hostdivine.com/clientarea.php">Client Area</a>
           </div>
+          <div class="nav-social" aria-label="Follow Host Divine"><a class="nav-social-link" href="#" aria-label="Host Divine on Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a><a class="nav-social-link" href="#" aria-label="Host Divine on X"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a><a class="nav-social-link" href="https://wa.me/" aria-label="Host Divine on WhatsApp" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a><a class="nav-social-link" href="#" aria-label="Host Divine on Telegram"><i class="fa-brands fa-telegram" aria-hidden="true"></i></a><a class="nav-social-link" href="#" aria-label="Host Divine on IMO"><i class="fa-solid fa-comment-dots" aria-hidden="true"></i></a></div>
         </div>
       </div>
     </nav>
   </header>
 
   <!-- Main Content -->
-  <main id="main">
+  <main id="main" data-hero="1">
 
-    <!-- Page Hero Banner -->
     <section class="page-hero">
+      <div class="page-hero-bg" aria-hidden="true"><span class="page-hero-grid-lines"></span><span class="page-hero-glow"></span></div>
       <div class="container">
-        <ul class="breadcrumb">
-          <li><a href="index.html">Home</a></li>
-          <li class="breadcrumb-sep"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></li>
-          <li><a href="about-us.html">About Us</a></li>
-          <li class="breadcrumb-sep"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></li>
-          <li class="breadcrumb-current">FAQ</li>
-        </ul>
-
-        <div class="page-hero-grid">
-          <div>
-            <span class="eyebrow"><span class="eyebrow-dot"></span>Knowledge &amp; Support</span>
-            <h1 class="page-hero-title">Frequently Asked Questions</h1>
-            <p class="page-hero-lead">Everything you need to know about Host Divine hosting plans, server architecture, domain registrations, cPanel tools, billing terms, and zero-downtime migration.</p>
-            <div class="page-hero-badges">
-              <span class="page-badge-item"><i class="fa-solid fa-circle-question" aria-hidden="true"></i> Comprehensive Answers</span>
-              <span class="page-badge-item"><i class="fa-solid fa-headset" aria-hidden="true"></i> 24/7/365 Expert Support</span>
-              <span class="page-badge-item"><i class="fa-solid fa-bolt" aria-hidden="true"></i> Instant Setup</span>
-              <span class="page-badge-item"><i class="fa-solid fa-truck-fast" aria-hidden="true"></i> Free Migration</span>
-            </div>
-            <div class="page-hero-actions">
-              <a class="btn btn-primary" href="#faq-hosting">Browse Questions <i class="fa-solid fa-arrow-down" aria-hidden="true"></i></a>
-              <a class="btn btn-outline" href="contact.html">Ask Our Support Team</a>
-            </div>
+        <nav aria-label="Breadcrumb"><ol class="breadcrumb"><li><a href="index.html">Home</a></li><li><span>Company</span></li><li aria-current="page">FAQ</li></ol></nav>
+        <div class="page-hero-grid is-single">
+          <div class="page-hero-copy">
+            <span class="eyebrow is-dark"><span class="eyebrow-dot"></span>Knowledge &amp; Support</span>
+            <h1 class="page-hero-title">Frequently asked <span class="text-gradient">questions</span></h1>
+            <p class="page-hero-lead">Everything you need to know about our hosting plans, servers, domains, billing and free migration.</p>
+            <div class="page-hero-actions"><a class="btn btn-primary" href="#faq-topics">Browse Questions <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+              <a class="btn btn-ghost" href="contact.html">Ask Support</a></div>
+            <ul class="page-hero-badges"><li><i class="fa-solid fa-headset" aria-hidden="true"></i>24/7 support</li><li><i class="fa-solid fa-stopwatch" aria-hidden="true"></i>&lt; 15 min response</li><li><i class="fa-solid fa-truck-fast" aria-hidden="true"></i>Free migration</li><li><i class="fa-solid fa-hand-holding-dollar" aria-hidden="true"></i>30-day guarantee</li></ul>
+            
           </div>
 
-          <div class="page-hero-visual">
-            <div class="hero-console-head">
-              <div class="hero-console-dots">
-                <span></span><span></span><span></span>
-              </div>
-              <span class="hero-console-badge"><i class="fa-solid fa-circle" aria-hidden="true"></i> Support SLA</span>
-            </div>
-            <div class="hero-console-row">
-              <span class="hero-console-label"><i class="fa-solid fa-clock" aria-hidden="true"></i> Average Ticket Response</span>
-              <span class="hero-console-val">&lt; 15 Minutes</span>
-            </div>
-            <div class="hero-console-row">
-              <span class="hero-console-label"><i class="fa-solid fa-award" aria-hidden="true"></i> First Contact Resolution</span>
-              <span class="hero-console-val">94.8% SLA</span>
-            </div>
-            <div class="hero-console-row">
-              <span class="hero-console-label"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> 30-Day Guarantee</span>
-              <span class="hero-console-val">100% Risk Free</span>
-            </div>
-            <div class="hero-console-row">
-              <span class="hero-console-label"><i class="fa-solid fa-server" aria-hidden="true"></i> Production Monitoring</span>
-              <span class="hero-console-val">24/7 NOC Active</span>
-            </div>
-          </div>
         </div>
       </div>
     </section>
 
-    <!-- FAQ Categories Overview -->
-    <section class="section">
+    <section class="section bg-grid" id="faq-topics">
       <div class="container">
         <div class="section-head reveal">
           <span class="eyebrow"><span class="eyebrow-dot"></span>Categories</span>
-          <h2 class="section-title">Browse Questions by Topic</h2>
-          <p class="section-lead">Select any category below to jump directly to detailed answers prepared by our cloud systems engineering team.</p>
+          <h2 class="section-title">Browse questions by topic</h2>
+          
         </div>
-
-        <div class="highlights-grid reveal">
-          <a class="highlight-item" href="#faq-general" style="text-decoration:none;color:inherit;">
-            <div class="highlight-icon"><i class="fa-solid fa-building" aria-hidden="true"></i></div>
-            <h3>General &amp; Billing</h3>
-            <p>Company background, money-back guarantees, payment methods and account management.</p>
-          </a>
-          <a class="highlight-item" href="#faq-hosting" style="text-decoration:none;color:inherit;">
-            <div class="highlight-icon"><i class="fa-solid fa-server" aria-hidden="true"></i></div>
-            <h3>Web &amp; cPanel Hosting</h3>
-            <p>LiteSpeed server, PHP version switches, free SSL, cPanel features and automated JetBackup.</p>
-          </a>
-          <a class="highlight-item" href="#faq-reseller" style="text-decoration:none;color:inherit;">
-            <div class="highlight-icon"><i class="fa-solid fa-diagram-project" aria-hidden="true"></i></div>
-            <h3>Reseller &amp; Multi-Tier</h3>
-            <p>WHM control, Master &amp; Alpha reseller tiers, private nameservers and white-label branding.</p>
-          </a>
-          <a class="highlight-item" href="#faq-domains" style="text-decoration:none;color:inherit;">
-            <div class="highlight-icon"><i class="fa-solid fa-globe" aria-hidden="true"></i></div>
-            <h3>Domains &amp; .BD Registry</h3>
-            <p>BTCL official paperwork, approval timelines, domain renewals and zero-downtime transfers.</p>
-          </a>
-          <a class="highlight-item" href="#faq-servers" style="text-decoration:none;color:inherit;">
-            <div class="highlight-icon"><i class="fa-solid fa-microchip" aria-hidden="true"></i></div>
-            <h3>VPS &amp; Dedicated Cloud</h3>
-            <p>Root SSH access, Linux distributions, automated DDoS filtering and bare metal configurations.</p>
-          </a>
-          <a class="highlight-item" href="#faq-migration" style="text-decoration:none;color:inherit;">
-            <div class="highlight-icon"><i class="fa-solid fa-truck-fast" aria-hidden="true"></i></div>
-            <h3>Free Migration</h3>
-            <p>How our engineers migrate your websites, databases and email accounts without any downtime.</p>
-          </a>
+        <div class="topic-grid">
+          <a class="topic-card reveal" href="#faq-general"><span class="highlight-icon"><i class="fa-solid fa-circle-info" aria-hidden="true"></i></span><span><strong>General</strong><small>4 questions</small></span><i class="fa-solid fa-arrow-down" aria-hidden="true"></i></a>
+          <a class="topic-card reveal" href="#faq-hosting"><span class="highlight-icon"><i class="fa-solid fa-server" aria-hidden="true"></i></span><span><strong>cPanel Hosting</strong><small>4 questions</small></span><i class="fa-solid fa-arrow-down" aria-hidden="true"></i></a>
+          <a class="topic-card reveal" href="#faq-reseller"><span class="highlight-icon"><i class="fa-solid fa-users-gear" aria-hidden="true"></i></span><span><strong>Reseller Hosting</strong><small>3 questions</small></span><i class="fa-solid fa-arrow-down" aria-hidden="true"></i></a>
+          <a class="topic-card reveal" href="#faq-domains"><span class="highlight-icon"><i class="fa-solid fa-globe" aria-hidden="true"></i></span><span><strong>Domain Registry</strong><small>3 questions</small></span><i class="fa-solid fa-arrow-down" aria-hidden="true"></i></a>
+          <a class="topic-card reveal" href="#faq-servers"><span class="highlight-icon"><i class="fa-solid fa-microchip" aria-hidden="true"></i></span><span><strong>Cloud Infrastructure</strong><small>3 questions</small></span><i class="fa-solid fa-arrow-down" aria-hidden="true"></i></a>
+          <a class="topic-card reveal" href="#faq-migration"><span class="highlight-icon"><i class="fa-solid fa-truck-fast" aria-hidden="true"></i></span><span><strong>Migration</strong><small>1 question</small></span><i class="fa-solid fa-arrow-down" aria-hidden="true"></i></a>
         </div>
       </div>
     </section>
 
-    <!-- FAQ Accordions by Section -->
-    <section class="section" style="background:#fcfdff;border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
-      <div class="container" style="max-width:960px;">
-
-        <!-- 1. General & Billing -->
-        <div id="faq-general" style="margin-bottom:60px;">
-          <div class="section-head reveal" style="text-align:left;margin-bottom:28px;">
+    <section class="section bg-soft">
+      <div class="container faq-groups">
+        <div class="faq-group" id="faq-general">
+          <div class="faq-group-head reveal">
             <span class="eyebrow"><span class="eyebrow-dot"></span>General</span>
-            <h2 class="section-title" style="font-size:28px;">General &amp; Billing Questions</h2>
+            <h2 class="section-title">General &amp; Billing Questions</h2>
           </div>
-          <div class="faq-accordion reveal">
-            <details class="faq-item" open>
-              <summary class="faq-summary">
-                <span>What makes Host Divine different from other hosting companies?</span>
-                <i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i>
-              </summary>
-              <div class="faq-content">
-                <p>Host Divine has been operating high-availability hosting infrastructure since 2004. Unlike low-cost oversold hosts, every Host Divine shared and reseller server is powered by pure NVMe enterprise SSDs, LiteSpeed Web Server with LSCache, CloudLinux cagefs isolation, and real-time Imunify360 AI malware filtering. Furthermore, we maintain a dedicated 24/7/365 engineering desk with guaranteed responses under 15 minutes.</p>
-              </div>
-            </details>
-
+          <div class="reveal">
+          <div class="faq-accordion">
             <details class="faq-item">
-              <summary class="faq-summary">
-                <span>What payment methods do you accept?</span>
-                <i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i>
-              </summary>
-              <div class="faq-content">
-                <p>We accept all major international payment gateways including Visa, MasterCard, American Express, PayPal, bank wire transfers, and leading local gateways in Bangladesh (bKash, Nagad, Rocket, DBBL Nexus) for convenient .BD domain and hosting billing.</p>
-              </div>
+              <summary class="faq-summary"><span>What makes Host Divine different from other hosting companies?</span><i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i></summary>
+              <div class="faq-content"><p>Host Divine has been operating high-availability hosting infrastructure since 2004. Unlike low-cost oversold hosts, every Host Divine shared and reseller server is powered by pure NVMe enterprise SSDs, LiteSpeed Web Server with LSCache, CloudLinux cagefs isolation, and real-time Imunify360 AI malware filtering. Furthermore, we maintain a dedicated 24/7/365 engineering desk with guaranteed responses under 15 minutes.</p></div>
             </details>
-
             <details class="faq-item">
-              <summary class="faq-summary">
-                <span>Do you offer a money-back guarantee?</span>
-                <i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i>
-              </summary>
-              <div class="faq-content">
-                <p>Yes. All shared cPanel hosting and reseller hosting accounts come with an unconditional 30-day money-back guarantee. If you are unsatisfied for any reason, submit a cancellation request within 30 days for a full refund of your hosting fees. Please note that domain registrations, dedicated servers, and software licenses are non-refundable per vendor policies.</p>
-              </div>
+              <summary class="faq-summary"><span>What payment methods do you accept?</span><i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i></summary>
+              <div class="faq-content"><p>We accept all major international payment gateways including Visa, MasterCard, American Express, PayPal, bank wire transfers, and leading local gateways in Bangladesh (bKash, Nagad, Rocket, DBBL Nexus) for convenient .BD domain and hosting billing.</p></div>
             </details>
-
             <details class="faq-item">
-              <summary class="faq-summary">
-                <span>How fast is my hosting account activated after payment?</span>
-                <i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i>
-              </summary>
-              <div class="faq-content">
-                <p>Account activation is completely automated. Once your payment clears through our secure gateway, your cPanel or WHM credentials, nameservers, and server IP details will be dispatched to your registered email address within 60 seconds.</p>
-              </div>
+              <summary class="faq-summary"><span>Do you offer a money-back guarantee?</span><i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i></summary>
+              <div class="faq-content"><p>Yes. All shared cPanel hosting and reseller hosting accounts come with an unconditional 30-day money-back guarantee. If you are unsatisfied for any reason, submit a cancellation request within 30 days for a full refund of your hosting fees. Please note that domain registrations, dedicated servers, and software licenses are non-refundable per vendor policies.</p></div>
             </details>
+            <details class="faq-item">
+              <summary class="faq-summary"><span>How fast is my hosting account activated after payment?</span><i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i></summary>
+              <div class="faq-content"><p>Account activation is completely automated. Once your payment clears through our secure gateway, your cPanel or WHM credentials, nameservers, and server IP details will be dispatched to your registered email address within 60 seconds.</p></div>
+            </details>
+          </div>
           </div>
         </div>
-
-        <!-- 2. Web & cPanel Hosting -->
-        <div id="faq-hosting" style="margin-bottom:60px;">
-          <div class="section-head reveal" style="text-align:left;margin-bottom:28px;">
+        <div class="faq-group" id="faq-hosting">
+          <div class="faq-group-head reveal">
             <span class="eyebrow"><span class="eyebrow-dot"></span>cPanel Hosting</span>
-            <h2 class="section-title" style="font-size:28px;">Web Hosting &amp; Technical Capabilities</h2>
+            <h2 class="section-title">Web Hosting &amp; Technical Capabilities</h2>
           </div>
-          <div class="faq-accordion reveal">
+          <div class="reveal">
+          <div class="faq-accordion">
             <details class="faq-item">
-              <summary class="faq-summary">
-                <span>What control panel do I get with shared web hosting?</span>
-                <i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i>
-              </summary>
-              <div class="faq-content">
-                <p>You receive the authentic, fully licensed cPanel control panel with full privileges. It features the modern Jupiter interface, Softaculous 1-click app installer (for WordPress, Joomla, Laravel, PrestaShop), full phpMyAdmin access, DNS zone editor, unlimited email forwarders, autoresponders, and cron job management.</p>
-              </div>
+              <summary class="faq-summary"><span>What control panel do I get with shared web hosting?</span><i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i></summary>
+              <div class="faq-content"><p>You receive the authentic, fully licensed cPanel control panel with full privileges. It features the modern Jupiter interface, Softaculous 1-click app installer (for WordPress, Joomla, Laravel, PrestaShop), full phpMyAdmin access, DNS zone editor, unlimited email forwarders, autoresponders, and cron job management.</p></div>
             </details>
-
             <details class="faq-item">
-              <summary class="faq-summary">
-                <span>Can I switch PHP versions and customize PHP extensions?</span>
-                <i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i>
-              </summary>
-              <div class="faq-content">
-                <p>Yes. With our integrated CloudLinux PHP Selector, you can select any version from PHP 7.4 through PHP 8.0, 8.1, 8.2, and 8.3 per domain or subdomain. You can also toggle over 80 extensions (including Redis, Memcached, ionCube, Imagick, OPcache) and adjust resource values such as <code>upload_max_filesize</code> and <code>memory_limit</code> up to 1024MB directly from cPanel.</p>
-              </div>
+              <summary class="faq-summary"><span>Can I switch PHP versions and customize PHP extensions?</span><i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i></summary>
+              <div class="faq-content"><p>Yes. With our integrated CloudLinux PHP Selector, you can select any version from PHP 7.4 through PHP 8.0, 8.1, 8.2, and 8.3 per domain or subdomain. You can also toggle over 80 extensions (including Redis, Memcached, ionCube, Imagick, OPcache) and adjust resource values such as <code>upload_max_filesize</code> and <code>memory_limit</code> up to 1024MB directly from cPanel.</p></div>
             </details>
-
             <details class="faq-item">
-              <summary class="faq-summary">
-                <span>Are SSL certificates free and automatically renewed?</span>
-                <i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i>
-              </summary>
-              <div class="faq-content">
-                <p>Yes. AutoSSL is active on every Host Divine web hosting server. As soon as your domain points to our nameservers, a free Let's Encrypt 256-bit SSL certificate is automatically issued and will renew seamlessly in the background without any manual action required.</p>
-              </div>
+              <summary class="faq-summary"><span>Are SSL certificates free and automatically renewed?</span><i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i></summary>
+              <div class="faq-content"><p>Yes. AutoSSL is active on every Host Divine web hosting server. As soon as your domain points to our nameservers, a free Let's Encrypt 256-bit SSL certificate is automatically issued and will renew seamlessly in the background without any manual action required.</p></div>
             </details>
-
             <details class="faq-item">
-              <summary class="faq-summary">
-                <span>How do your automated backups work?</span>
-                <i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i>
-              </summary>
-              <div class="faq-content">
-                <p>We deploy JetBackup 5 on all production clusters. Snapshots of your web files, MySQL databases, email mailboxes, and DNS records are captured daily and stored on independent remote backup nodes. You can restore single files, tables, or complete accounts directly from your cPanel dashboard at any time.</p>
-              </div>
+              <summary class="faq-summary"><span>How do your automated backups work?</span><i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i></summary>
+              <div class="faq-content"><p>We deploy JetBackup 5 on all production clusters. Snapshots of your web files, MySQL databases, email mailboxes, and DNS records are captured daily and stored on independent remote backup nodes. You can restore single files, tables, or complete accounts directly from your cPanel dashboard at any time.</p></div>
             </details>
+          </div>
           </div>
         </div>
-
-        <!-- 3. Reseller & Multi-Tier -->
-        <div id="faq-reseller" style="margin-bottom:60px;">
-          <div class="section-head reveal" style="text-align:left;margin-bottom:28px;">
+        <div class="faq-group" id="faq-reseller">
+          <div class="faq-group-head reveal">
             <span class="eyebrow"><span class="eyebrow-dot"></span>Reseller Hosting</span>
-            <h2 class="section-title" style="font-size:28px;">Reseller &amp; Multi-Tier Infrastructure</h2>
+            <h2 class="section-title">Reseller &amp; Multi-Tier Infrastructure</h2>
           </div>
-          <div class="faq-accordion reveal">
+          <div class="reveal">
+          <div class="faq-accordion">
             <details class="faq-item">
-              <summary class="faq-summary">
-                <span>What is the difference between Reseller, Master Reseller, and Alpha Reseller?</span>
-                <i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i>
-              </summary>
-              <div class="faq-content">
-                <p>Standard Reseller hosting allows you to create independent cPanel accounts for your clients through WebHost Manager (WHM). Master Reseller introduces secondary privileges, allowing you to create standard Reseller accounts in addition to cPanel accounts. Alpha Reseller sits at the top of the hierarchy, empowering you to create Alpha Resellers, Master Resellers, and standard WHM Resellers—ideal for ambitious web agencies and hosting startups.</p>
-              </div>
+              <summary class="faq-summary"><span>What is the difference between Reseller, Master Reseller, and Alpha Reseller?</span><i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i></summary>
+              <div class="faq-content"><p>Standard Reseller hosting allows you to create independent cPanel accounts for your clients through WebHost Manager (WHM). Master Reseller introduces secondary privileges, allowing you to create standard Reseller accounts in addition to cPanel accounts. Alpha Reseller sits at the top of the hierarchy, empowering you to create Alpha Resellers, Master Resellers, and standard WHM Resellers—ideal for ambitious web agencies and hosting startups.</p></div>
             </details>
-
             <details class="faq-item">
-              <summary class="faq-summary">
-                <span>Are reseller accounts 100% white-label?</span>
-                <i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i>
-              </summary>
-              <div class="faq-content">
-                <p>Yes, completely white-label. Host Divine branding is entirely concealed. You can configure your own custom vanity nameservers (such as <code>ns1.yourbrand.com</code> and <code>ns2.yourbrand.com</code>), upload your company logo inside cPanel, and provide your clients with your own branded webmail and billing URLs.</p>
-              </div>
+              <summary class="faq-summary"><span>Are reseller accounts 100% white-label?</span><i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i></summary>
+              <div class="faq-content"><p>Yes, completely white-label. Host Divine branding is entirely concealed. You can configure your own custom vanity nameservers (such as <code>ns1.yourbrand.com</code> and <code>ns2.yourbrand.com</code>), upload your company logo inside cPanel, and provide your clients with your own branded webmail and billing URLs.</p></div>
             </details>
-
             <details class="faq-item">
-              <summary class="faq-summary">
-                <span>Can I integrate WHMCS or another billing platform?</span>
-                <i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i>
-              </summary>
-              <div class="faq-content">
-                <p>Yes! Every reseller account provides full API access (WHM API tokens), allowing seamless 1-click provisioning and suspension via WHMCS, ClientExec, Blesta, or custom automation scripts.</p>
-              </div>
+              <summary class="faq-summary"><span>Can I integrate WHMCS or another billing platform?</span><i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i></summary>
+              <div class="faq-content"><p>Yes! Every reseller account provides full API access (WHM API tokens), allowing seamless 1-click provisioning and suspension via WHMCS, ClientExec, Blesta, or custom automation scripts.</p></div>
             </details>
+          </div>
           </div>
         </div>
-
-        <!-- 4. Domains & .BD Registry -->
-        <div id="faq-domains" style="margin-bottom:60px;">
-          <div class="section-head reveal" style="text-align:left;margin-bottom:28px;">
+        <div class="faq-group" id="faq-domains">
+          <div class="faq-group-head reveal">
             <span class="eyebrow"><span class="eyebrow-dot"></span>Domain Registry</span>
-            <h2 class="section-title" style="font-size:28px;">Domain Names &amp; Official .BD Registration</h2>
+            <h2 class="section-title">Domain Names &amp; Official .BD Registration</h2>
           </div>
-          <div class="faq-accordion reveal">
+          <div class="reveal">
+          <div class="faq-accordion">
             <details class="faq-item">
-              <summary class="faq-summary">
-                <span>What is required to register an official .BD domain?</span>
-                <i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i>
-              </summary>
-              <div class="faq-content">
-                <p>.BD domains (such as <code>.com.bd</code>, <code>.net.bd</code>, <code>.org.bd</code>, <code>.edu.bd</code>, or direct <code>.bd</code>) are regulated by the Bangladesh Telecommunications Company Limited (BTCL). For commercial registrations, an updated Trade License or Certificate of Incorporation is required. For personal domains, a National ID (NID) or Passport copy must be submitted. All .BD domains are registered on a minimum 2-year government cycle.</p>
-              </div>
+              <summary class="faq-summary"><span>What is required to register an official .BD domain?</span><i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i></summary>
+              <div class="faq-content"><p>.BD domains (such as <code>.com.bd</code>, <code>.net.bd</code>, <code>.org.bd</code>, <code>.edu.bd</code>, or direct <code>.bd</code>) are regulated by the Bangladesh Telecommunications Company Limited (BTCL). For commercial registrations, an updated Trade License or Certificate of Incorporation is required. For personal domains, a National ID (NID) or Passport copy must be submitted. All .BD domains are registered on a minimum 2-year government cycle.</p></div>
             </details>
-
             <details class="faq-item">
-              <summary class="faq-summary">
-                <span>How long does .BD domain approval take?</span>
-                <i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i>
-              </summary>
-              <div class="faq-content">
-                <p>Once you submit your application and required documents through Host Divine, our administrative liaison verifies the paperwork and lodges it into the BTCL registry queue. Typical government verification and DNS delegation takes between 24 and 72 business hours.</p>
-              </div>
+              <summary class="faq-summary"><span>How long does .BD domain approval take?</span><i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i></summary>
+              <div class="faq-content"><p>Once you submit your application and required documents through Host Divine, our administrative liaison verifies the paperwork and lodges it into the BTCL registry queue. Typical government verification and DNS delegation takes between 24 and 72 business hours.</p></div>
             </details>
-
             <details class="faq-item">
-              <summary class="faq-summary">
-                <span>Do I get full DNS management with my domain?</span>
-                <i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i>
-              </summary>
-              <div class="faq-content">
-                <p>Yes. Every domain registered with Host Divine includes our redundant Anycast DNS management console. You can configure A, AAAA, CNAME, MX, TXT (SPF/DKIM), and SRV records with instant propagation across global root servers.</p>
-              </div>
+              <summary class="faq-summary"><span>Do I get full DNS management with my domain?</span><i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i></summary>
+              <div class="faq-content"><p>Yes. Every domain registered with Host Divine includes our redundant Anycast DNS management console. You can configure A, AAAA, CNAME, MX, TXT (SPF/DKIM), and SRV records with instant propagation across global root servers.</p></div>
             </details>
+          </div>
           </div>
         </div>
-
-        <!-- 5. VPS & Dedicated Servers -->
-        <div id="faq-servers" style="margin-bottom:60px;">
-          <div class="section-head reveal" style="text-align:left;margin-bottom:28px;">
+        <div class="faq-group" id="faq-servers">
+          <div class="faq-group-head reveal">
             <span class="eyebrow"><span class="eyebrow-dot"></span>Cloud Infrastructure</span>
-            <h2 class="section-title" style="font-size:28px;">VPS &amp; Dedicated Bare Metal Servers</h2>
+            <h2 class="section-title">VPS &amp; Dedicated Bare Metal Servers</h2>
           </div>
-          <div class="faq-accordion reveal">
+          <div class="reveal">
+          <div class="faq-accordion">
             <details class="faq-item">
-              <summary class="faq-summary">
-                <span>Do I receive full root SSH access?</span>
-                <i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i>
-              </summary>
-              <div class="faq-content">
-                <p>Yes. Both VPS and dedicated servers are delivered with 100% root SSH access (or Administrator Remote Desktop for Windows). You have complete freedom to install custom kernel modules, Docker, Kubernetes, database clusters, or proprietary control panels.</p>
-              </div>
+              <summary class="faq-summary"><span>Do I receive full root SSH access?</span><i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i></summary>
+              <div class="faq-content"><p>Yes. Both VPS and dedicated servers are delivered with 100% root SSH access (or Administrator Remote Desktop for Windows). You have complete freedom to install custom kernel modules, Docker, Kubernetes, database clusters, or proprietary control panels.</p></div>
             </details>
-
             <details class="faq-item">
-              <summary class="faq-summary">
-                <span>What virtualization technology powers your VPS servers?</span>
-                <i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i>
-              </summary>
-              <div class="faq-content">
-                <p>All Host Divine VPS servers are built on pure KVM (Kernel-based Virtual Machine) hardware virtualization. KVM guarantees strict isolation of CPU cores, dedicated RAM allocations, and raw NVMe disk throughput without noisy-neighbor interference.</p>
-              </div>
+              <summary class="faq-summary"><span>What virtualization technology powers your VPS servers?</span><i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i></summary>
+              <div class="faq-content"><p>All Host Divine VPS servers are built on pure KVM (Kernel-based Virtual Machine) hardware virtualization. KVM guarantees strict isolation of CPU cores, dedicated RAM allocations, and raw NVMe disk throughput without noisy-neighbor interference.</p></div>
             </details>
-
             <details class="faq-item">
-              <summary class="faq-summary">
-                <span>Is DDoS mitigation enabled by default?</span>
-                <i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i>
-              </summary>
-              <div class="faq-content">
-                <p>Yes. All server traffic flows through our inline hardware scrubbing layer capable of filtering up to 10+ Tbps of malicious volumetric attack traffic (including SYN floods, UDP amplification, and HTTP layer-7 attacks) without latency degradation.</p>
-              </div>
+              <summary class="faq-summary"><span>Is DDoS mitigation enabled by default?</span><i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i></summary>
+              <div class="faq-content"><p>Yes. All server traffic flows through our inline hardware scrubbing layer capable of filtering up to 10+ Tbps of malicious volumetric attack traffic (including SYN floods, UDP amplification, and HTTP layer-7 attacks) without latency degradation.</p></div>
             </details>
+          </div>
           </div>
         </div>
-
-        <!-- 6. Migration -->
-        <div id="faq-migration">
-          <div class="section-head reveal" style="text-align:left;margin-bottom:28px;">
+        <div class="faq-group" id="faq-migration">
+          <div class="faq-group-head reveal">
             <span class="eyebrow"><span class="eyebrow-dot"></span>Migration</span>
-            <h2 class="section-title" style="font-size:28px;">Zero-Downtime Website Migration</h2>
+            <h2 class="section-title">Zero-Downtime Website Migration</h2>
           </div>
-          <div class="faq-accordion reveal">
+          <div class="reveal">
+          <div class="faq-accordion">
             <details class="faq-item">
-              <summary class="faq-summary">
-                <span>How does your free migration service work?</span>
-                <i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i>
-              </summary>
-              <div class="faq-content">
-                <p>Migrating to Host Divine is completely seamless. After placing an order, submit a migration ticket with your old host's cPanel or backup details. Our migration specialists copy all files, databases, mailboxes, and SSL certificates, test functionality on a temporary preview URL, and assist you in updating DNS records with zero website downtime.</p>
-              </div>
+              <summary class="faq-summary"><span>How does your free migration service work?</span><i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i></summary>
+              <div class="faq-content"><p>Migrating to Host Divine is completely seamless. After placing an order, submit a migration ticket with your old host's cPanel or backup details. Our migration specialists copy all files, databases, mailboxes, and SSL certificates, test functionality on a temporary preview URL, and assist you in updating DNS records with zero website downtime.</p></div>
             </details>
           </div>
+          </div>
         </div>
-
       </div>
     </section>
 
-    <!-- Page CTA Banner -->
-    <section class="section" style="background:#fff;">
+    <section class="cta-section">
       <div class="container">
         <div class="page-cta-banner reveal">
-          <h2>Still Have Questions? Our Engineers Are Here to Help!</h2>
-          <p>Whether you need custom hardware specs, high-volume reseller plans, or assistance with BTCL .BD domain paperwork, our 24/7 technical team is ready to assist you right now.</p>
-          <div class="page-cta-actions">
-            <a class="btn btn-primary" href="contact.html">Contact Support Team <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
-            <a class="btn btn-outline" href="https://robot.hostdivine.com/submitticket.php" target="_blank" rel="noopener noreferrer">Submit Support Ticket</a>
+          <div class="page-cta-bg" aria-hidden="true"></div>
+          <div class="page-cta-copy">
+            <span class="eyebrow is-dark"><span class="eyebrow-dot"></span>Get started today</span>
+            <h2>Didn't find your answer?</h2>
+            <p>Our engineers are available 24/7 and reply in under 15 minutes.</p>
           </div>
+          <div class="page-cta-actions"><a class="btn btn-primary" href="contact.html">Contact Support <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a><a class="btn btn-ghost" href="https://robot.hostdivine.com/knowledgebase.php">Knowledge Base</a></div>
         </div>
       </div>
     </section>
-
   </main>
 
-    <!-- Footer Section -->
+  <!-- Footer Section -->
   <footer class="site-footer">
     <div aria-hidden="true" class="footer-orbit"></div>
     <div class="container footer-hero">
@@ -497,45 +361,52 @@
     </div>
     <div class="container footer-grid">
       <div>
-        <h3>Hosting Services</h3>
-        <a href="cpanel-hosting.html">cPanel Hosting</a>
-        <a href="reseller-hosting.html">Reseller Web Hosting</a>
-        <a href="reseller-hosting.html#master">Master Reseller</a>
-        <a href="reseller-hosting.html#alpha">Alpha Reseller</a>
+        <h3>Hosting</h3>
+        <a href="cpanel-hosting.html">Web Hosting</a>
         <a href="windows-hosting.html">Windows Hosting</a>
+        <a href="php-hosting.html">PHP Hosting</a>
+        <a href="nodejs-hosting.html">Node.js Hosting</a>
+        <a href="python-hosting.html">Python Hosting</a>
+        <a href="languages.html">All Languages</a>
       </div>
       <div>
-        <h3>Servers</h3>
+        <h3>Reseller &amp; Servers</h3>
+        <a href="reseller-hosting.html">cPanel Reseller</a>
+        <a href="master-reseller.html">Master Reseller</a>
+        <a href="alpha-reseller.html">Alpha Reseller</a>
+        <a href="flex-reseller.html">Flex Reseller</a>
         <a href="vps-server.html">VPS Server</a>
         <a href="dedicated-server.html">Dedicated Server</a>
       </div>
       <div>
-        <h3>Domain Services</h3>
+        <h3>Domains</h3>
         <a href="domain-registration.html">Domain Registration</a>
-        <a href="bd-domain.html">.BD Domain Registration</a>
-        <a href="domain-transfer.html#renew">Domain Renew</a>
+        <a href="bd-domain.html">.BD Domain</a>
         <a href="domain-transfer.html">Domain Transfer</a>
-        <a href="domain-registration.html#search">Domain Search</a>
+        <a href="domain-renew.html">Domain Renew</a>
+        <a href="domain-pricing.html">Domain Pricing</a>
       </div>
       <div>
-        <h3>About Us</h3>
+        <h3>Services</h3>
+        <a href="ssl-certificates.html">SSL Certificates</a>
+        <a href="business-email.html">Business Email</a>
+        <a href="seo-service.html">SEO Service</a>
+      </div>
+      <div>
+        <h3>Company</h3>
         <a href="about-us.html">Company Overview</a>
-        <a href="about-us.html#timeline">Timeline</a>
+        <a href="timeline.html">Timeline</a>
         <a href="faq.html">FAQ</a>
         <a href="blog.html">Blog</a>
         <a href="contact.html">Contact Us</a>
       </div>
     </div>
     <div class="container footer-bottom">
-      <p>© 2004 – <span data-current-year="">2026</span> <a class="brand-footer-link" href="#">Host Divine™</a> — A brand label of ZELT, UAE — All Rights ® Reserved</p>
+      <p>© 2004 – <span data-current-year="">2026</span> <a class="brand-footer-link" href="index.html">Host Divine™</a> — A brand label of ZELT, UAE — All Rights ® Reserved</p>
       <div class="footer-bottom-links">
         <a href="https://robot.hostdivine.com/announcements.php"><i aria-hidden="true" class="fa-solid fa-bullhorn"></i><span>Announcements</span></a>
-        <a href="#"><i aria-hidden="true" class="fa-solid fa-file-shield"></i><span>Terms &amp; Policies</span></a>
-        <a aria-label="Host Divine Facebook" class="footer-social-link" href="#" rel="noopener noreferrer" target="_blank"><i aria-hidden="true" class="fa-brands fa-facebook-f"></i></a>
-        <a aria-label="Host Divine X" class="footer-social-link" href="#" rel="noopener noreferrer" target="_blank"><i aria-hidden="true" class="fa-brands fa-x-twitter"></i></a>
-        <a aria-label="Host Divine WhatsApp" class="footer-social-link" href="#" rel="noopener noreferrer" target="_blank"><i aria-hidden="true" class="fa-brands fa-whatsapp"></i></a>
-        <a aria-label="Host Divine Telegram" class="footer-social-link" href="#" rel="noopener noreferrer" target="_blank"><i aria-hidden="true" class="fa-brands fa-telegram"></i></a>
-        <a aria-label="Host Divine IMO" class="footer-social-link" href="#"><i aria-hidden="true" class="fa-solid fa-comment-dots"></i></a>
+        <a href="faq.html"><i aria-hidden="true" class="fa-solid fa-file-shield"></i><span>Terms &amp; Policies</span></a>
+        <a href="https://robot.hostdivine.com/serverstatus.php"><i aria-hidden="true" class="fa-solid fa-signal"></i><span>Network Status</span></a>
       </div>
     </div>
   </footer>
@@ -544,6 +415,7 @@
   <aside class="quick-dock" aria-label="Quick contact and navigation">
     <a class="dock-btn dock-top" href="#top" aria-label="Scroll to top of page" title="Scroll to Top">
       <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+      <span class="dock-tooltip">Scroll to Top</span>
     </a>
     <a class="dock-btn dock-support" href="https://robot.hostdivine.com/submitticket.php" target="_blank" rel="noopener noreferrer" aria-label="24/7 Support Desk" title="24/7 Support Desk">
       <i class="fa-solid fa-headset" aria-hidden="true"></i>
@@ -562,4 +434,3 @@
   <script defer src="assets/js/main.js"></script>
 </body>
 </html>
-

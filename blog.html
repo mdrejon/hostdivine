@@ -3,13 +3,14 @@
 <head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>Hosting Insights &amp; Technology Blog — Host Divine</title>
-  <meta content="Guides, tutorials, and cloud architecture deep-dives from Host Divine systems engineers covering cPanel, LiteSpeed, .BD domains, WHM reseller scaling, and Linux security." name="description"/>
+  <title>Blog — Hosting, Cloud &amp; Server Guides | Host Divine™</title>
+  <meta content="Guides and tutorials from Host Divine engineers on hosting performance, reseller business, Linux security, WordPress speed and .BD domains." name="description"/>
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
   <link href="assets/img/favicon.svg" rel="icon" type="image/svg+xml"/>
   <link href="assets/img/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
   <link href="assets/img/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
   <link href="assets/img/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+  <link href="assets/img/header-home.webp" rel="preload" as="image" fetchpriority="high"/>
   <link href="assets/css/style.css" rel="stylesheet"/>
   <script>document.documentElement.classList.add('js');</script>
 </head>
@@ -21,10 +22,13 @@
     <div class="header-strip">
       <div class="container strip-inner">
         <p><strong>Host Divine Networks</strong> — Managed cloud, VPS, and reseller hosting solutions from the world's top co-locations</p>
-        <div aria-label="Quick support links" class="strip-links">
-          <a href="https://robot.hostdivine.com/serverstatus.php">Network Status</a>
-          <a href="https://robot.hostdivine.com/knowledgebase.php">Knowledge Base</a>
-          <a href="https://robot.hostdivine.com/submitticket.php">Submit Ticket</a>
+        <div class="strip-right">
+          <div aria-label="Quick support links" class="strip-links">
+            <a href="https://robot.hostdivine.com/serverstatus.php">Network Status</a>
+            <a href="https://robot.hostdivine.com/knowledgebase.php">Knowledge Base</a>
+            <a href="https://robot.hostdivine.com/submitticket.php">Submit Ticket</a>
+          </div>
+          <div class="strip-social" aria-label="Follow Host Divine"><a class="strip-social-link" href="#" aria-label="Host Divine on Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a><a class="strip-social-link" href="#" aria-label="Host Divine on X"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a><a class="strip-social-link" href="https://wa.me/" aria-label="Host Divine on WhatsApp" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a><a class="strip-social-link" href="#" aria-label="Host Divine on Telegram"><i class="fa-brands fa-telegram" aria-hidden="true"></i></a><a class="strip-social-link" href="#" aria-label="Host Divine on IMO"><i class="fa-solid fa-comment-dots" aria-hidden="true"></i></a></div>
         </div>
       </div>
     </div>
@@ -39,66 +43,93 @@
         <div class="nav-panel" id="navPanel">
           <ul class="nav-menu">
             <li class="nav-item has-menu">
-              <button class="nav-link" type="button">Hosting</button>
+              <button class="nav-link" type="button" aria-expanded="false">Hosting</button>
               <div class="mega-menu mega-wide">
                 <div class="mega-card intro-card">
                   <span>Web &amp; Cloud Hosting</span>
-                  <strong>High-speed SSD hosting tailored for growth.</strong>
-                  <p>Reliable cPanel, multi-tier reseller platforms and Windows hosting built on NVMe infrastructure with 99.9% uptime SLA.</p>
+                  <strong>High-speed NVMe hosting tailored for growth.</strong>
+                  <p>cPanel and Windows hosting plus developer platforms for PHP, Node.js, Python, Ruby and Java — all on LiteSpeed and pure NVMe.</p>
                 </div>
                 <div class="mega-column">
                   <p class="mega-title">Web Hosting</p>
-                  <a href="cpanel-hosting.html">cPanel Hosting<span>Fast, secure cPanel hosting with SSD storage</span></a>
-                  <a href="reseller-hosting.html">Reseller Web Hosting<span>White-label WHM hosting for agencies &amp; startups</span></a>
-                  <a href="reseller-hosting.html#master">Master Reseller<span>Create and manage multiple reseller accounts</span></a>
-                  <a href="reseller-hosting.html#alpha">Alpha Reseller<span>Top-tier master &amp; alpha reseller control</span></a>
+                  <a href="cpanel-hosting.html">Web Hosting<span>Fast cPanel hosting on LiteSpeed &amp; NVMe</span></a>
+                  <a href="windows-hosting.html">Windows Hosting<span>ASP.NET, .NET Core, IIS &amp; MSSQL</span></a>
+                  <div class="mega-promo-box">
+                    <i class="fa-solid fa-code" aria-hidden="true"></i>
+                    <div><strong>Developer friendly</strong><p>SSH, Git, MultiPHP, Node.js and Python selectors on every plan.</p></div>
+                  </div>
                 </div>
                 <div class="mega-column">
-                  <p class="mega-title">Windows Hosting</p>
-                  <a href="windows-hosting.html">Windows Hosting<span>ASP.NET, .NET Core, IIS &amp; MSSQL database support</span></a>
-                  <div class="mega-promo-box">
-                    <i class="fa-brands fa-windows" aria-hidden="true"></i>
-                    <div>
-                      <strong>Enterprise Windows</strong>
-                      <p>Full support for ASP.NET 8, MVC and dedicated MSSQL databases.</p>
-                    </div>
-                  </div>
+                  <p class="mega-title">Language Platforms</p>
+                  <a href="php-hosting.html">PHP Hosting<span>PHP 7.4 – 8.3 with Laravel &amp; WordPress</span></a>
+                  <a href="nodejs-hosting.html">Node.js Hosting<span>Express, Next.js &amp; NestJS apps</span></a>
+                  <a href="python-hosting.html">Python Hosting<span>Django, Flask &amp; FastAPI apps</span></a>
+                  <a href="ruby-hosting.html">Ruby Hosting<span>Rails &amp; Sinatra on Passenger</span></a>
+                  <a href="java-hosting.html">Java / Tomcat Hosting<span>JSP, Servlets &amp; Spring Boot</span></a>
+                  <a href="languages.html">All Supported Languages<span>Compare every runtime we support</span></a>
                 </div>
               </div>
             </li>
             <li class="nav-item has-menu">
-              <button class="nav-link" type="button">Server</button>
+              <button class="nav-link" type="button" aria-expanded="false">Reseller</button>
+              <div class="mega-menu compact-menu">
+                <div class="mega-column">
+                  <p class="mega-title">cPanel Powered Reseller</p>
+                  <a href="reseller-hosting.html">cPanel Reseller<span>White-label WHM reseller plans</span></a>
+                  <a href="master-reseller.html">Master Reseller<span>Create and sell reseller accounts</span></a>
+                  <a href="alpha-reseller.html">Alpha Reseller<span>Top-tier multi-level reseller control</span></a>
+                  <a href="flex-reseller.html">Flex Reseller<span>Pay-as-you-grow reseller resources</span></a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item has-menu">
+              <button class="nav-link" type="button" aria-expanded="false">Server</button>
               <div class="mega-menu compact-menu">
                 <div class="mega-column">
                   <p class="mega-title">Managed Servers</p>
-                  <a href="vps-server.html">VPS Server<span>Scalable virtual private servers with full root access</span></a>
-                  <a href="dedicated-server.html">Dedicated Server<span>High-performance bare metal servers for production workloads</span></a>
+                  <a href="vps-server.html">VPS Server<span>KVM cloud servers with full root access</span></a>
+                  <a href="dedicated-server.html">Dedicated Server<span>Bare metal servers for production</span></a>
                 </div>
               </div>
             </li>
             <li class="nav-item has-menu">
-              <button class="nav-link" type="button">Domain</button>
+              <button class="nav-link" type="button" aria-expanded="false">Domain</button>
+              <div class="mega-menu mega-two">
+                <div class="mega-column">
+                  <p class="mega-title">Register</p>
+                  <a href="domain-registration.html">Domain Registration<span>Register from 400+ extensions</span></a>
+                  <a href="domain-registration.html#search">Domain Search<span>Instant name &amp; price lookup</span></a>
+                  <a href="bd-domain.html">.BD Domain<span>Official BTCL .bd registration</span></a>
+                </div>
+                <div class="mega-column">
+                  <p class="mega-title">Manage</p>
+                  <a href="domain-transfer.html">Domain Transfer<span>Move domains with zero downtime</span></a>
+                  <a href="domain-renew.html">Domain Renew<span>Renew early, keep your brand safe</span></a>
+                  <a href="domain-pricing.html">Domain Pricing<span>Full TLD price list in BDT</span></a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item has-menu">
+              <button class="nav-link" type="button" aria-expanded="false">Services</button>
               <div class="mega-menu compact-menu">
                 <div class="mega-column">
-                  <p class="mega-title">Domain Services</p>
-                  <a href="domain-registration.html">Domain Registration<span>Register your ideal domain name across 500+ extensions</span></a>
-                  <a href="bd-domain.html">.BD Domain Registration<span>Official BTCL .bd domain registration in Bangladesh</span></a>
-                  <a href="domain-transfer.html#renew">Domain Renew<span>Renew existing domains and keep your brand protected</span></a>
-                  <a href="domain-transfer.html">Domain Transfer<span>Transfer domains to Host Divine with zero downtime</span></a>
-                  <a href="domain-registration.html#search">Domain Search<span>Instant WHOIS lookup &amp; smart domain suggestions</span></a>
+                  <p class="mega-title">Business Services</p>
+                  <a href="ssl-certificates.html">SSL Certificates<span>DV, OV, EV &amp; wildcard SSL</span></a>
+                  <a href="business-email.html">Business Email<span>Professional email with spam defense</span></a>
+                  <a href="seo-service.html">SEO Service<span>Technical SEO &amp; growth campaigns</span></a>
                 </div>
               </div>
             </li>
-            <li class="nav-item has-menu">
-              <button class="nav-link" type="button">About Us</button>
+            <li class="nav-item has-menu is-current">
+              <button class="nav-link" type="button" aria-expanded="false">Company</button>
               <div class="mega-menu compact-menu">
                 <div class="mega-column">
                   <p class="mega-title">About Host Divine</p>
-                  <a href="about-us.html">Company Overview<span>Learn about Host Divine infrastructure and mission</span></a>
-                  <a href="about-us.html#timeline">Timeline<span>Our journey, milestones and technological growth</span></a>
-                  <a href="faq.html">FAQ<span>Frequently asked questions and support answers</span></a>
-                  <a href="blog.html">Blog<span>Hosting, cloud, server tips and tech updates</span></a>
-                  <a href="contact.html">Contact Us<span>Sales, technical support and migration inquiries</span></a>
+                  <a href="about-us.html">Company Overview<span>Our infrastructure and mission</span></a>
+                  <a href="timeline.html">Timeline<span>Milestones since 2004</span></a>
+                  <a href="faq.html">FAQ<span>Answers to common questions</span></a>
+                  <a href="blog.html" aria-current="page">Blog<span>Hosting, cloud and server guides</span></a>
+                  <a href="contact.html">Contact Us<span>Sales, support and migration</span></a>
                 </div>
               </div>
             </li>
@@ -108,269 +139,136 @@
             <a class="nav-login" href="https://panel.hostdivine.com/">Domain Login</a>
             <a class="nav-cta" href="https://robot.hostdivine.com/clientarea.php">Client Area</a>
           </div>
+          <div class="nav-social" aria-label="Follow Host Divine"><a class="nav-social-link" href="#" aria-label="Host Divine on Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a><a class="nav-social-link" href="#" aria-label="Host Divine on X"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a><a class="nav-social-link" href="https://wa.me/" aria-label="Host Divine on WhatsApp" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a><a class="nav-social-link" href="#" aria-label="Host Divine on Telegram"><i class="fa-brands fa-telegram" aria-hidden="true"></i></a><a class="nav-social-link" href="#" aria-label="Host Divine on IMO"><i class="fa-solid fa-comment-dots" aria-hidden="true"></i></a></div>
         </div>
       </div>
     </nav>
   </header>
 
   <!-- Main Content -->
-  <main id="main">
+  <main id="main" data-hero="1">
 
-    <!-- Page Hero Banner -->
     <section class="page-hero">
+      <div class="page-hero-bg" aria-hidden="true"><span class="page-hero-grid-lines"></span><span class="page-hero-glow"></span></div>
       <div class="container">
-        <ul class="breadcrumb">
-          <li><a href="index.html">Home</a></li>
-          <li class="breadcrumb-sep"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></li>
-          <li><a href="about-us.html">About Us</a></li>
-          <li class="breadcrumb-sep"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></li>
-          <li class="breadcrumb-current">Blog</li>
-        </ul>
-
-        <div class="page-hero-grid">
-          <div>
-            <span class="eyebrow"><span class="eyebrow-dot"></span>Tech &amp; Infrastructure</span>
-            <h1 class="page-hero-title">Host Divine Technology Blog</h1>
-            <p class="page-hero-lead">Actionable guides, server optimization tutorials, and cloud architecture insights written by our Tier-3 systems administrators and Linux engineers.</p>
-            <div class="page-hero-badges">
-              <span class="page-badge-item"><i class="fa-solid fa-newspaper" aria-hidden="true"></i> Technical Guides</span>
-              <span class="page-badge-item"><i class="fa-solid fa-bolt" aria-hidden="true"></i> LiteSpeed &amp; NVMe</span>
-              <span class="page-badge-item"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> Server Security</span>
-              <span class="page-badge-item"><i class="fa-solid fa-globe" aria-hidden="true"></i> .BD Registry News</span>
-            </div>
-            <div class="page-hero-actions">
-              <a class="btn btn-primary" href="#blog-posts">Explore Articles <i class="fa-solid fa-arrow-down" aria-hidden="true"></i></a>
-              <a class="btn btn-outline" href="contact.html">Suggest a Topic</a>
-            </div>
+        <nav aria-label="Breadcrumb"><ol class="breadcrumb"><li><a href="index.html">Home</a></li><li><span>Company</span></li><li aria-current="page">Blog</li></ol></nav>
+        <div class="page-hero-grid is-single">
+          <div class="page-hero-copy">
+            <span class="eyebrow is-dark"><span class="eyebrow-dot"></span>Tech &amp; Infrastructure</span>
+            <h1 class="page-hero-title">The Host Divine <span class="text-gradient">technology blog</span></h1>
+            <p class="page-hero-lead">Practical guides, server optimization tutorials and cloud architecture insights from our systems engineers.</p>
+            <div class="page-hero-actions"><a class="btn btn-primary" href="#posts">Latest Articles <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+              <a class="btn btn-ghost" href="contact.html">Suggest a Topic</a></div>
+            <ul class="page-hero-badges"><li><i class="fa-solid fa-book" aria-hidden="true"></i>Technical guides</li><li><i class="fa-solid fa-bolt" aria-hidden="true"></i>Performance</li><li><i class="fa-solid fa-shield-halved" aria-hidden="true"></i>Security</li><li><i class="fa-solid fa-globe" aria-hidden="true"></i>.BD news</li></ul>
+            
           </div>
 
-          <div class="page-hero-visual">
-            <div class="hero-console-head">
-              <div class="hero-console-dots">
-                <span></span><span></span><span></span>
-              </div>
-              <span class="hero-console-badge"><i class="fa-solid fa-circle" aria-hidden="true"></i> Publications</span>
-            </div>
-            <div class="hero-console-row">
-              <span class="hero-console-label"><i class="fa-solid fa-book-open" aria-hidden="true"></i> Published Guides</span>
-              <span class="hero-console-val">120+ In-Depth Articles</span>
-            </div>
-            <div class="hero-console-row">
-              <span class="hero-console-label"><i class="fa-solid fa-code" aria-hidden="true"></i> Architecture Focus</span>
-              <span class="hero-console-val">cPanel, WHM, KVM, BTCL</span>
-            </div>
-            <div class="hero-console-row">
-              <span class="hero-console-label"><i class="fa-solid fa-check-double" aria-hidden="true"></i> Peer-Reviewed</span>
-              <span class="hero-console-val">100% Tested Configurations</span>
-            </div>
-            <div class="hero-console-row">
-              <span class="hero-console-label"><i class="fa-solid fa-calendar" aria-hidden="true"></i> Updated Regularly</span>
-              <span class="hero-console-val">November 2026 Edition</span>
-            </div>
-          </div>
         </div>
       </div>
     </section>
 
-    <!-- Featured Post Spotlight -->
-    <section class="section" style="padding-bottom:0;">
+    <section class="section bg-grid">
       <div class="container">
-        <div class="blog-featured reveal">
-          <div>
-            <span style="background:var(--orange);color:#fff;font-size:12px;font-weight:800;padding:5px 14px;border-radius:999px;text-transform:uppercase;letter-spacing:0.06em;display:inline-block;margin-bottom:16px;">Featured Spotlight</span>
-            <h2 style="font-size:clamp(20px, 2.5vw, 32px);font-weight:800;line-height:1.3;margin:0 0 16px;">How LiteSpeed + NVMe Drives Deliver 400% Faster WordPress TTFB</h2>
-            <p style="font-size:15px;color:rgba(255,255,255,0.85);line-height:1.6;margin:0 0 24px;">Discover how Host Divine configures LiteSpeed Web Server, Enterprise LSCache, and enterprise NVMe hardware to crush server response times and pass Google Core Web Vitals effortlessly.</p>
-            <div style="display:flex;gap:18px;font-size:13px;color:rgba(255,255,255,0.7);margin-bottom:24px;flex-wrap:wrap;">
-              <span><i class="fa-regular fa-clock" aria-hidden="true"></i> 7 min read</span>
-              <span><i class="fa-solid fa-tag" aria-hidden="true"></i> Performance Optimization</span>
-            </div>
-            <a class="btn btn-primary" href="cpanel-hosting.html">Read Architecture Analysis <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+
+        <article class="blog-featured reveal">
+          <div class="blog-featured-copy">
+            <span class="blog-category-tag">Featured · Performance</span>
+            <h2>How LiteSpeed + NVMe deliver up to 4x faster WordPress TTFB</h2>
+            <p>How we configure LiteSpeed Web Server, LSCache and enterprise NVMe hardware to cut server response times and pass Core Web Vitals.</p>
+            <p class="blog-meta"><i class="fa-regular fa-clock" aria-hidden="true"></i> 7 min read</p>
           </div>
-          <div style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);border-radius:18px;padding:24px;min-width:0;">
-            <div style="font-size:14px;font-weight:700;color:var(--orange);margin-bottom:12px;"><i class="fa-solid fa-gauge-high" aria-hidden="true"></i> Benchmark Summary</div>
-            <div style="margin-bottom:14px;">
-              <div style="display:flex;justify-content:space-between;font-size:13px;margin-bottom:4px;gap:8px;">
-                <span>Apache Standard</span>
-                <span style="color:#f87171;font-weight:700;">720ms TTFB</span>
-              </div>
-              <div style="height:8px;background:rgba(255,255,255,0.15);border-radius:4px;overflow:hidden;">
-                <div style="width:78%;height:100%;background:#ef4444;"></div>
-              </div>
-            </div>
-            <div style="margin-bottom:14px;">
-              <div style="display:flex;justify-content:space-between;font-size:13px;margin-bottom:4px;gap:8px;">
-                <span>Nginx Reverse Proxy</span>
-                <span style="color:#fbbf24;font-weight:700;">410ms TTFB</span>
-              </div>
-              <div style="height:8px;background:rgba(255,255,255,0.15);border-radius:4px;overflow:hidden;">
-                <div style="width:52%;height:100%;background:#f59e0b;"></div>
-              </div>
-            </div>
-            <div>
-              <div style="display:flex;justify-content:space-between;font-size:13px;margin-bottom:4px;gap:8px;">
-                <strong>Host Divine LiteSpeed</strong>
-                <strong style="color:#4ade80;">82ms (4x Fast)</strong>
-              </div>
-              <div style="height:8px;background:rgba(255,255,255,0.15);border-radius:4px;overflow:hidden;">
-                <div style="width:18%;height:100%;background:#22c55e;"></div>
-              </div>
-            </div>
+          <div class="blog-featured-chart" aria-label="Sample time-to-first-byte comparison">
+            <p class="bench-title">Sample TTFB benchmark</p>
+            <div class="bench-row"><span>Apache</span><i style="--w:100%"></i><b>720 ms</b></div>
+            <div class="bench-row"><span>Nginx proxy</span><i style="--w:57%"></i><b>410 ms</b></div>
+            <div class="bench-row is-best"><span>Host Divine LiteSpeed</span><i style="--w:12%"></i><b>82 ms</b></div>
           </div>
-        </div>
+        </article>
       </div>
     </section>
 
-    <!-- Main Blog Grid Section -->
-    <section class="section" id="blog-posts">
+    <section class="section bg-soft" id="posts">
       <div class="container">
         <div class="section-head reveal">
           <span class="eyebrow"><span class="eyebrow-dot"></span>Articles</span>
-          <h2 class="section-title">Latest Hosting Guides &amp; Tutorials</h2>
-          <p class="section-lead">Step-by-step documentation, best practices, and actionable advice from our cloud engineering team.</p>
+          <h2 class="section-title">Latest hosting guides &amp; tutorials</h2>
+          
         </div>
-
-        <div class="blog-grid reveal">
-
-          <!-- Card 1: .BD Domain Guide -->
-          <article class="blog-card">
-            <div class="blog-thumb-wrap">
+        <div class="blog-grid">
+          <article class="blog-card reveal">
+            <div class="blog-thumb-wrap" aria-hidden="true"><i class="fa-solid fa-globe" aria-hidden="true"></i></div>
+            <div class="blog-body">
               <span class="blog-category-tag">Domain Guide</span>
-              <i class="fa-solid fa-globe" aria-hidden="true"></i>
-            </div>
-            <div class="blog-body">
-              <div class="blog-meta">
-                <span><i class="fa-regular fa-calendar" aria-hidden="true"></i> Nov 04, 2026</span>
-                <span><i class="fa-regular fa-clock" aria-hidden="true"></i> 6 min read</span>
-              </div>
-              <h3>Step-by-Step Guide: How to Register a .BD Domain with BTCL in 2026</h3>
-              <p>Everything you need to know about BTCL policies, submitting Trade License or NID papers, configuring Anycast DNS records, and navigating 2-year government renewal cycles.</p>
-              <a class="blog-link" href="bd-domain.html">Read Full Guide <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+              <h3>How to register a .BD domain with BTCL in 2026</h3>
+              <p>BTCL policies, required documents, DNS setup and the registration timeline explained step by step.</p>
+              <p class="blog-meta"><span><i class="fa-regular fa-calendar" aria-hidden="true"></i> Nov 04, 2026</span><span><i class="fa-regular fa-clock" aria-hidden="true"></i> 6 min read</span></p>
             </div>
           </article>
-
-          <!-- Card 2: Reseller Hosting Strategy -->
-          <article class="blog-card">
-            <div class="blog-thumb-wrap">
+          <article class="blog-card reveal">
+            <div class="blog-thumb-wrap" aria-hidden="true"><i class="fa-solid fa-users-gear" aria-hidden="true"></i></div>
+            <div class="blog-body">
               <span class="blog-category-tag">Reseller</span>
-              <i class="fa-solid fa-diagram-project" aria-hidden="true"></i>
-            </div>
-            <div class="blog-body">
-              <div class="blog-meta">
-                <span><i class="fa-regular fa-calendar" aria-hidden="true"></i> Oct 28, 2026</span>
-                <span><i class="fa-regular fa-clock" aria-hidden="true"></i> 8 min read</span>
-              </div>
-              <h3>Scaling a White-Label Reseller Hosting Business: The WHM Blueprint</h3>
-              <p>Discover how agencies and freelance designers configure WHM packages, custom nameservers, and automated client billing to establish stable recurring monthly hosting income.</p>
-              <a class="blog-link" href="reseller-hosting.html">Read Full Guide <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+              <h3>Scaling a white-label reseller hosting business</h3>
+              <p>How agencies configure WHM packages, private nameservers and billing to build recurring revenue.</p>
+              <p class="blog-meta"><span><i class="fa-regular fa-calendar" aria-hidden="true"></i> Oct 28, 2026</span><span><i class="fa-regular fa-clock" aria-hidden="true"></i> 8 min read</span></p>
             </div>
           </article>
-
-          <!-- Card 3: NVMe vs SATA -->
-          <article class="blog-card">
-            <div class="blog-thumb-wrap">
+          <article class="blog-card reveal">
+            <div class="blog-thumb-wrap" aria-hidden="true"><i class="fa-solid fa-hard-drive" aria-hidden="true"></i></div>
+            <div class="blog-body">
               <span class="blog-category-tag">Infrastructure</span>
-              <i class="fa-solid fa-microchip" aria-hidden="true"></i>
-            </div>
-            <div class="blog-body">
-              <div class="blog-meta">
-                <span><i class="fa-regular fa-calendar" aria-hidden="true"></i> Oct 19, 2026</span>
-                <span><i class="fa-regular fa-clock" aria-hidden="true"></i> 5 min read</span>
-              </div>
-              <h3>Enterprise NVMe vs SATA SSD: Why High Disk IOPS Dictates App Speed</h3>
-              <p>A technical breakdown of random read/write latency, input/output queue depth, and why NVMe solid-state storage eliminates MySQL bottlenecks under heavy concurrent web traffic.</p>
-              <a class="blog-link" href="cpanel-hosting.html">Read Full Guide <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+              <h3>NVMe vs SATA SSD: why disk IOPS decide app speed</h3>
+              <p>Random read/write latency, queue depth and why NVMe removes MySQL bottlenecks under load.</p>
+              <p class="blog-meta"><span><i class="fa-regular fa-calendar" aria-hidden="true"></i> Oct 19, 2026</span><span><i class="fa-regular fa-clock" aria-hidden="true"></i> 5 min read</span></p>
             </div>
           </article>
-
-          <!-- Card 4: Linux Server Security -->
-          <article class="blog-card">
-            <div class="blog-thumb-wrap">
+          <article class="blog-card reveal">
+            <div class="blog-thumb-wrap" aria-hidden="true"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></div>
+            <div class="blog-body">
               <span class="blog-category-tag">Security</span>
-              <i class="fa-solid fa-shield-virus" aria-hidden="true"></i>
-            </div>
-            <div class="blog-body">
-              <div class="blog-meta">
-                <span><i class="fa-regular fa-calendar" aria-hidden="true"></i> Oct 12, 2026</span>
-                <span><i class="fa-regular fa-clock" aria-hidden="true"></i> 9 min read</span>
-              </div>
-              <h3>Hardening Linux Cloud Servers: Essential Best Practices for SSH &amp; Firewalls</h3>
-              <p>Step-by-step checklist to secure your production Linux instance: enforcing ED25519 SSH keys, configuring CSF firewall policies, and automating Imunify360 AI protection.</p>
-              <a class="blog-link" href="vps-server.html">Read Full Guide <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+              <h3>Hardening Linux cloud servers: SSH and firewall essentials</h3>
+              <p>ED25519 keys, CSF firewall policies and automated Imunify360 protection for production servers.</p>
+              <p class="blog-meta"><span><i class="fa-regular fa-calendar" aria-hidden="true"></i> Oct 12, 2026</span><span><i class="fa-regular fa-clock" aria-hidden="true"></i> 9 min read</span></p>
             </div>
           </article>
-
-          <!-- Card 5: LiteSpeed Cache -->
-          <article class="blog-card">
-            <div class="blog-thumb-wrap">
+          <article class="blog-card reveal">
+            <div class="blog-thumb-wrap" aria-hidden="true"><i class="fa-brands fa-wordpress" aria-hidden="true"></i></div>
+            <div class="blog-body">
               <span class="blog-category-tag">WordPress</span>
-              <i class="fa-brands fa-wordpress" aria-hidden="true"></i>
-            </div>
-            <div class="blog-body">
-              <div class="blog-meta">
-                <span><i class="fa-regular fa-calendar" aria-hidden="true"></i> Sep 29, 2026</span>
-                <span><i class="fa-regular fa-clock" aria-hidden="true"></i> 7 min read</span>
-              </div>
-              <h3>LiteSpeed Cache (LSCache) vs Generic Plugins: Achieving 100% Core Web Vitals</h3>
-              <p>Learn how server-level caching bypasses PHP execution completely to serve dynamic WooCommerce, blog, and portfolio pages with instant edge page loading.</p>
-              <a class="blog-link" href="cpanel-hosting.html">Read Full Guide <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+              <h3>LiteSpeed Cache vs generic plugins for Core Web Vitals</h3>
+              <p>How server-level caching skips PHP to serve WooCommerce and blog pages instantly.</p>
+              <p class="blog-meta"><span><i class="fa-regular fa-calendar" aria-hidden="true"></i> Sep 29, 2026</span><span><i class="fa-regular fa-clock" aria-hidden="true"></i> 7 min read</span></p>
             </div>
           </article>
-
-          <!-- Card 6: VPS vs Dedicated -->
-          <article class="blog-card">
-            <div class="blog-thumb-wrap">
+          <article class="blog-card reveal">
+            <div class="blog-thumb-wrap" aria-hidden="true"><i class="fa-solid fa-server" aria-hidden="true"></i></div>
+            <div class="blog-body">
               <span class="blog-category-tag">Servers</span>
-              <i class="fa-solid fa-server" aria-hidden="true"></i>
-            </div>
-            <div class="blog-body">
-              <div class="blog-meta">
-                <span><i class="fa-regular fa-calendar" aria-hidden="true"></i> Sep 15, 2026</span>
-                <span><i class="fa-regular fa-clock" aria-hidden="true"></i> 6 min read</span>
-              </div>
-              <h3>KVM VPS vs Dedicated Bare Metal: Choosing the Right Hosting Tier</h3>
-              <p>Evaluate your CPU scaling, dedicated RAM thresholds, compliance mandates, and budget requirements to select between flexible virtual cloud nodes and raw bare metal servers.</p>
-              <a class="blog-link" href="dedicated-server.html">Read Full Guide <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+              <h3>KVM VPS vs dedicated bare metal: choosing the right tier</h3>
+              <p>CPU scaling, RAM, compliance and budget — how to choose between VPS and dedicated.</p>
+              <p class="blog-meta"><span><i class="fa-regular fa-calendar" aria-hidden="true"></i> Sep 15, 2026</span><span><i class="fa-regular fa-clock" aria-hidden="true"></i> 6 min read</span></p>
             </div>
           </article>
-
         </div>
       </div>
     </section>
 
-    <!-- Newsletter Subscription Card -->
-    <section class="section" style="background:#fcfdff;border-top:1px solid var(--line);">
-      <div class="container" style="max-width:800px;">
-        <div class="blog-newsletter-card reveal">
-          <div style="width:52px;height:52px;background:#eef5ff;color:var(--blue);border-radius:14px;display:inline-flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:16px;">
-            <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
-          </div>
-          <h2 style="font-size:24px;font-weight:800;color:var(--navy);margin:0 0 10px;">Subscribe to Hosting Insights</h2>
-          <p style="font-size:14px;color:var(--muted);max-width:540px;margin:0 auto 24px;line-height:1.6;">Get monthly deep-dives on server performance, Linux security patches, BTCL .BD domain policies, and exclusive hosting discounts delivered straight to your inbox.</p>
-          <form class="blog-newsletter-form" action="#" method="post" onsubmit="event.preventDefault(); alert('Thank you for subscribing to Host Divine insights!');">
-            <input type="email" placeholder="Enter your work email address" required/>
-            <button type="submit" class="btn btn-primary" style="padding:12px 24px;white-space:nowrap;">Subscribe</button>
-          </form>
-        </div>
-      </div>
-    </section>
-
-    <!-- Page CTA Banner -->
-    <section class="section" style="background:#fff;">
+    <section class="cta-section">
       <div class="container">
         <div class="page-cta-banner reveal">
-          <h2>Ready to Launch Your Next Project on Host Divine?</h2>
-          <p>Join over 240,000 websites powered by our high-performance NVMe cloud infrastructure. Instant activation, 99.9% uptime SLA, and 30-day money-back guarantee.</p>
-          <div class="page-cta-actions">
-            <a class="btn btn-primary" href="cpanel-hosting.html">Explore Hosting Plans <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
-            <a class="btn btn-outline" href="contact.html">Talk to an Engineer</a>
+          <div class="page-cta-bg" aria-hidden="true"></div>
+          <div class="page-cta-copy">
+            <span class="eyebrow is-dark"><span class="eyebrow-dot"></span>Newsletter</span>
+            <h2>Get hosting insights every month</h2>
+            <p>Server performance tips, security updates, .BD domain news and exclusive discounts.</p>
           </div>
+          <div class="page-cta-actions"><a class="btn btn-primary" href="https://robot.hostdivine.com/clientarea.php">Subscribe via Client Area <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a><a class="btn btn-ghost" href="https://robot.hostdivine.com/knowledgebase.php">Knowledge Base</a></div>
         </div>
       </div>
     </section>
-
   </main>
 
-    <!-- Footer Section -->
+  <!-- Footer Section -->
   <footer class="site-footer">
     <div aria-hidden="true" class="footer-orbit"></div>
     <div class="container footer-hero">
@@ -394,45 +292,52 @@
     </div>
     <div class="container footer-grid">
       <div>
-        <h3>Hosting Services</h3>
-        <a href="cpanel-hosting.html">cPanel Hosting</a>
-        <a href="reseller-hosting.html">Reseller Web Hosting</a>
-        <a href="reseller-hosting.html#master">Master Reseller</a>
-        <a href="reseller-hosting.html#alpha">Alpha Reseller</a>
+        <h3>Hosting</h3>
+        <a href="cpanel-hosting.html">Web Hosting</a>
         <a href="windows-hosting.html">Windows Hosting</a>
+        <a href="php-hosting.html">PHP Hosting</a>
+        <a href="nodejs-hosting.html">Node.js Hosting</a>
+        <a href="python-hosting.html">Python Hosting</a>
+        <a href="languages.html">All Languages</a>
       </div>
       <div>
-        <h3>Servers</h3>
+        <h3>Reseller &amp; Servers</h3>
+        <a href="reseller-hosting.html">cPanel Reseller</a>
+        <a href="master-reseller.html">Master Reseller</a>
+        <a href="alpha-reseller.html">Alpha Reseller</a>
+        <a href="flex-reseller.html">Flex Reseller</a>
         <a href="vps-server.html">VPS Server</a>
         <a href="dedicated-server.html">Dedicated Server</a>
       </div>
       <div>
-        <h3>Domain Services</h3>
+        <h3>Domains</h3>
         <a href="domain-registration.html">Domain Registration</a>
-        <a href="bd-domain.html">.BD Domain Registration</a>
-        <a href="domain-transfer.html#renew">Domain Renew</a>
+        <a href="bd-domain.html">.BD Domain</a>
         <a href="domain-transfer.html">Domain Transfer</a>
-        <a href="domain-registration.html#search">Domain Search</a>
+        <a href="domain-renew.html">Domain Renew</a>
+        <a href="domain-pricing.html">Domain Pricing</a>
       </div>
       <div>
-        <h3>About Us</h3>
+        <h3>Services</h3>
+        <a href="ssl-certificates.html">SSL Certificates</a>
+        <a href="business-email.html">Business Email</a>
+        <a href="seo-service.html">SEO Service</a>
+      </div>
+      <div>
+        <h3>Company</h3>
         <a href="about-us.html">Company Overview</a>
-        <a href="about-us.html#timeline">Timeline</a>
+        <a href="timeline.html">Timeline</a>
         <a href="faq.html">FAQ</a>
         <a href="blog.html">Blog</a>
         <a href="contact.html">Contact Us</a>
       </div>
     </div>
     <div class="container footer-bottom">
-      <p>© 2004 – <span data-current-year="">2026</span> <a class="brand-footer-link" href="#">Host Divine™</a> — A brand label of ZELT, UAE — All Rights ® Reserved</p>
+      <p>© 2004 – <span data-current-year="">2026</span> <a class="brand-footer-link" href="index.html">Host Divine™</a> — A brand label of ZELT, UAE — All Rights ® Reserved</p>
       <div class="footer-bottom-links">
         <a href="https://robot.hostdivine.com/announcements.php"><i aria-hidden="true" class="fa-solid fa-bullhorn"></i><span>Announcements</span></a>
-        <a href="#"><i aria-hidden="true" class="fa-solid fa-file-shield"></i><span>Terms &amp; Policies</span></a>
-        <a aria-label="Host Divine Facebook" class="footer-social-link" href="#" rel="noopener noreferrer" target="_blank"><i aria-hidden="true" class="fa-brands fa-facebook-f"></i></a>
-        <a aria-label="Host Divine X" class="footer-social-link" href="#" rel="noopener noreferrer" target="_blank"><i aria-hidden="true" class="fa-brands fa-x-twitter"></i></a>
-        <a aria-label="Host Divine WhatsApp" class="footer-social-link" href="#" rel="noopener noreferrer" target="_blank"><i aria-hidden="true" class="fa-brands fa-whatsapp"></i></a>
-        <a aria-label="Host Divine Telegram" class="footer-social-link" href="#" rel="noopener noreferrer" target="_blank"><i aria-hidden="true" class="fa-brands fa-telegram"></i></a>
-        <a aria-label="Host Divine IMO" class="footer-social-link" href="#"><i aria-hidden="true" class="fa-solid fa-comment-dots"></i></a>
+        <a href="faq.html"><i aria-hidden="true" class="fa-solid fa-file-shield"></i><span>Terms &amp; Policies</span></a>
+        <a href="https://robot.hostdivine.com/serverstatus.php"><i aria-hidden="true" class="fa-solid fa-signal"></i><span>Network Status</span></a>
       </div>
     </div>
   </footer>
@@ -441,6 +346,7 @@
   <aside class="quick-dock" aria-label="Quick contact and navigation">
     <a class="dock-btn dock-top" href="#top" aria-label="Scroll to top of page" title="Scroll to Top">
       <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+      <span class="dock-tooltip">Scroll to Top</span>
     </a>
     <a class="dock-btn dock-support" href="https://robot.hostdivine.com/submitticket.php" target="_blank" rel="noopener noreferrer" aria-label="24/7 Support Desk" title="24/7 Support Desk">
       <i class="fa-solid fa-headset" aria-hidden="true"></i>

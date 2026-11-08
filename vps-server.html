@@ -3,13 +3,14 @@
 <head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>Cloud VPS Servers | Pure NVMe KVM Virtual Servers — Host Divine</title>
-  <meta content="Deploy high-performance KVM Cloud VPS servers with pure NVMe storage, dedicated vCPU &amp; RAM, full root access, 1 Gbps port and instant provisioning." name="description"/>
+  <title>VPS Server — KVM Cloud VPS on NVMe | Host Divine™</title>
+  <meta content="High-performance KVM cloud VPS with dedicated AMD EPYC cores, NVMe storage, full root access and DDoS protection. Deployed in under 60 seconds from $7.99/month." name="description"/>
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
   <link href="assets/img/favicon.svg" rel="icon" type="image/svg+xml"/>
   <link href="assets/img/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
   <link href="assets/img/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
   <link href="assets/img/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+  <link href="assets/img/header-home-2.webp" rel="preload" as="image" fetchpriority="high"/>
   <link href="assets/css/style.css" rel="stylesheet"/>
   <script>document.documentElement.classList.add('js');</script>
 </head>
@@ -21,10 +22,13 @@
     <div class="header-strip">
       <div class="container strip-inner">
         <p><strong>Host Divine Networks</strong> — Managed cloud, VPS, and reseller hosting solutions from the world's top co-locations</p>
-        <div aria-label="Quick support links" class="strip-links">
-          <a href="https://robot.hostdivine.com/serverstatus.php">Network Status</a>
-          <a href="https://robot.hostdivine.com/knowledgebase.php">Knowledge Base</a>
-          <a href="https://robot.hostdivine.com/submitticket.php">Submit Ticket</a>
+        <div class="strip-right">
+          <div aria-label="Quick support links" class="strip-links">
+            <a href="https://robot.hostdivine.com/serverstatus.php">Network Status</a>
+            <a href="https://robot.hostdivine.com/knowledgebase.php">Knowledge Base</a>
+            <a href="https://robot.hostdivine.com/submitticket.php">Submit Ticket</a>
+          </div>
+          <div class="strip-social" aria-label="Follow Host Divine"><a class="strip-social-link" href="#" aria-label="Host Divine on Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a><a class="strip-social-link" href="#" aria-label="Host Divine on X"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a><a class="strip-social-link" href="https://wa.me/" aria-label="Host Divine on WhatsApp" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a><a class="strip-social-link" href="#" aria-label="Host Divine on Telegram"><i class="fa-brands fa-telegram" aria-hidden="true"></i></a><a class="strip-social-link" href="#" aria-label="Host Divine on IMO"><i class="fa-solid fa-comment-dots" aria-hidden="true"></i></a></div>
         </div>
       </div>
     </div>
@@ -39,388 +43,402 @@
         <div class="nav-panel" id="navPanel">
           <ul class="nav-menu">
             <li class="nav-item has-menu">
-              <button class="nav-link" type="button">Hosting</button>
+              <button class="nav-link" type="button" aria-expanded="false">Hosting</button>
               <div class="mega-menu mega-wide">
                 <div class="mega-card intro-card">
                   <span>Web &amp; Cloud Hosting</span>
-                  <strong>High-speed SSD hosting tailored for growth.</strong>
-                  <p>Reliable cPanel, multi-tier reseller platforms and Windows hosting built on NVMe infrastructure with 99.9% uptime SLA.</p>
+                  <strong>High-speed NVMe hosting tailored for growth.</strong>
+                  <p>cPanel and Windows hosting plus developer platforms for PHP, Node.js, Python, Ruby and Java — all on LiteSpeed and pure NVMe.</p>
                 </div>
                 <div class="mega-column">
                   <p class="mega-title">Web Hosting</p>
-                  <a href="cpanel-hosting.html">cPanel Hosting<span>Fast, secure cPanel hosting with SSD storage</span></a>
-                  <a href="reseller-hosting.html">Reseller Web Hosting<span>White-label WHM hosting for agencies &amp; startups</span></a>
-                  <a href="reseller-hosting.html#master">Master Reseller<span>Create and manage multiple reseller accounts</span></a>
-                  <a href="reseller-hosting.html#alpha">Alpha Reseller<span>Top-tier master &amp; alpha reseller control</span></a>
+                  <a href="cpanel-hosting.html">Web Hosting<span>Fast cPanel hosting on LiteSpeed &amp; NVMe</span></a>
+                  <a href="windows-hosting.html">Windows Hosting<span>ASP.NET, .NET Core, IIS &amp; MSSQL</span></a>
+                  <div class="mega-promo-box">
+                    <i class="fa-solid fa-code" aria-hidden="true"></i>
+                    <div><strong>Developer friendly</strong><p>SSH, Git, MultiPHP, Node.js and Python selectors on every plan.</p></div>
+                  </div>
                 </div>
                 <div class="mega-column">
-                  <p class="mega-title">Windows Hosting</p>
-                  <a href="windows-hosting.html">Windows Hosting<span>ASP.NET, .NET Core, IIS &amp; MSSQL database support</span></a>
-                  <div class="mega-promo-box">
-                    <i class="fa-brands fa-windows" aria-hidden="true"></i>
-                    <div>
-                      <strong>Enterprise Windows</strong>
-                      <p>Full support for ASP.NET 8, MVC and dedicated MSSQL databases.</p>
-                    </div>
-                  </div>
+                  <p class="mega-title">Language Platforms</p>
+                  <a href="php-hosting.html">PHP Hosting<span>PHP 7.4 – 8.3 with Laravel &amp; WordPress</span></a>
+                  <a href="nodejs-hosting.html">Node.js Hosting<span>Express, Next.js &amp; NestJS apps</span></a>
+                  <a href="python-hosting.html">Python Hosting<span>Django, Flask &amp; FastAPI apps</span></a>
+                  <a href="ruby-hosting.html">Ruby Hosting<span>Rails &amp; Sinatra on Passenger</span></a>
+                  <a href="java-hosting.html">Java / Tomcat Hosting<span>JSP, Servlets &amp; Spring Boot</span></a>
+                  <a href="languages.html">All Supported Languages<span>Compare every runtime we support</span></a>
                 </div>
               </div>
             </li>
             <li class="nav-item has-menu">
-              <button class="nav-link" type="button">Server</button>
+              <button class="nav-link" type="button" aria-expanded="false">Reseller</button>
+              <div class="mega-menu compact-menu">
+                <div class="mega-column">
+                  <p class="mega-title">cPanel Powered Reseller</p>
+                  <a href="reseller-hosting.html">cPanel Reseller<span>White-label WHM reseller plans</span></a>
+                  <a href="master-reseller.html">Master Reseller<span>Create and sell reseller accounts</span></a>
+                  <a href="alpha-reseller.html">Alpha Reseller<span>Top-tier multi-level reseller control</span></a>
+                  <a href="flex-reseller.html">Flex Reseller<span>Pay-as-you-grow reseller resources</span></a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item has-menu is-current">
+              <button class="nav-link" type="button" aria-expanded="false">Server</button>
               <div class="mega-menu compact-menu">
                 <div class="mega-column">
                   <p class="mega-title">Managed Servers</p>
-                  <a href="vps-server.html">VPS Server<span>Scalable virtual private servers with full root access</span></a>
-                  <a href="dedicated-server.html">Dedicated Server<span>High-performance bare metal servers for production workloads</span></a>
+                  <a href="vps-server.html" aria-current="page">VPS Server<span>KVM cloud servers with full root access</span></a>
+                  <a href="dedicated-server.html">Dedicated Server<span>Bare metal servers for production</span></a>
                 </div>
               </div>
             </li>
             <li class="nav-item has-menu">
-              <button class="nav-link" type="button">Domain</button>
+              <button class="nav-link" type="button" aria-expanded="false">Domain</button>
+              <div class="mega-menu mega-two">
+                <div class="mega-column">
+                  <p class="mega-title">Register</p>
+                  <a href="domain-registration.html">Domain Registration<span>Register from 400+ extensions</span></a>
+                  <a href="domain-registration.html#search">Domain Search<span>Instant name &amp; price lookup</span></a>
+                  <a href="bd-domain.html">.BD Domain<span>Official BTCL .bd registration</span></a>
+                </div>
+                <div class="mega-column">
+                  <p class="mega-title">Manage</p>
+                  <a href="domain-transfer.html">Domain Transfer<span>Move domains with zero downtime</span></a>
+                  <a href="domain-renew.html">Domain Renew<span>Renew early, keep your brand safe</span></a>
+                  <a href="domain-pricing.html">Domain Pricing<span>Full TLD price list in BDT</span></a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item has-menu">
+              <button class="nav-link" type="button" aria-expanded="false">Services</button>
               <div class="mega-menu compact-menu">
                 <div class="mega-column">
-                  <p class="mega-title">Domain Services</p>
-                  <a href="domain-registration.html">Domain Registration<span>Register your ideal domain name across 500+ extensions</span></a>
-                  <a href="bd-domain.html">.BD Domain Registration<span>Official BTCL .bd domain registration in Bangladesh</span></a>
-                  <a href="domain-transfer.html#renew">Domain Renew<span>Renew existing domains and keep your brand protected</span></a>
-                  <a href="domain-transfer.html">Domain Transfer<span>Transfer domains to Host Divine with zero downtime</span></a>
-                  <a href="domain-registration.html#search">Domain Search<span>Instant WHOIS lookup &amp; smart domain suggestions</span></a>
+                  <p class="mega-title">Business Services</p>
+                  <a href="ssl-certificates.html">SSL Certificates<span>DV, OV, EV &amp; wildcard SSL</span></a>
+                  <a href="business-email.html">Business Email<span>Professional email with spam defense</span></a>
+                  <a href="seo-service.html">SEO Service<span>Technical SEO &amp; growth campaigns</span></a>
                 </div>
               </div>
             </li>
             <li class="nav-item has-menu">
-              <button class="nav-link" type="button">About Us</button>
+              <button class="nav-link" type="button" aria-expanded="false">Company</button>
               <div class="mega-menu compact-menu">
                 <div class="mega-column">
                   <p class="mega-title">About Host Divine</p>
-                  <a href="about-us.html">Company Overview<span>Learn about Host Divine infrastructure and mission</span></a>
-                  <a href="about-us.html#timeline">Timeline<span>Our journey, milestones and technological growth</span></a>
-                  <a href="faq.html">FAQ<span>Frequently asked questions and support answers</span></a>
-                  <a href="blog.html">Blog<span>Hosting, cloud, server tips and tech updates</span></a>
-                  <a href="contact.html">Contact Us<span>Sales, technical support and migration inquiries</span></a>
+                  <a href="about-us.html">Company Overview<span>Our infrastructure and mission</span></a>
+                  <a href="timeline.html">Timeline<span>Milestones since 2004</span></a>
+                  <a href="faq.html">FAQ<span>Answers to common questions</span></a>
+                  <a href="blog.html">Blog<span>Hosting, cloud and server guides</span></a>
+                  <a href="contact.html">Contact Us<span>Sales, support and migration</span></a>
                 </div>
               </div>
             </li>
           </ul>
           <div class="nav-actions">
-            <a class="nav-phone" href="#">Sales Contact</a>
+            <a class="nav-phone" href="contact.html">Sales Contact</a>
             <a class="nav-login" href="https://panel.hostdivine.com/">Domain Login</a>
             <a class="nav-cta" href="https://robot.hostdivine.com/clientarea.php">Client Area</a>
           </div>
+          <div class="nav-social" aria-label="Follow Host Divine"><a class="nav-social-link" href="#" aria-label="Host Divine on Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a><a class="nav-social-link" href="#" aria-label="Host Divine on X"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a><a class="nav-social-link" href="https://wa.me/" aria-label="Host Divine on WhatsApp" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a><a class="nav-social-link" href="#" aria-label="Host Divine on Telegram"><i class="fa-brands fa-telegram" aria-hidden="true"></i></a><a class="nav-social-link" href="#" aria-label="Host Divine on IMO"><i class="fa-solid fa-comment-dots" aria-hidden="true"></i></a></div>
         </div>
       </div>
     </nav>
   </header>
 
   <!-- Main Content -->
-  <main id="main">
+  <main id="main" data-hero="3">
 
-    <!-- Page Hero Banner -->
     <section class="page-hero">
+      <div class="page-hero-bg" aria-hidden="true"><span class="page-hero-grid-lines"></span><span class="page-hero-glow"></span></div>
       <div class="container">
-        <ul class="breadcrumb">
-          <li><a href="index.html">Home</a></li>
-          <li class="breadcrumb-sep"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></li>
-          <li><span>Server</span></li>
-          <li class="breadcrumb-sep"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></li>
-          <li class="breadcrumb-current">Cloud VPS Server</li>
-        </ul>
-
+        <nav aria-label="Breadcrumb"><ol class="breadcrumb"><li><a href="index.html">Home</a></li><li><span>Server</span></li><li aria-current="page">VPS Server</li></ol></nav>
         <div class="page-hero-grid">
-          <div>
-            <span class="eyebrow"><span class="eyebrow-dot"></span>Pure KVM Virtualization</span>
-            <h1 class="page-hero-title">High-Performance Cloud VPS with Pure NVMe Storage</h1>
-            <p class="page-hero-lead">Deploy dedicated, isolated KVM cloud servers in under 60 seconds. Full root SSH access, dedicated AMD EPYC CPU cores, DDR4 ECC RAM, 1 Gbps redundant port, and automated weekly snapshots.</p>
-            <div class="page-hero-badges">
-              <span class="page-badge-item"><i class="fa-solid fa-microchip" aria-hidden="true"></i> Pure KVM Isolation</span>
-              <span class="page-badge-item"><i class="fa-solid fa-hard-drive" aria-hidden="true"></i> NVMe PCIe 4.0</span>
-              <span class="page-badge-item"><i class="fa-solid fa-terminal" aria-hidden="true"></i> Full Root Access</span>
-              <span class="page-badge-item"><i class="fa-solid fa-network-wired" aria-hidden="true"></i> 1 Gbps Port</span>
-              <span class="page-badge-item"><i class="fa-solid fa-shield-virus" aria-hidden="true"></i> Anti-DDoS Scrubbing</span>
-            </div>
-            <div class="page-hero-actions">
-              <a class="btn btn-primary" href="#plans">Configure VPS Plan <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
-              <a class="btn btn-outline" href="contact.html">Request Custom Spec</a>
-            </div>
+          <div class="page-hero-copy">
+            <span class="eyebrow is-dark"><span class="eyebrow-dot"></span>Pure KVM Virtualization</span>
+            <h1 class="page-hero-title">High-performance <span class="text-gradient">cloud VPS</span> on pure NVMe</h1>
+            <p class="page-hero-lead">Isolated KVM cloud servers deployed in under 60 seconds — full root SSH, dedicated AMD EPYC cores, DDR4 ECC RAM and automated snapshots.</p>
+            <div class="page-hero-actions"><a class="btn btn-primary" href="#plans">Configure VPS Plan <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+              <a class="btn btn-ghost" href="contact.html">Request Custom Spec</a></div>
+            <ul class="page-hero-badges"><li><i class="fa-solid fa-cube" aria-hidden="true"></i>KVM Isolation</li><li><i class="fa-solid fa-hard-drive" aria-hidden="true"></i>NVMe Gen 4</li><li><i class="fa-solid fa-terminal" aria-hidden="true"></i>Full Root</li><li><i class="fa-solid fa-shield-halved" aria-hidden="true"></i>Anti-DDoS</li></ul>
+            
           </div>
-
-          <div class="page-hero-visual">
+          <div class="page-hero-visual" aria-label="Platform summary">
             <div class="hero-console-head">
-              <div class="hero-console-dots">
-                <span></span><span></span><span></span>
-              </div>
+              <div class="hero-console-dots" aria-hidden="true"><span></span><span></span><span></span></div>
               <span class="hero-console-badge"><i class="fa-solid fa-circle" aria-hidden="true"></i> Instant Deploy</span>
             </div>
             <div class="hero-console-row">
-              <span class="hero-console-label"><i class="fa-solid fa-cubes" aria-hidden="true"></i> Hypervisor Stack</span>
-              <span class="hero-console-val">Kernel-Based VM (KVM)</span>
+              <span class="hero-console-label"><i class="fa-solid fa-cube" aria-hidden="true"></i> Hypervisor</span>
+              <span class="hero-console-val">KVM</span>
             </div>
             <div class="hero-console-row">
-              <span class="hero-console-label"><i class="fa-solid fa-microchip" aria-hidden="true"></i> Processor Nodes</span>
-              <span class="hero-console-val">AMD EPYC 7003 / Intel Xeon</span>
+              <span class="hero-console-label"><i class="fa-solid fa-microchip" aria-hidden="true"></i> Processors</span>
+              <span class="hero-console-val">AMD EPYC / Xeon</span>
             </div>
             <div class="hero-console-row">
-              <span class="hero-console-label"><i class="fa-solid fa-hard-drive" aria-hidden="true"></i> Storage Fabric</span>
-              <span class="hero-console-val">Ceph Distributed NVMe</span>
+              <span class="hero-console-label"><i class="fa-solid fa-network-wired" aria-hidden="true"></i> Uplink</span>
+              <span class="hero-console-val">1 Gbps redundant</span>
             </div>
             <div class="hero-console-row">
-              <span class="hero-console-label"><i class="fa-solid fa-arrows-left-right" aria-hidden="true"></i> Uplink Speed</span>
-              <span class="hero-console-val">1 Gbps Redundant Burstable</span>
+              <span class="hero-console-label"><i class="fa-solid fa-stopwatch" aria-hidden="true"></i> Provisioning</span>
+              <span class="hero-console-val">&lt; 60 seconds</span>
             </div>
-            <div class="hero-console-row">
-              <span class="hero-console-label"><i class="fa-solid fa-stopwatch" aria-hidden="true"></i> Provisioning Time</span>
-              <span class="hero-console-val">&lt; 60 Seconds Automated</span>
+            <div class="hero-console-foot">
+              <p>Starting at <strong>$7.99</strong><span>/month</span></p>
+              <a class="btn btn-primary" href="#plans">Deploy Now</a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Key Highlights -->
-    <section class="section">
+    <div class="stats-float-wrap">
       <div class="container">
-        <div class="section-head reveal">
-          <span class="eyebrow"><span class="eyebrow-dot"></span>Cloud Power</span>
-          <h2 class="section-title">Built for developers, production workloads and high-scale apps</h2>
-          <p class="section-sub">Zero shared hardware bottlenecks. Experience predictable compute performance with true hardware virtualization.</p>
-        </div>
-
-        <div class="highlights-grid reveal">
-          <div class="highlight-card">
-            <div class="highlight-icon"><i class="fa-solid fa-terminal" aria-hidden="true"></i></div>
-            <h3>Full Root &amp; VNC Access</h3>
-            <p>Complete unhindered root privileges via SSH. Install any software, tune kernel parameters, configure custom firewalls, and use HTML5 web VNC.</p>
-          </div>
-          <div class="highlight-card">
-            <div class="highlight-icon"><i class="fa-solid fa-microchip" aria-hidden="true"></i></div>
-            <h3>Dedicated Compute Cores</h3>
-            <p>Every vCPU core and gigabyte of DDR4 ECC RAM is physically reserved for your virtual machine. No noisy neighbours or throttling.</p>
-          </div>
-          <div class="highlight-card">
-            <div class="highlight-icon"><i class="fa-solid fa-hard-drive" aria-hidden="true"></i></div>
-            <h3>Enterprise NVMe Storage</h3>
-            <p>Distributed PCIe Gen 4 NVMe arrays deliver tens of thousands of IOPS for fast database operations, container workloads, and microservices.</p>
-          </div>
-          <div class="highlight-card">
-            <div class="highlight-icon"><i class="fa-solid fa-compact-disc" aria-hidden="true"></i></div>
-            <h3>1-Click OS Installs</h3>
-            <p>Deploy Ubuntu, Debian, AlmaLinux, Rocky Linux, or Windows Server in seconds. Custom ISO mounting supported for custom distributions.</p>
-          </div>
-          <div class="highlight-card">
-            <div class="highlight-icon"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></div>
-            <h3>Automated Anti-DDoS</h3>
-            <p>Up to 1 Tbps scrubbing capacity mitigates Volumetric, SYN flood, and Layer 7 attacks before malicious packets reach your server.</p>
-          </div>
-          <div class="highlight-card">
-            <div class="highlight-icon"><i class="fa-solid fa-camera" aria-hidden="true"></i></div>
-            <h3>Snapshots &amp; Backups</h3>
-            <p>Take point-in-time snapshots before updates or deploy automated weekly snapshot backups with 1-click disaster recovery.</p>
-          </div>
-        </div>
+        <ul class="stats-float">
+          <li><span class="stats-float-icon"><i class="fa-solid fa-stopwatch" aria-hidden="true"></i></span><div><strong>&lt; 60s</strong><span>Provisioning</span></div></li>
+          <li><span class="stats-float-icon"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></span><div><strong>1 Tbps</strong><span>DDoS scrubbing</span></div></li>
+          <li><span class="stats-float-icon"><i class="fa-solid fa-signal" aria-hidden="true"></i></span><div><strong>99.9%</strong><span>Uptime SLA</span></div></li>
+          <li><span class="stats-float-icon"><i class="fa-solid fa-heart-pulse" aria-hidden="true"></i></span><div><strong>24/7</strong><span>Server monitoring</span></div></li>
+        </ul>
       </div>
-    </section>
+    </div>
 
-    <!-- Plans Section -->
-    <section class="section" id="plans" style="background: #f7faff;">
+    <section class="section bg-waves" id="plans">
       <div class="container">
         <div class="section-head reveal">
           <span class="eyebrow"><span class="eyebrow-dot"></span>VPS Configurations</span>
-          <h2 class="section-title">Transparent Cloud VPS plans</h2>
-          <p class="section-sub">Upgrade or downgrade your resources anytime directly from the Robot client control portal.</p>
+          <h2 class="section-title">Transparent cloud VPS plans</h2>
+          <p class="section-sub">Upgrade or downgrade any time from the Robot client portal.</p>
         </div>
+          <div class="pricing-grid pricing-grid-4 reveal">
+            <article class="plan-card">
+              <div class="plan-top"><span class="plan-cat is-cloud">Cloud VPS</span></div>
+              <h3 class="plan-name">VPS-1 Starter</h3>
+              <p class="plan-desc">Great for staging, lightweight bots and VPN nodes.</p>
+              <div class="plan-price"><sup>$</sup><span>7.99</span><small>/mo</small></div>
+              <p class="plan-billed">Billed monthly or $89.00/yr</p>
+              <a class="btn btn-outline plan-btn" href="https://robot.hostdivine.com/cart.php?a=add">Deploy VPS-1</a>
+              <ul class="plan-features">
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i>1 vCPU Core (AMD EPYC)</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i>2 GB DDR4 ECC RAM</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i>40 GB NVMe PCIe SSD</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i>2,000 GB Monthly Bandwidth</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i>1 Dedicated IPv4</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i>Full Root SSH Access</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i>Anti-DDoS Protection</li>
+              </ul>
+            </article>
+            <article class="plan-card is-featured">
+              <div class="plan-top"><span class="plan-cat is-cloud">Cloud VPS</span><span class="plan-badge">Recommended</span></div>
+              <h3 class="plan-name">VPS-2 Pro</h3>
+              <p class="plan-desc">Sweet spot for busy WordPress, APIs &amp; production apps.</p>
+              <div class="plan-price"><sup>$</sup><span>14.99</span><small>/mo</small></div>
+              <p class="plan-billed">Billed monthly or $165.00/yr</p>
+              <a class="btn btn-primary plan-btn" href="https://robot.hostdivine.com/cart.php?a=add">Deploy VPS-2</a>
+              <ul class="plan-features">
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i>2 vCPU Cores (AMD EPYC)</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i>4 GB DDR4 ECC RAM</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i>80 GB NVMe PCIe SSD</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i>4,000 GB Monthly Bandwidth</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i>1 Dedicated IPv4</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i>Full Root SSH Access</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i>Anti-DDoS Protection</li>
+              </ul>
+            </article>
+            <article class="plan-card">
+              <div class="plan-top"><span class="plan-cat is-cloud">Cloud VPS</span></div>
+              <h3 class="plan-name">VPS-3 Ultra</h3>
+              <p class="plan-desc">Power for busy databases and multi-tenant hosting.</p>
+              <div class="plan-price"><sup>$</sup><span>27.99</span><small>/mo</small></div>
+              <p class="plan-billed">Billed monthly or $309.00/yr</p>
+              <a class="btn btn-outline plan-btn" href="https://robot.hostdivine.com/cart.php?a=add">Deploy VPS-3</a>
+              <ul class="plan-features">
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i>4 vCPU Cores (AMD EPYC)</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i>8 GB DDR4 ECC RAM</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i>160 GB NVMe PCIe SSD</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i>8,000 GB Monthly Bandwidth</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i>1 Dedicated IPv4</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i>Full Root SSH Access</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i>Anti-DDoS Protection</li>
+              </ul>
+            </article>
+            <article class="plan-card">
+              <div class="plan-top"><span class="plan-cat is-cloud">Cloud VPS</span></div>
+              <h3 class="plan-name">VPS-4 Max</h3>
+              <p class="plan-desc">Heavy-duty compute for microservices and eCommerce.</p>
+              <div class="plan-price"><sup>$</sup><span>52.99</span><small>/mo</small></div>
+              <p class="plan-billed">Billed monthly or $580.00/yr</p>
+              <a class="btn btn-outline plan-btn" href="https://robot.hostdivine.com/cart.php?a=add">Deploy VPS-4</a>
+              <ul class="plan-features">
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i>8 vCPU Cores (AMD EPYC)</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i>16 GB DDR4 ECC RAM</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i>320 GB NVMe PCIe SSD</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i>12,000 GB Monthly Bandwidth</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i>2 Dedicated IPv4</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i>Full Root SSH Access</li>
+                <li><i class="fa-solid fa-check" aria-hidden="true"></i>Anti-DDoS Protection</li>
+              </ul>
+            </article>
+          </div>
+      </div>
+    </section>
 
-        <div class="pricing-grid-4 reveal">
-          <!-- VPS-1 -->
-          <article class="plan-card">
-            <div class="plan-top"><span class="plan-cat">Cloud VPS</span></div>
-            <h3 class="plan-name">VPS-1 Starter</h3>
-            <p class="plan-desc">Great for development staging, lightweight bots and VPN nodes.</p>
-            <div class="plan-price"><sup>$</sup><span>7.99</span><small>/mo</small></div>
-            <p class="plan-billed">Billed monthly or $89.00/yr</p>
-            <a class="btn btn-outline plan-btn" href="https://robot.hostdivine.com/cart.php?a=add">Deploy VPS-1</a>
-            <ul class="plan-features">
-              <li><i class="fa-solid fa-check"></i>1 vCPU Core (AMD EPYC)</li>
-              <li><i class="fa-solid fa-check"></i>2 GB DDR4 ECC RAM</li>
-              <li><i class="fa-solid fa-check"></i>40 GB NVMe PCIe SSD</li>
-              <li><i class="fa-solid fa-check"></i>2,000 GB Monthly Bandwidth</li>
-              <li><i class="fa-solid fa-check"></i>1 Dedicated IPv4 Address</li>
-              <li><i class="fa-solid fa-check"></i>Full Root SSH Access</li>
-              <li><i class="fa-solid fa-check"></i>Instant Provisioning</li>
-            </ul>
+    <section class="section bg-soft" id="compare">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow"><span class="eyebrow-dot"></span>Plan Comparison</span>
+          <h2 class="section-title">Compare VPS resources</h2>
+          
+        </div>
+        <div class="compare-wrap reveal" tabindex="0" role="region" aria-label="VPS plan comparison">
+          <table class="compare-table">
+            <caption class="sr-only">VPS plan comparison</caption>
+            <thead><tr><th scope="col">Features</th><th scope="col"><span class="cmp-plan">VPS-1 Starter</span><span class="cmp-price">$7.99<small>/mo</small></span></th><th scope="col" class="is-featured"><span class="cmp-plan">VPS-2 Pro</span><span class="cmp-price">$14.99<small>/mo</small></span></th><th scope="col"><span class="cmp-plan">VPS-3 Ultra</span><span class="cmp-price">$27.99<small>/mo</small></span></th><th scope="col"><span class="cmp-plan">VPS-4 Max</span><span class="cmp-price">$52.99<small>/mo</small></span></th></tr></thead>
+            <tbody>
+            <tr class="cmp-group"><th scope="rowgroup" colspan="5">Resources</th></tr>
+            <tr><th scope="row">vCPU</th><td>1 vCPU Core</td><td class="is-featured">2 vCPU Cores</td><td>4 vCPU Cores</td><td>8 vCPU Cores</td></tr>
+            <tr><th scope="row">RAM</th><td>2 GB</td><td class="is-featured">4 GB</td><td>8 GB</td><td>16 GB</td></tr>
+            <tr><th scope="row">NVMe Storage</th><td>40 GB</td><td class="is-featured">80 GB</td><td>160 GB</td><td>320 GB</td></tr>
+            <tr><th scope="row">Bandwidth</th><td>2,000 GB</td><td class="is-featured">4,000 GB</td><td>8,000 GB</td><td>12,000 GB</td></tr>
+            <tr><th scope="row">IPv4</th><td>1</td><td class="is-featured">1</td><td>1</td><td>2</td></tr>
+            <tr class="cmp-group"><th scope="rowgroup" colspan="5">Features</th></tr>
+            <tr><th scope="row">Full Root Access</th><td><span class="cmp-yes"><i class="fa-solid fa-check" aria-hidden="true"></i><span class="sr-only">Included</span></span></td><td class="is-featured"><span class="cmp-yes"><i class="fa-solid fa-check" aria-hidden="true"></i><span class="sr-only">Included</span></span></td><td><span class="cmp-yes"><i class="fa-solid fa-check" aria-hidden="true"></i><span class="sr-only">Included</span></span></td><td><span class="cmp-yes"><i class="fa-solid fa-check" aria-hidden="true"></i><span class="sr-only">Included</span></span></td></tr>
+            <tr><th scope="row">Weekly Snapshots</th><td><span class="cmp-no"><i class="fa-solid fa-xmark" aria-hidden="true"></i><span class="sr-only">Not included</span></span></td><td class="is-featured"><span class="cmp-yes"><i class="fa-solid fa-check" aria-hidden="true"></i><span class="sr-only">Included</span></span></td><td><span class="cmp-yes"><i class="fa-solid fa-check" aria-hidden="true"></i><span class="sr-only">Included</span></span></td><td><span class="cmp-yes"><i class="fa-solid fa-check" aria-hidden="true"></i><span class="sr-only">Included</span></span></td></tr>
+            <tr><th scope="row">cPanel / Plesk Ready</th><td><span class="cmp-no"><i class="fa-solid fa-xmark" aria-hidden="true"></i><span class="sr-only">Not included</span></span></td><td class="is-featured"><span class="cmp-no"><i class="fa-solid fa-xmark" aria-hidden="true"></i><span class="sr-only">Not included</span></span></td><td><span class="cmp-yes"><i class="fa-solid fa-check" aria-hidden="true"></i><span class="sr-only">Included</span></span></td><td><span class="cmp-yes"><i class="fa-solid fa-check" aria-hidden="true"></i><span class="sr-only">Included</span></span></td></tr>
+            <tr><th scope="row">Managed Tier Option</th><td><span class="cmp-no"><i class="fa-solid fa-xmark" aria-hidden="true"></i><span class="sr-only">Not included</span></span></td><td class="is-featured"><span class="cmp-no"><i class="fa-solid fa-xmark" aria-hidden="true"></i><span class="sr-only">Not included</span></span></td><td><span class="cmp-no"><i class="fa-solid fa-xmark" aria-hidden="true"></i><span class="sr-only">Not included</span></span></td><td><span class="cmp-yes"><i class="fa-solid fa-check" aria-hidden="true"></i><span class="sr-only">Included</span></span></td></tr>
+            </tbody>
+            <tfoot><tr><th scope="row">Get started</th><td><a class="btn btn-outline" href="https://robot.hostdivine.com/cart.php?a=add">Order</a></td><td class="is-featured"><a class="btn btn-primary" href="https://robot.hostdivine.com/cart.php?a=add">Order</a></td><td><a class="btn btn-outline" href="https://robot.hostdivine.com/cart.php?a=add">Order</a></td><td><a class="btn btn-outline" href="https://robot.hostdivine.com/cart.php?a=add">Order</a></td></tr></tfoot>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg-grid">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow"><span class="eyebrow-dot"></span>Cloud Power</span>
+          <h2 class="section-title">Built for developers and production workloads</h2>
+          
+        </div>
+        <div class="highlights-grid cols-3">
+          <article class="highlight-card reveal">
+            <div class="highlight-icon"><i class="fa-solid fa-terminal" aria-hidden="true"></i></div>
+            <h3>Full Root &amp; VNC</h3>
+            <p>Unrestricted root via SSH, custom firewalls, kernel tuning and an HTML5 web console.</p>
           </article>
-
-          <!-- VPS-2 (Recommended) -->
-          <article class="plan-card is-featured">
-            <div class="plan-top"><span class="plan-cat">Cloud VPS</span><span class="plan-badge">Recommended</span></div>
-            <h3 class="plan-name">VPS-2 Pro</h3>
-            <p class="plan-desc">Our sweet spot for high-traffic WordPress, APIs &amp; production apps.</p>
-            <div class="plan-price"><sup>$</sup><span>14.99</span><small>/mo</small></div>
-            <p class="plan-billed">Billed monthly or $165.00/yr</p>
-            <a class="btn btn-primary plan-btn" href="https://robot.hostdivine.com/cart.php?a=add">Deploy VPS-2</a>
-            <ul class="plan-features">
-              <li><i class="fa-solid fa-check"></i>2 vCPU Cores (AMD EPYC)</li>
-              <li><i class="fa-solid fa-check"></i>4 GB DDR4 ECC RAM</li>
-              <li><i class="fa-solid fa-check"></i>80 GB NVMe PCIe SSD</li>
-              <li><i class="fa-solid fa-check"></i>4,000 GB Monthly Bandwidth</li>
-              <li><i class="fa-solid fa-check"></i>1 Dedicated IPv4 Address</li>
-              <li><i class="fa-solid fa-check"></i>Automated Weekly Snapshots</li>
-              <li><i class="fa-solid fa-check"></i>24/7 Server Monitoring</li>
-            </ul>
+          <article class="highlight-card reveal">
+            <div class="highlight-icon"><i class="fa-solid fa-microchip" aria-hidden="true"></i></div>
+            <h3>Dedicated Cores</h3>
+            <p>Every vCPU and GB of ECC RAM is reserved for your VM — no noisy neighbours.</p>
           </article>
-
-          <!-- VPS-3 -->
-          <article class="plan-card">
-            <div class="plan-top"><span class="plan-cat">Cloud VPS</span></div>
-            <h3 class="plan-name">VPS-3 Ultra</h3>
-            <p class="plan-desc">Substantial power for busy database servers and multi-tenant hosting.</p>
-            <div class="plan-price"><sup>$</sup><span>27.99</span><small>/mo</small></div>
-            <p class="plan-billed">Billed monthly or $309.00/yr</p>
-            <a class="btn btn-outline plan-btn" href="https://robot.hostdivine.com/cart.php?a=add">Deploy VPS-3</a>
-            <ul class="plan-features">
-              <li><i class="fa-solid fa-check"></i>4 vCPU Cores (AMD EPYC)</li>
-              <li><i class="fa-solid fa-check"></i>8 GB DDR4 ECC RAM</li>
-              <li><i class="fa-solid fa-check"></i>160 GB NVMe PCIe SSD</li>
-              <li><i class="fa-solid fa-check"></i>8,000 GB Monthly Bandwidth</li>
-              <li><i class="fa-solid fa-check"></i>1 Dedicated IPv4 Address</li>
-              <li><i class="fa-solid fa-check"></i>cPanel / Plesk License Ready</li>
-              <li><i class="fa-solid fa-check"></i>Priority Support Desk</li>
-            </ul>
+          <article class="highlight-card reveal">
+            <div class="highlight-icon"><i class="fa-solid fa-hard-drive" aria-hidden="true"></i></div>
+            <h3>Enterprise NVMe</h3>
+            <p>PCIe Gen 4 NVMe arrays deliver tens of thousands of IOPS for databases and containers.</p>
           </article>
-
-          <!-- VPS-4 -->
-          <article class="plan-card">
-            <div class="plan-top"><span class="plan-cat is-cloud">Cloud VPS</span><span class="plan-badge is-blue">High Memory</span></div>
-            <h3 class="plan-name">VPS-4 Max</h3>
-            <p class="plan-desc">Heavy-duty compute for enterprise microservices and eCommerce.</p>
-            <div class="plan-price"><sup>$</sup><span>52.99</span><small>/mo</small></div>
-            <p class="plan-billed">Billed monthly or $580.00/yr</p>
-            <a class="btn btn-outline plan-btn" href="https://robot.hostdivine.com/cart.php?a=add">Deploy VPS-4</a>
-            <ul class="plan-features">
-              <li><i class="fa-solid fa-check"></i>8 vCPU Cores (AMD EPYC)</li>
-              <li><i class="fa-solid fa-check"></i>16 GB DDR4 ECC RAM</li>
-              <li><i class="fa-solid fa-check"></i>320 GB NVMe PCIe SSD</li>
-              <li><i class="fa-solid fa-check"></i>12,000 GB Monthly Bandwidth</li>
-              <li><i class="fa-solid fa-check"></i>2 Dedicated IPv4 Addresses</li>
-              <li><i class="fa-solid fa-check"></i>Optional Fully Managed Tier</li>
-              <li><i class="fa-solid fa-check"></i>VIP Engineer Escalation</li>
-            </ul>
+          <article class="highlight-card reveal">
+            <div class="highlight-icon"><i class="fa-brands fa-linux" aria-hidden="true"></i></div>
+            <h3>1-Click OS Installs</h3>
+            <p>Ubuntu, Debian, AlmaLinux, Rocky Linux or Windows Server — or mount your own ISO.</p>
+          </article>
+          <article class="highlight-card reveal">
+            <div class="highlight-icon"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></div>
+            <h3>Automated Anti-DDoS</h3>
+            <p>Up to 1 Tbps scrubbing stops volumetric, SYN flood and Layer 7 attacks.</p>
+          </article>
+          <article class="highlight-card reveal">
+            <div class="highlight-icon"><i class="fa-solid fa-camera-rotate" aria-hidden="true"></i></div>
+            <h3>Snapshots &amp; Backups</h3>
+            <p>Point-in-time snapshots and weekly automated backups with 1-click recovery.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- Technical Specifications Grid -->
-    <section class="section">
+    <section class="section bg-circuit">
       <div class="container">
         <div class="section-head reveal">
           <span class="eyebrow"><span class="eyebrow-dot"></span>Hardware Matrix</span>
-          <h2 class="section-title">Technical Specifications</h2>
-          <p class="section-sub">Standard features across all Host Divine Cloud VPS instances.</p>
+          <h2 class="section-title">Technical specifications</h2>
+          
         </div>
-
         <div class="specs-grid reveal">
           <div class="spec-group">
-            <h3 class="spec-group-title"><i class="fa-solid fa-microchip" aria-hidden="true"></i> Hardware &amp; Hypervisor</h3>
-            <div class="spec-row"><span class="spec-label">Virtualization</span><span class="spec-value">Hardware-Assisted KVM</span></div>
-            <div class="spec-row"><span class="spec-label">Processors</span><span class="spec-value">AMD EPYC 7003 / Intel Xeon Scalable</span></div>
-            <div class="spec-row"><span class="spec-label">Memory</span><span class="spec-value">DDR4 3200MHz ECC Registered</span></div>
-            <div class="spec-row"><span class="spec-label">Storage Fabric</span><span class="spec-value">Ceph NVMe SSD RAID-10</span></div>
-            <div class="spec-row"><span class="spec-label">Uptime SLA</span><span class="spec-value">99.9% Financially Guaranteed</span></div>
+            <h3 class="spec-group-title"><i class="fa-solid fa-microchip" aria-hidden="true"></i> Hardware</h3>
+            <div class="spec-row"><span class="spec-label">Virtualization</span><span class="spec-value">KVM</span></div>
+            <div class="spec-row"><span class="spec-label">Processors</span><span class="spec-value">AMD EPYC 7003 / Xeon</span></div>
+            <div class="spec-row"><span class="spec-label">Memory</span><span class="spec-value">DDR4 3200 ECC</span></div>
+            <div class="spec-row"><span class="spec-label">Storage</span><span class="spec-value">Ceph NVMe RAID-10</span></div>
           </div>
-
           <div class="spec-group">
-            <h3 class="spec-group-title"><i class="fa-solid fa-compact-disc" aria-hidden="true"></i> Operating Systems</h3>
-            <div class="spec-row"><span class="spec-label">Linux Distributions</span><span class="spec-value">Ubuntu, Debian, AlmaLinux, Rocky</span></div>
-            <div class="spec-row"><span class="spec-label">Windows Support</span><span class="spec-value">Windows Server 2022 (Optional)</span></div>
-            <div class="spec-row"><span class="spec-label">Custom ISO</span><span class="spec-value">Mount Custom ISO Images</span></div>
-            <div class="spec-row"><span class="spec-label">Control Panels</span><span class="spec-value">cPanel, Plesk, CyberPanel, DirectAdmin</span></div>
-            <div class="spec-row"><span class="spec-label">Reinstall Time</span><span class="spec-value">Automated Under 2 Minutes</span></div>
+            <h3 class="spec-group-title"><i class="fa-brands fa-linux" aria-hidden="true"></i> Operating Systems</h3>
+            <div class="spec-row"><span class="spec-label">Linux</span><span class="spec-value">Ubuntu, Debian, Alma, Rocky</span></div>
+            <div class="spec-row"><span class="spec-label">Windows</span><span class="spec-value">Server 2022 (optional)</span></div>
+            <div class="spec-row"><span class="spec-label">Custom ISO</span><span class="spec-value">Supported</span></div>
+            <div class="spec-row"><span class="spec-label">Panels</span><span class="spec-value">cPanel, Plesk, CyberPanel</span></div>
           </div>
-
           <div class="spec-group">
-            <h3 class="spec-group-title"><i class="fa-solid fa-network-wired" aria-hidden="true"></i> Networking &amp; Security</h3>
-            <div class="spec-row"><span class="spec-label">Network Port</span><span class="spec-value">1 Gbps Burstable Upstream</span></div>
-            <div class="spec-row"><span class="spec-label">IP Allocation</span><span class="spec-value">1 Dedicated IPv4 + /64 IPv6</span></div>
-            <div class="spec-row"><span class="spec-label">Reverse DNS (rDNS)</span><span class="spec-value">Self-Managed via Portal</span></div>
-            <div class="spec-row"><span class="spec-label">DDoS Mitigation</span><span class="spec-value">Automated 1 Tbps Layer 3/4/7</span></div>
-            <div class="spec-row"><span class="spec-label">Network Carriers</span><span class="spec-value">Tier-1 Peering Blend</span></div>
-          </div>
-
-          <div class="spec-group">
-            <h3 class="spec-group-title"><i class="fa-solid fa-sliders" aria-hidden="true"></i> Management Tools</h3>
-            <div class="spec-row"><span class="spec-label">Web Portal</span><span class="spec-value">Host Divine Robot Control</span></div>
-            <div class="spec-row"><span class="spec-label">Emergency Console</span><span class="spec-value">NoVNC Out-of-Band Browser Console</span></div>
-            <div class="spec-row"><span class="spec-label">Power Control</span><span class="spec-value">Boot, Reboot, Power Off &amp; Reset</span></div>
-            <div class="spec-row"><span class="spec-label">Telemetry</span><span class="spec-value">Live CPU, RAM &amp; Network Traffic Graphs</span></div>
-            <div class="spec-row"><span class="spec-label">Support Level</span><span class="spec-value">24/7/365 Hardware &amp; Network Support</span></div>
+            <h3 class="spec-group-title"><i class="fa-solid fa-network-wired" aria-hidden="true"></i> Network</h3>
+            <div class="spec-row"><span class="spec-label">Port</span><span class="spec-value">1 Gbps burstable</span></div>
+            <div class="spec-row"><span class="spec-label">IP</span><span class="spec-value">1 IPv4 + /64 IPv6</span></div>
+            <div class="spec-row"><span class="spec-label">rDNS</span><span class="spec-value">Self-managed</span></div>
+            <div class="spec-row"><span class="spec-label">DDoS</span><span class="spec-value">1 Tbps L3/4/7</span></div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- FAQ Accordion -->
-    <section class="section" style="background: #f7faff;">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="eyebrow"><span class="eyebrow-dot"></span>VPS Knowledge</span>
-          <h2 class="section-title">Frequently Asked Questions</h2>
-          <p class="section-sub">Answers to common inquiries regarding our Cloud VPS servers.</p>
+    <section class="section bg-soft" id="faq">
+      <div class="container faq-layout">
+        <div class="faq-intro reveal">
+          <span class="eyebrow"><span class="eyebrow-dot"></span>FAQ</span>
+          <h2 class="section-title">VPS questions</h2>
+          
+          <div class="faq-help">
+            <span class="faq-help-icon"><i class="fa-solid fa-headset" aria-hidden="true"></i></span>
+            <div><strong>Still have questions?</strong><p>Our engineers reply in under 15 minutes, 24/7.</p></div>
+          </div>
+          <a class="btn btn-outline" href="contact.html">Contact support <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
         </div>
-
-        <div class="faq-accordion reveal">
-          <details class="faq-item" open>
-            <summary class="faq-summary">
-              <span>How fast is my VPS provisioned after payment?</span>
-              <i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i>
-            </summary>
-            <p class="faq-content">Our cloud orchestration system provisions and bootstraps your VPS automatically in less than 60 seconds. You will receive an email with your dedicated IP, SSH port, and root credentials immediately upon invoice completion.</p>
-          </details>
-
-          <details class="faq-item">
-            <summary class="faq-summary">
-              <span>Can I upgrade my VPS CPU, RAM, or storage later?</span>
-              <i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i>
-            </summary>
-            <p class="faq-content">Yes. You can scale your VPS resources seamlessly at any time from your Robot client panel. Upgrades require only a brief reboot to resize the virtual disk and reallocate CPU/RAM.</p>
-          </details>
-
-          <details class="faq-item">
-            <summary class="faq-summary">
-              <span>Do you provide root access to the VPS?</span>
-              <i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i>
-            </summary>
-            <p class="faq-content">Yes, every instance includes unrestricted root access via SSH on Linux or Administrator RDP access on Windows. You maintain total administrative sovereignty over your operating system.</p>
-          </details>
-
-          <details class="faq-item">
-            <summary class="faq-summary">
-              <span>Can I install custom control panels like cPanel, CyberPanel, or Docker?</span>
-              <i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i>
-            </summary>
-            <p class="faq-content">Absolutely! You can install Docker, Kubernetes, cPanel/WHM, Plesk, CyberPanel, aaPanel, or configure raw stacks with Nginx and PostgreSQL without any restrictions.</p>
-          </details>
+        <div class="reveal">
+          <div class="faq-accordion">
+            <details class="faq-item" open>
+              <summary class="faq-summary"><span>How fast is my VPS provisioned?</span><i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i></summary>
+              <div class="faq-content"><p>Automatically in under 60 seconds. You receive your IP, SSH port and root credentials by email.</p></div>
+            </details>
+            <details class="faq-item">
+              <summary class="faq-summary"><span>Can I upgrade CPU, RAM or storage later?</span><i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i></summary>
+              <div class="faq-content"><p>Yes. Scale resources any time from the Robot client panel; upgrades need only a short reboot.</p></div>
+            </details>
+            <details class="faq-item">
+              <summary class="faq-summary"><span>Do I get root access?</span><i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i></summary>
+              <div class="faq-content"><p>Yes. Full root via SSH on Linux or Administrator RDP on Windows.</p></div>
+            </details>
+            <details class="faq-item">
+              <summary class="faq-summary"><span>Can I install cPanel, Docker or CyberPanel?</span><i class="fa-solid fa-chevron-down faq-chevron" aria-hidden="true"></i></summary>
+              <div class="faq-content"><p>Yes. Install Docker, Kubernetes, cPanel/WHM, Plesk, CyberPanel or your own stack without restrictions.</p></div>
+            </details>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Page CTA Banner -->
-    <section class="section">
+    <section class="cta-section">
       <div class="container">
         <div class="page-cta-banner reveal">
-          <h2>Ready to launch your high-speed Cloud VPS?</h2>
-          <p>Instant provisioning, unmetered traffic, and 24/7 expert infrastructure engineers standing by.</p>
-          <div class="page-hero-actions" style="justify-content: center;">
-            <a class="btn btn-primary" href="#plans">Deploy Cloud VPS Now <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
-            <a class="btn btn-outline" href="contact.html">Request Custom Enterprise Spec</a>
+          <div class="page-cta-bg" aria-hidden="true"></div>
+          <div class="page-cta-copy">
+            <span class="eyebrow is-dark"><span class="eyebrow-dot"></span>Get started today</span>
+            <h2>Launch your cloud VPS in 60 seconds</h2>
+            <p>Instant provisioning, generous bandwidth and 24/7 infrastructure engineers.</p>
           </div>
+          <div class="page-cta-actions"><a class="btn btn-primary" href="#plans">Deploy Cloud VPS <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a><a class="btn btn-ghost" href="dedicated-server.html">Dedicated Servers</a></div>
         </div>
       </div>
     </section>
-
   </main>
 
-    <!-- Footer Section -->
+  <!-- Footer Section -->
   <footer class="site-footer">
     <div aria-hidden="true" class="footer-orbit"></div>
     <div class="container footer-hero">
@@ -444,45 +462,52 @@
     </div>
     <div class="container footer-grid">
       <div>
-        <h3>Hosting Services</h3>
-        <a href="cpanel-hosting.html">cPanel Hosting</a>
-        <a href="reseller-hosting.html">Reseller Web Hosting</a>
-        <a href="reseller-hosting.html#master">Master Reseller</a>
-        <a href="reseller-hosting.html#alpha">Alpha Reseller</a>
+        <h3>Hosting</h3>
+        <a href="cpanel-hosting.html">Web Hosting</a>
         <a href="windows-hosting.html">Windows Hosting</a>
+        <a href="php-hosting.html">PHP Hosting</a>
+        <a href="nodejs-hosting.html">Node.js Hosting</a>
+        <a href="python-hosting.html">Python Hosting</a>
+        <a href="languages.html">All Languages</a>
       </div>
       <div>
-        <h3>Servers</h3>
+        <h3>Reseller &amp; Servers</h3>
+        <a href="reseller-hosting.html">cPanel Reseller</a>
+        <a href="master-reseller.html">Master Reseller</a>
+        <a href="alpha-reseller.html">Alpha Reseller</a>
+        <a href="flex-reseller.html">Flex Reseller</a>
         <a href="vps-server.html">VPS Server</a>
         <a href="dedicated-server.html">Dedicated Server</a>
       </div>
       <div>
-        <h3>Domain Services</h3>
+        <h3>Domains</h3>
         <a href="domain-registration.html">Domain Registration</a>
-        <a href="bd-domain.html">.BD Domain Registration</a>
-        <a href="domain-transfer.html#renew">Domain Renew</a>
+        <a href="bd-domain.html">.BD Domain</a>
         <a href="domain-transfer.html">Domain Transfer</a>
-        <a href="domain-registration.html#search">Domain Search</a>
+        <a href="domain-renew.html">Domain Renew</a>
+        <a href="domain-pricing.html">Domain Pricing</a>
       </div>
       <div>
-        <h3>About Us</h3>
+        <h3>Services</h3>
+        <a href="ssl-certificates.html">SSL Certificates</a>
+        <a href="business-email.html">Business Email</a>
+        <a href="seo-service.html">SEO Service</a>
+      </div>
+      <div>
+        <h3>Company</h3>
         <a href="about-us.html">Company Overview</a>
-        <a href="about-us.html#timeline">Timeline</a>
+        <a href="timeline.html">Timeline</a>
         <a href="faq.html">FAQ</a>
         <a href="blog.html">Blog</a>
         <a href="contact.html">Contact Us</a>
       </div>
     </div>
     <div class="container footer-bottom">
-      <p>© 2004 – <span data-current-year="">2026</span> <a class="brand-footer-link" href="#">Host Divine™</a> — A brand label of ZELT, UAE — All Rights ® Reserved</p>
+      <p>© 2004 – <span data-current-year="">2026</span> <a class="brand-footer-link" href="index.html">Host Divine™</a> — A brand label of ZELT, UAE — All Rights ® Reserved</p>
       <div class="footer-bottom-links">
         <a href="https://robot.hostdivine.com/announcements.php"><i aria-hidden="true" class="fa-solid fa-bullhorn"></i><span>Announcements</span></a>
-        <a href="#"><i aria-hidden="true" class="fa-solid fa-file-shield"></i><span>Terms &amp; Policies</span></a>
-        <a aria-label="Host Divine Facebook" class="footer-social-link" href="#" rel="noopener noreferrer" target="_blank"><i aria-hidden="true" class="fa-brands fa-facebook-f"></i></a>
-        <a aria-label="Host Divine X" class="footer-social-link" href="#" rel="noopener noreferrer" target="_blank"><i aria-hidden="true" class="fa-brands fa-x-twitter"></i></a>
-        <a aria-label="Host Divine WhatsApp" class="footer-social-link" href="#" rel="noopener noreferrer" target="_blank"><i aria-hidden="true" class="fa-brands fa-whatsapp"></i></a>
-        <a aria-label="Host Divine Telegram" class="footer-social-link" href="#" rel="noopener noreferrer" target="_blank"><i aria-hidden="true" class="fa-brands fa-telegram"></i></a>
-        <a aria-label="Host Divine IMO" class="footer-social-link" href="#"><i aria-hidden="true" class="fa-solid fa-comment-dots"></i></a>
+        <a href="faq.html"><i aria-hidden="true" class="fa-solid fa-file-shield"></i><span>Terms &amp; Policies</span></a>
+        <a href="https://robot.hostdivine.com/serverstatus.php"><i aria-hidden="true" class="fa-solid fa-signal"></i><span>Network Status</span></a>
       </div>
     </div>
   </footer>
@@ -491,6 +516,7 @@
   <aside class="quick-dock" aria-label="Quick contact and navigation">
     <a class="dock-btn dock-top" href="#top" aria-label="Scroll to top of page" title="Scroll to Top">
       <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+      <span class="dock-tooltip">Scroll to Top</span>
     </a>
     <a class="dock-btn dock-support" href="https://robot.hostdivine.com/submitticket.php" target="_blank" rel="noopener noreferrer" aria-label="24/7 Support Desk" title="24/7 Support Desk">
       <i class="fa-solid fa-headset" aria-hidden="true"></i>

@@ -14,7 +14,10 @@ Static marketing website for **Host Divine** (cloud, reseller, VPS, dedicated ho
 | `index.html` | Homepage. It is also the **template** for every new page (head, header, footer). |
 | `assets/css/style.css` | The **single** stylesheet. Tokens, then base, header, domain search, footer, shared responsive rules, homepage sections, then homepage responsive rules. |
 | `assets/js/main.js` | Vanilla JS in an IIFE. Covers the nav, hero slider, card sliders, billing switch, tabs, reveal-on-scroll and counters. |
-| `assets/img/` | Logos, favicons, `hero-hosting.svg` (hero illustration) and `logos/` (technology partner SVGs). |
+| `assets/img/` | Logos, favicons, `hero-hosting.svg` (hero illustration), `logos/` (technology partner SVGs) and `bg/` (original SVG section backgrounds). |
+| `*.html` (inner pages) | Hosting, reseller, server, domain, services, language and company pages. They share one set of components (`.page-hero`, `.stats-float`, `.highlights-grid`, `.pricing-grid-N`, `.compare-table`, `.specs-grid`, `.steps-grid`, `.faq-layout`, `.page-cta-banner`) styled in the `PAGE: Inner pages` block of `style.css`. |
+| Section backgrounds | Add one class to a `.section`: `bg-soft`, `bg-grid`, `bg-waves`, `bg-circuit`, `bg-globe`, `bg-hex`, `bg-mesh`, or `bg-photo` (dark photo; text flips to white via `.is-dark`). |
+| Domain search | Reusable `[data-domain-search]` card (register/transfer modes, live preview, TLD chips). Prices are in BDT; wrap `৳` in `<span class="tk">` because the brand fonts lack the glyph. |
 | `diagram/` | Wireframes (`homepage.jpeg`). Follow them for layout and section order. |
 | `tools/responsive-check.html` | Automated horizontal-overflow test at every breakpoint (see §7). |
 | `Hostingard/` | Offline mirror of a **third-party commercial theme**. **Reference only.** Do not edit it, link to it, or copy its code or images. |

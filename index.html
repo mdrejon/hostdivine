@@ -22,16 +22,19 @@
     <div class="header-strip">
       <div class="container strip-inner">
         <p><strong>Host Divine Networks</strong> — Managed cloud, VPS, and reseller hosting solutions from the world's top co-locations</p>
-        <div aria-label="Quick support links" class="strip-links">
-          <a href="https://robot.hostdivine.com/serverstatus.php">Network Status</a>
-          <a href="https://robot.hostdivine.com/knowledgebase.php">Knowledge Base</a>
-          <a href="https://robot.hostdivine.com/submitticket.php">Submit Ticket</a>
+        <div class="strip-right">
+          <div aria-label="Quick support links" class="strip-links">
+            <a href="https://robot.hostdivine.com/serverstatus.php">Network Status</a>
+            <a href="https://robot.hostdivine.com/knowledgebase.php">Knowledge Base</a>
+            <a href="https://robot.hostdivine.com/submitticket.php">Submit Ticket</a>
+          </div>
+          <div class="strip-social" aria-label="Follow Host Divine"><a class="strip-social-link" href="#" aria-label="Host Divine on Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a><a class="strip-social-link" href="#" aria-label="Host Divine on X"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a><a class="strip-social-link" href="https://wa.me/" aria-label="Host Divine on WhatsApp" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a><a class="strip-social-link" href="#" aria-label="Host Divine on Telegram"><i class="fa-brands fa-telegram" aria-hidden="true"></i></a><a class="strip-social-link" href="#" aria-label="Host Divine on IMO"><i class="fa-solid fa-comment-dots" aria-hidden="true"></i></a></div>
         </div>
       </div>
     </div>
     <nav aria-label="Primary navigation" class="main-nav">
       <div class="container nav-inner">
-        <a aria-label="Host Divine home" class="brand brand-image" href="https://www.hostdivine.com/">
+        <a aria-label="Host Divine home" class="brand brand-image" href="index.html">
           <img alt="Host Divine" decoding="async" fetchpriority="high" height="44" loading="eager" src="assets/img/logo.svg" width="204"/>
         </a>
         <button aria-controls="navPanel" aria-expanded="false" aria-label="Open navigation" class="mobile-toggle" type="button">
@@ -40,75 +43,103 @@
         <div class="nav-panel" id="navPanel">
           <ul class="nav-menu">
             <li class="nav-item has-menu">
-              <button class="nav-link" type="button">Hosting</button>
+              <button class="nav-link" type="button" aria-expanded="false">Hosting</button>
               <div class="mega-menu mega-wide">
                 <div class="mega-card intro-card">
                   <span>Web &amp; Cloud Hosting</span>
-                  <strong>High-speed SSD hosting tailored for growth.</strong>
-                  <p>Reliable cPanel, multi-tier reseller platforms and Windows hosting built on NVMe infrastructure with 99.9% uptime SLA.</p>
+                  <strong>High-speed NVMe hosting tailored for growth.</strong>
+                  <p>cPanel and Windows hosting plus developer platforms for PHP, Node.js, Python, Ruby and Java — all on LiteSpeed and pure NVMe.</p>
                 </div>
                 <div class="mega-column">
                   <p class="mega-title">Web Hosting</p>
-                  <a href="cpanel-hosting.html">cPanel Hosting<span>Fast, secure cPanel hosting with SSD storage</span></a>
-                  <a href="reseller-hosting.html">Reseller Web Hosting<span>White-label WHM hosting for agencies &amp; startups</span></a>
-                  <a href="reseller-hosting.html#master">Master Reseller<span>Create and manage multiple reseller accounts</span></a>
-                  <a href="reseller-hosting.html#alpha">Alpha Reseller<span>Top-tier master &amp; alpha reseller control</span></a>
+                  <a href="cpanel-hosting.html">Web Hosting<span>Fast cPanel hosting on LiteSpeed &amp; NVMe</span></a>
+                  <a href="windows-hosting.html">Windows Hosting<span>ASP.NET, .NET Core, IIS &amp; MSSQL</span></a>
+                  <div class="mega-promo-box">
+                    <i class="fa-solid fa-code" aria-hidden="true"></i>
+                    <div><strong>Developer friendly</strong><p>SSH, Git, MultiPHP, Node.js and Python selectors on every plan.</p></div>
+                  </div>
                 </div>
                 <div class="mega-column">
-                  <p class="mega-title">Windows Hosting</p>
-                  <a href="windows-hosting.html">Windows Hosting<span>ASP.NET, .NET Core, IIS &amp; MSSQL database support</span></a>
-                  <div class="mega-promo-box">
-                    <i class="fa-brands fa-windows" aria-hidden="true"></i>
-                    <div>
-                      <strong>Enterprise Windows</strong>
-                      <p>Full support for ASP.NET 8, MVC and dedicated MSSQL databases.</p>
-                    </div>
-                  </div>
+                  <p class="mega-title">Language Platforms</p>
+                  <a href="php-hosting.html">PHP Hosting<span>PHP 7.4 – 8.3 with Laravel &amp; WordPress</span></a>
+                  <a href="nodejs-hosting.html">Node.js Hosting<span>Express, Next.js &amp; NestJS apps</span></a>
+                  <a href="python-hosting.html">Python Hosting<span>Django, Flask &amp; FastAPI apps</span></a>
+                  <a href="ruby-hosting.html">Ruby Hosting<span>Rails &amp; Sinatra on Passenger</span></a>
+                  <a href="java-hosting.html">Java / Tomcat Hosting<span>JSP, Servlets &amp; Spring Boot</span></a>
+                  <a href="languages.html">All Supported Languages<span>Compare every runtime we support</span></a>
                 </div>
               </div>
             </li>
             <li class="nav-item has-menu">
-              <button class="nav-link" type="button">Server</button>
+              <button class="nav-link" type="button" aria-expanded="false">Reseller</button>
+              <div class="mega-menu compact-menu">
+                <div class="mega-column">
+                  <p class="mega-title">cPanel Powered Reseller</p>
+                  <a href="reseller-hosting.html">cPanel Reseller<span>White-label WHM reseller plans</span></a>
+                  <a href="master-reseller.html">Master Reseller<span>Create and sell reseller accounts</span></a>
+                  <a href="alpha-reseller.html">Alpha Reseller<span>Top-tier multi-level reseller control</span></a>
+                  <a href="flex-reseller.html">Flex Reseller<span>Pay-as-you-grow reseller resources</span></a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item has-menu">
+              <button class="nav-link" type="button" aria-expanded="false">Server</button>
               <div class="mega-menu compact-menu">
                 <div class="mega-column">
                   <p class="mega-title">Managed Servers</p>
-                  <a href="vps-server.html">VPS Server<span>Scalable virtual private servers with full root access</span></a>
-                  <a href="dedicated-server.html">Dedicated Server<span>High-performance bare metal servers for production workloads</span></a>
+                  <a href="vps-server.html">VPS Server<span>KVM cloud servers with full root access</span></a>
+                  <a href="dedicated-server.html">Dedicated Server<span>Bare metal servers for production</span></a>
                 </div>
               </div>
             </li>
             <li class="nav-item has-menu">
-              <button class="nav-link" type="button">Domain</button>
+              <button class="nav-link" type="button" aria-expanded="false">Domain</button>
+              <div class="mega-menu mega-two">
+                <div class="mega-column">
+                  <p class="mega-title">Register</p>
+                  <a href="domain-registration.html">Domain Registration<span>Register from 400+ extensions</span></a>
+                  <a href="domain-registration.html#search">Domain Search<span>Instant name &amp; price lookup</span></a>
+                  <a href="bd-domain.html">.BD Domain<span>Official BTCL .bd registration</span></a>
+                </div>
+                <div class="mega-column">
+                  <p class="mega-title">Manage</p>
+                  <a href="domain-transfer.html">Domain Transfer<span>Move domains with zero downtime</span></a>
+                  <a href="domain-renew.html">Domain Renew<span>Renew early, keep your brand safe</span></a>
+                  <a href="domain-pricing.html">Domain Pricing<span>Full TLD price list in BDT</span></a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item has-menu">
+              <button class="nav-link" type="button" aria-expanded="false">Services</button>
               <div class="mega-menu compact-menu">
                 <div class="mega-column">
-                  <p class="mega-title">Domain Services</p>
-                  <a href="domain-registration.html">Domain Registration<span>Register your ideal domain name across 500+ extensions</span></a>
-                  <a href="bd-domain.html">.BD Domain Registration<span>Official BTCL .bd domain registration in Bangladesh</span></a>
-                  <a href="domain-transfer.html#renew">Domain Renew<span>Renew existing domains and keep your brand protected</span></a>
-                  <a href="domain-transfer.html">Domain Transfer<span>Transfer domains to Host Divine with zero downtime</span></a>
-                  <a href="domain-registration.html#search">Domain Search<span>Instant WHOIS lookup &amp; smart domain suggestions</span></a>
+                  <p class="mega-title">Business Services</p>
+                  <a href="ssl-certificates.html">SSL Certificates<span>DV, OV, EV &amp; wildcard SSL</span></a>
+                  <a href="business-email.html">Business Email<span>Professional email with spam defense</span></a>
+                  <a href="seo-service.html">SEO Service<span>Technical SEO &amp; growth campaigns</span></a>
                 </div>
               </div>
             </li>
             <li class="nav-item has-menu">
-              <button class="nav-link" type="button">About Us</button>
+              <button class="nav-link" type="button" aria-expanded="false">Company</button>
               <div class="mega-menu compact-menu">
                 <div class="mega-column">
                   <p class="mega-title">About Host Divine</p>
-                  <a href="about-us.html">Company Overview<span>Learn about Host Divine infrastructure and mission</span></a>
-                  <a href="about-us.html#timeline">Timeline<span>Our journey, milestones and technological growth</span></a>
-                  <a href="faq.html">FAQ<span>Frequently asked questions and support answers</span></a>
-                  <a href="blog.html">Blog<span>Hosting, cloud, server tips and tech updates</span></a>
-                  <a href="contact.html">Contact Us<span>Sales, technical support and migration inquiries</span></a>
+                  <a href="about-us.html">Company Overview<span>Our infrastructure and mission</span></a>
+                  <a href="timeline.html">Timeline<span>Milestones since 2004</span></a>
+                  <a href="faq.html">FAQ<span>Answers to common questions</span></a>
+                  <a href="blog.html">Blog<span>Hosting, cloud and server guides</span></a>
+                  <a href="contact.html">Contact Us<span>Sales, support and migration</span></a>
                 </div>
               </div>
             </li>
           </ul>
           <div class="nav-actions">
-            <a class="nav-phone" href="#">Sales Contact</a>
+            <a class="nav-phone" href="contact.html">Sales Contact</a>
             <a class="nav-login" href="https://panel.hostdivine.com/">Domain Login</a>
             <a class="nav-cta" href="https://robot.hostdivine.com/clientarea.php">Client Area</a>
           </div>
+          <div class="nav-social" aria-label="Follow Host Divine"><a class="nav-social-link" href="#" aria-label="Host Divine on Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a><a class="nav-social-link" href="#" aria-label="Host Divine on X"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a><a class="nav-social-link" href="https://wa.me/" aria-label="Host Divine on WhatsApp" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a><a class="nav-social-link" href="#" aria-label="Host Divine on Telegram"><i class="fa-brands fa-telegram" aria-hidden="true"></i></a><a class="nav-social-link" href="#" aria-label="Host Divine on IMO"><i class="fa-solid fa-comment-dots" aria-hidden="true"></i></a></div>
         </div>
       </div>
     </nav>
@@ -171,7 +202,7 @@
           </div>
         </article>
 
-        <!-- Slide 2 : Reseller & Master Reseller -->
+        <!-- Slide 2 : Reseller &amp; Master Reseller -->
         <article class="hero-slide" role="group" aria-roledescription="slide" aria-label="2 of 4">
           <div class="container hero-inner">
             <div class="hero-copy">
@@ -185,7 +216,7 @@
               </ul>
               <div class="hero-actions">
                 <a class="btn btn-primary" href="#reseller-plans">Compare Reseller Plans <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
-                <a class="btn btn-ghost" href="#reseller-plans">Master Reseller</a>
+                <a class="btn btn-ghost" href="master-reseller.html">Master Reseller</a>
               </div>
               <p class="hero-price">Starting at <strong>$64.95</strong><span>/year</span></p>
             </div>
@@ -225,7 +256,7 @@
           </div>
         </article>
 
-        <!-- Slide 3 : Domain Registration & Search -->
+        <!-- Slide 3 : Domain Registration &amp; Search -->
         <article class="hero-slide" role="group" aria-roledescription="slide" aria-label="3 of 4">
           <div class="container hero-inner">
             <div class="hero-copy">
@@ -271,7 +302,7 @@
           </div>
         </article>
 
-        <!-- Slide 4 : Cloud VPS & Dedicated Servers -->
+        <!-- Slide 4 : Cloud VPS &amp; Dedicated Servers -->
         <article class="hero-slide" role="group" aria-roledescription="slide" aria-label="4 of 4">
           <div class="container hero-inner">
             <div class="hero-copy">
@@ -284,8 +315,8 @@
                 <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i>24/7 dedicated server engineers &amp; SLA</li>
               </ul>
               <div class="hero-actions">
-                <a class="btn btn-primary" href="#services">Explore Cloud Servers <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
-                <a class="btn btn-ghost" href="#why-us">Server Specifications</a>
+                <a class="btn btn-primary" href="vps-server.html">Explore Cloud Servers <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                <a class="btn btn-ghost" href="dedicated-server.html">Server Specifications</a>
               </div>
               <p class="hero-price">VPS from <strong>$15.90</strong><span>/month</span></p>
             </div>
@@ -330,139 +361,80 @@
     </section>
 
     <!-- ======================================================================
-         2. Domain Search (Pick Up Domain)
+         2. Domain Search (generated component — see domainSearchSection)
          ====================================================================== -->
-    <section class="domain-pickup-section" id="domain-search">
-      <!-- Background Ambient Glow & Floating Decorative Elements -->
-      <div class="domain-bg-glow" aria-hidden="true"></div>
-      <div class="domain-floating-pill float-left" aria-hidden="true">
-        <span class="pill-dot"></span>
-        <span>.com</span>
-      </div>
-      <div class="domain-floating-pill float-right" aria-hidden="true">
-        <i class="fa-solid fa-lock"></i>
-        <span>https://</span>
-      </div>
-
+    <section class="domain-search-section" id="domain-search" aria-labelledby="ds-title">
+      <div class="ds-bg" aria-hidden="true"><span class="ds-orbit ds-orbit-a"></span><span class="ds-orbit ds-orbit-b"></span></div>
       <div class="container">
-        <div class="domain-pickup-card">
-          <!-- Top Tag Badge -->
-          <div class="domain-pickup-badge">
-            <span class="badge-dot"></span>
-            <span>Pick Up Domain</span>
-            <span class="badge-sep">•</span>
-            <span class="badge-discount">Flat 25% OFF</span>
+        <div class="ds-head">
+          <span class="ds-badge"><span class="eyebrow-dot"></span>Pick Up Domain <span class="ds-badge-sep" aria-hidden="true">•</span> <b>Flat 25% OFF</b></span>
+          <h2 class="ds-title" id="ds-title">Flat 25% OFF on new <span class="text-gradient">domain registration!</span></h2>
+          <p class="ds-sub">Find the right name &amp; register today to save big on your next domain. Prices shown in BDT per year.</p>
+        </div>
+        <div class="ds-card" data-domain-search>
+          <div class="ds-modes" role="radiogroup" aria-label="Choose an action">
+            <button type="button" class="ds-mode is-active" role="radio" aria-checked="true" data-ds-mode="register"><i class="fa-solid fa-circle-plus" aria-hidden="true"></i>Register</button>
+            <button type="button" class="ds-mode" role="radio" aria-checked="false" data-ds-mode="transfer"><i class="fa-solid fa-right-left" aria-hidden="true"></i>Transfer</button>
           </div>
-
-          <!-- Section Headings -->
-          <h2 class="domain-pickup-title">Flat 25% OFF on new domain registration!</h2>
-          <p class="domain-pickup-subtitle">Find the right plan &amp; register today to save big on your next domain name!</p>
-
-          <!-- Domain Search Bar -->
-          <form class="domain-search-form" id="domainSearchForm" action="https://robot.hostdivine.com/cart.php" method="get">
+          <form class="ds-form" action="https://robot.hostdivine.com/cart.php" method="get" data-ds-form>
             <input type="hidden" name="a" value="add"/>
-            <input type="hidden" name="domain" value="register"/>
-
-            <div class="domain-search-bar">
-              <span class="search-bar-icon" aria-hidden="true">
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </span>
-              <input
-                type="text"
-                class="domain-search-input"
-                id="domainSearchInput"
-                name="query"
-                placeholder="Type the domain you want to buy"
-                autocomplete="off"
-                spellcheck="false"
-                required
-              />
-              <div class="domain-select-wrapper">
-                <select class="domain-tld-select" id="domainTldSelect" aria-label="Select domain extension">
+            <input type="hidden" name="domain" value="register" data-ds-action/>
+            <div class="ds-bar">
+              <span class="ds-bar-icon" aria-hidden="true"><i class="fa-solid fa-globe" aria-hidden="true"></i></span>
+              <label class="sr-only" for="home-ds-input">Domain name</label>
+              <input class="ds-input" id="home-ds-input" name="query" type="text" inputmode="url" placeholder="Find your perfect domain name…" autocomplete="off" autocapitalize="off" spellcheck="false" required data-ds-input/>
+              <div class="ds-select">
+                <label class="sr-only" for="home-ds-tld">Extension</label>
+                <select id="home-ds-tld" data-ds-tld>
                   <option value=".com">.com</option>
-                  <option value=".co">.co</option>
-                  <option value=".info">.info</option>
                   <option value=".net">.net</option>
                   <option value=".org">.org</option>
+                  <option value=".info">.info</option>
+                  <option value=".xyz">.xyz</option>
+                  <option value=".co">.co</option>
                   <option value=".biz">.biz</option>
-                  <option value=".ai">.ai</option>
+                  <option value=".io">.io</option>
                   <option value=".online">.online</option>
+                  <option value=".store">.store</option>
                   <option value=".tech">.tech</option>
                   <option value=".app">.app</option>
+                  <option value=".dev">.dev</option>
+                  <option value=".ai">.ai</option>
+                  <option value=".me">.me</option>
+                  <option value=".asia">.asia</option>
+                  <option value=".us">.us</option>
+                  <option value=".uk">.uk</option>
                 </select>
-                <i class="fa-solid fa-chevron-down select-chevron" aria-hidden="true"></i>
+                <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
               </div>
-              <button type="submit" class="domain-search-btn">
-                <span>Search Domain</span>
-              </button>
+              <button type="submit" class="ds-submit"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i><span data-ds-label>Search</span></button>
             </div>
           </form>
-
-          <!-- Featured TLD Price Cards (from Image 2) -->
-          <div class="domain-price-cards" role="region" aria-label="Popular domain extensions with prices">
-            <button type="button" class="tld-price-card active" data-tld=".com">
-              <span class="tld-name tld-blue">.com</span>
-              <span class="tld-price">$9.56<small>/Year</small></span>
-            </button>
-            <button type="button" class="tld-price-card" data-tld=".co">
-              <span class="tld-name tld-red">.co</span>
-              <span class="tld-price">$4.56<small>/Year</small></span>
-            </button>
-            <button type="button" class="tld-price-card" data-tld=".info">
-              <span class="tld-name tld-orange">.info</span>
-              <span class="tld-price">$9.56<small>/Year</small></span>
-            </button>
-            <button type="button" class="tld-price-card" data-tld=".net">
-              <span class="tld-name tld-amber">.net</span>
-              <span class="tld-price">$8.99<small>/Year</small></span>
-            </button>
-            <button type="button" class="tld-price-card" data-tld=".org">
-              <span class="tld-name tld-green">.org</span>
-              <span class="tld-price">$6.56<small>/Year</small></span>
-            </button>
-            <button type="button" class="tld-price-card" data-tld=".biz">
-              <span class="tld-name tld-cyan">.biz</span>
-              <span class="tld-price">$6.56<small>/Year</small></span>
-            </button>
+          <div class="ds-preview" data-ds-preview hidden>
+            <p class="ds-preview-title">Popular extensions for <strong data-ds-name></strong></p>
+            <div class="ds-preview-list" data-ds-preview-list></div>
           </div>
-
-          <!-- Extended TLD Tags List & View More (from Image 1) -->
-          <div class="domain-tags-container">
-            <div class="domain-tags-row">
-              <button type="button" class="tld-tag" data-tld=".com">.com</button>
-              <button type="button" class="tld-tag" data-tld=".net">.net</button>
-              <button type="button" class="tld-tag" data-tld=".org">.org</button>
-              <button type="button" class="tld-tag" data-tld=".online">.online</button>
-              <button type="button" class="tld-tag" data-tld=".me">.me</button>
-              <button type="button" class="tld-tag" data-tld=".ai">.ai</button>
-              <button type="button" class="tld-tag" data-tld=".business">.business</button>
-              <button type="button" class="tld-tag" data-tld=".biz">.biz</button>
-              <button type="button" class="tld-tag" data-tld=".edu">.edu</button>
-              <button type="button" class="tld-tag" data-tld=".asia">.asia</button>
-            </div>
-            <!-- Collapsible secondary row -->
-            <div class="domain-tags-row domain-tags-extra" id="extraTlds" hidden>
-              <button type="button" class="tld-tag" data-tld=".app">.app</button>
-              <button type="button" class="tld-tag" data-tld=".agency">.agency</button>
-              <button type="button" class="tld-tag" data-tld=".tech">.tech</button>
-              <button type="button" class="tld-tag" data-tld=".ea">.ea</button>
-              <button type="button" class="tld-tag" data-tld=".art">.art</button>
-              <button type="button" class="tld-tag" data-tld=".store">.store</button>
-              <button type="button" class="tld-tag" data-tld=".dev">.dev</button>
-              <button type="button" class="tld-tag" data-tld=".io">.io</button>
-            </div>
-            <button type="button" class="domain-view-more-btn" id="viewMoreTldsBtn" aria-expanded="false">
-              <span>View More</span>
-              <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
-            </button>
+          <div class="ds-tlds" role="list" aria-label="Popular extensions and yearly prices">
+            <button type="button" class="ds-tld is-active" role="listitem" data-tld=".com" data-price="1,600"><em>Hot</em><span class="ds-tld-name">.com</span><span class="ds-tld-price"><span class="tk">৳</span>1,600<small>/yr</small></span></button>
+            <button type="button" class="ds-tld" role="listitem" data-tld=".net" data-price="1,600"><span class="ds-tld-name">.net</span><span class="ds-tld-price"><span class="tk">৳</span>1,600<small>/yr</small></span></button>
+            <button type="button" class="ds-tld" role="listitem" data-tld=".org" data-price="1,650"><span class="ds-tld-name">.org</span><span class="ds-tld-price"><span class="tk">৳</span>1,650<small>/yr</small></span></button>
+            <button type="button" class="ds-tld" role="listitem" data-tld=".info" data-price="2,300"><span class="ds-tld-name">.info</span><span class="ds-tld-price"><span class="tk">৳</span>2,300<small>/yr</small></span></button>
+            <button type="button" class="ds-tld" role="listitem" data-tld=".xyz" data-price="1,700"><span class="ds-tld-name">.xyz</span><span class="ds-tld-price"><span class="tk">৳</span>1,700<small>/yr</small></span></button>
+            <button type="button" class="ds-tld" role="listitem" data-tld=".co" data-price="2,596"><span class="ds-tld-name">.co</span><span class="ds-tld-price"><span class="tk">৳</span>2,596<small>/yr</small></span></button>
+            <button type="button" class="ds-tld" role="listitem" data-tld=".biz" data-price="2,454"><span class="ds-tld-name">.biz</span><span class="ds-tld-price"><span class="tk">৳</span>2,454<small>/yr</small></span></button>
+            <button type="button" class="ds-tld" role="listitem" data-tld=".io" data-price="5,446"><span class="ds-tld-name">.io</span><span class="ds-tld-price"><span class="tk">৳</span>5,446<small>/yr</small></span></button>
           </div>
-
-          <!-- Feature Highlights Strip -->
-          <div class="domain-features-strip">
-            <span><i class="fa-solid fa-circle-check"></i> Free DNS Management</span>
-            <span><i class="fa-solid fa-circle-check"></i> Free Privacy Protection</span>
-            <span><i class="fa-solid fa-circle-check"></i> Instant Domain Activation</span>
-            <span><i class="fa-solid fa-circle-check"></i> 24/7 Expert Support</span>
+          <div class="ds-foot">
+            <ul class="ds-perks">
+              <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i>Free DNS management</li>
+              <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i>Domain theft protection</li>
+              <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i>Instant activation</li>
+              <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i>24/7 expert support</li>
+            </ul>
+            <div class="ds-links">
+              <a href="domain-pricing.html">All 400+ extensions <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+              <a href="bd-domain.html">.BD domain <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
           </div>
         </div>
       </div>
@@ -471,11 +443,11 @@
     <!-- ======================================================================
          3. Host Divine Services Showcase
          ====================================================================== -->
-    <section class="section services-section" id="services">
+    <section class="section services-section bg-photo-light" id="services">
       <div class="container">
         <div class="services-shell reveal">
 
-          <!-- Left Column: Copy & Dark Security/AI Feature Cards -->
+          <!-- Left Column: Copy &amp; Dark Security/AI Feature Cards -->
           <div class="services-col-intro">
             <div class="services-intro-header">
               <span class="eyebrow-pill">
@@ -511,7 +483,7 @@
                 </div>
               </div>
 
-              <!-- Dark Card 3: Automated DDoS guard & smart response -->
+              <!-- Dark Card 3: Automated DDoS guard &amp; smart response -->
               <div class="feature-dark-card">
                 <div class="feature-dark-content">
                   <h3>Automated DDoS guard &amp; smart response</h3>
@@ -524,7 +496,7 @@
             </div>
           </div>
 
-          <!-- Right Column: Included Platform Banner & 2-Col Service Cards -->
+          <!-- Right Column: Included Platform Banner &amp; 2-Col Service Cards -->
           <div class="services-col-cards">
             <!-- Top Dark Banner: Included Across the Platform -->
             <div class="platform-included-banner">
@@ -556,32 +528,32 @@
                 <a class="platform-svc-link" href="#reseller-plans">Compare reseller hosting <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
               </div>
 
-              <!-- Card 3: VPS & VDS Servers -->
+              <!-- Card 3: VPS &amp; VDS Servers -->
               <div class="platform-svc-card">
                 <h4>VPS &amp; VDS Servers</h4>
                 <p>Scalable virtual servers for applications, control panels, private workloads, staging environments and growing websites that need more control.</p>
-                <a class="platform-svc-link" href="#hosting-plans">View VPS and VDS <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                <a class="platform-svc-link" href="vps-server.html">View VPS and VDS <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
               </div>
 
               <!-- Card 4: Dedicated Servers -->
               <div class="platform-svc-card">
                 <h4>Dedicated Servers</h4>
                 <p>Powerful dedicated servers for high-traffic websites, hosting nodes, databases, SaaS platforms and infrastructure that needs isolated hardware.</p>
-                <a class="platform-svc-link" href="#hosting-plans">View dedicated servers <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                <a class="platform-svc-link" href="dedicated-server.html">View dedicated servers <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
               </div>
 
               <!-- Card 5: Business Email -->
               <div class="platform-svc-card">
                 <h4>Business Email</h4>
                 <p>Professional business email hosting with Webmail, IMAP/POP3, anti-spam filters, and reliable deliverability for your corporate brand.</p>
-                <a class="platform-svc-link" href="#hosting-plans">Get business email <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                <a class="platform-svc-link" href="business-email.html">Get business email <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
               </div>
 
               <!-- Card 6: Managed SEO -->
               <div class="platform-svc-card">
                 <h4>Managed SEO</h4>
                 <p>Managed SEO strategies and tools to drive organic traffic, rankings, search visibility and performance audits for your websites.</p>
-                <a class="platform-svc-link" href="#services">Explore SEO services <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                <a class="platform-svc-link" href="seo-service.html">Explore SEO services <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
               </div>
             </div>
           </div>
@@ -596,7 +568,7 @@
          equivalent). 2-year / 3-year prices are PLACEHOLDERS — confirm with client.
          Edit data-price-1y / -2y / -3y (price per year) on each card.
          ====================================================================== -->
-    <section class="section plans-section" id="hosting-plans">
+    <section class="section plans-section bg-waves" id="hosting-plans">
       <div class="container">
         <div class="section-head reveal">
           <span class="eyebrow"><span class="eyebrow-dot"></span>Web Hosting Packages</span>
@@ -888,9 +860,9 @@
     </section>
 
     <!-- ======================================================================
-         5. Reseller & Master Reseller (tabs + card slider)
+         5. Reseller &amp; Master Reseller (tabs + card slider)
          ====================================================================== -->
-    <section class="section reseller-section" id="reseller-plans">
+    <section class="section reseller-section bg-photo-light is-alt" id="reseller-plans">
       <div class="container">
         <div class="section-head reveal">
           <span class="eyebrow"><span class="eyebrow-dot"></span>Reseller Hosting</span>
@@ -908,81 +880,74 @@
           <div class="card-slider per-4" data-slider>
             <div class="slider-track" data-slider-track tabindex="0" aria-label="Reseller hosting plans">
 
-              <!-- Baby Plan -->
               <article class="plan-card">
                 <div class="plan-top"><span class="plan-cat">cPanel Reseller</span></div>
                 <h3 class="plan-name">Baby</h3>
-                <p class="plan-desc">Launch your agency with 25 independent cPanel client accounts.</p>
+                <p class="plan-desc">Perfect entry package to launch your hosting brand.</p>
                 <div class="plan-price"><sup>$</sup><span>4.50</span><small>/mo</small></div>
                 <p class="plan-billed">Billed monthly or $54.00/yr</p>
-                <a class="btn btn-outline plan-btn" href="reseller-hosting.html">Order Now</a>
+                <a class="btn btn-outline plan-btn" href="reseller-hosting.html#plans">Order Now</a>
                 <ul class="plan-features">
-                  <li><i class="fa-solid fa-check"></i>25 cPanel accounts</li>
                   <li><i class="fa-solid fa-check"></i>20 GB NVMe Disk Space</li>
                   <li><i class="fa-solid fa-check"></i>500 GB Monthly Bandwidth</li>
-                  <li><i class="fa-solid fa-check"></i>25 cPanel Accounts Supported</li>
-                  <li><i class="fa-solid fa-check"></i>Latest WHM + cPanel Access</li>
-                  <li><i class="fa-solid fa-check"></i>LiteSpeed Web Server</li>
-                  <li><i class="fa-solid fa-check"></i>CloudLinux OS Isolation</li>
-                  <li><i class="fa-solid fa-check"></i>Imunify360 Protection</li>
-                  <li class="is-off"><i class="fa-solid fa-xmark"></i>Free WHMCS license</li>
-                  <li><i class="fa-solid fa-check"></i>Imunify360 Firewall Defense</li>
+                  <li><i class="fa-solid fa-check"></i>25 cPanel Accounts</li>
+                  <li><i class="fa-solid fa-check"></i>Latest WHM + cPanel</li>
+                  <li><i class="fa-solid fa-check"></i>LiteSpeed &amp; CloudLinux</li>
+                  <li><i class="fa-solid fa-check"></i>Imunify360 Firewall</li>
                   <li><i class="fa-solid fa-check"></i>Free Setup &amp; Migration</li>
                 </ul>
               </article>
 
-              <!-- Economy Plan (Recommended) -->
               <article class="plan-card is-featured">
                 <div class="plan-top"><span class="plan-cat">cPanel Reseller</span><span class="plan-badge">Recommended</span></div>
                 <h3 class="plan-name">Economy</h3>
-                <p class="plan-desc">Ample storage and turbo processing power for growing client lists.</p>
+                <p class="plan-desc">Ample storage for growing client lists.</p>
                 <div class="plan-price"><sup>$</sup><span>9.10</span><small>/mo</small></div>
                 <p class="plan-billed">Billed monthly or $109.20/yr</p>
-                <a class="btn btn-primary plan-btn" href="reseller-hosting.html">Order Now</a>
+                <a class="btn btn-primary plan-btn" href="reseller-hosting.html#plans">Order Now</a>
                 <ul class="plan-features">
-                  <li><i class="fa-solid fa-check"></i>25 cPanel accounts</li>
                   <li><i class="fa-solid fa-check"></i>50 GB NVMe Disk Space</li>
                   <li><i class="fa-solid fa-check"></i>500 GB Monthly Bandwidth</li>
-                  <li><i class="fa-solid fa-check"></i>25 cPanel Accounts Supported</li>
-                  <li><i class="fa-solid fa-check"></i>Latest WHM + cPanel Access</li>
-                  <li><i class="fa-solid fa-check"></i>LiteSpeed Web Server</li>
-                  <li><i class="fa-solid fa-check"></i>JetBackup Automated Daily Backups</li>
-                  <li><i class="fa-solid fa-check"></i>100% White-Label Branded</li>
-                  <li><i class="fa-solid fa-check"></i>Free Private Nameservers</li>
-                  <li><i class="fa-solid fa-check"></i>CloudLinux OS Isolation</li>
-                  <li><i class="fa-solid fa-check"></i>Imunify360 Firewall Defense</li>
+                  <li><i class="fa-solid fa-check"></i>25 cPanel Accounts</li>
+                  <li><i class="fa-solid fa-check"></i>Latest WHM + cPanel</li>
+                  <li><i class="fa-solid fa-check"></i>LiteSpeed &amp; CloudLinux</li>
+                  <li><i class="fa-solid fa-check"></i>Imunify360 Firewall</li>
                   <li><i class="fa-solid fa-check"></i>Free Setup &amp; Migration</li>
                 </ul>
               </article>
 
-              <!-- Standard Plan -->
               <article class="plan-card">
                 <div class="plan-top"><span class="plan-cat">cPanel Reseller</span></div>
-                <h3 class="plan-name">Master Pro</h3>
-                <p class="plan-desc">High capacity infrastructure with multi-tier reseller management.</p>
-                <div class="plan-price"><sup>$</sup><span>18.50</span><small>/mo</small></div>
-                <p class="plan-billed">Billed monthly or $222.00/yr</p>
-                <a class="btn btn-outline plan-btn" href="reseller-hosting.html#master">Order Now</a>
                 <h3 class="plan-name">Standard</h3>
-                <p class="plan-desc">High NVMe capacity for digital agencies managing active client sites.</p>
+                <p class="plan-desc">High NVMe capacity for active agencies.</p>
                 <div class="plan-price"><sup>$</sup><span>16.25</span><small>/mo</small></div>
                 <p class="plan-billed">Billed monthly or $195.00/yr</p>
-                <a class="btn btn-outline plan-btn" href="reseller-hosting.html">Order Now</a>
+                <a class="btn btn-outline plan-btn" href="reseller-hosting.html#plans">Order Now</a>
                 <ul class="plan-features">
-                  <li><i class="fa-solid fa-check"></i>Unlimited cPanel accounts</li>
-                  <li><i class="fa-solid fa-check"></i>100 GB NVMe SSD Storage</li>
-                  <li><i class="fa-solid fa-check"></i>1000 GB Monthly Bandwidth</li>
-                  <li><i class="fa-solid fa-check"></i>Master WHM Engine</li>
-                  <li><i class="fa-solid fa-check"></i>Overselling Enabled</li>
-                  <li><i class="fa-solid fa-check"></i>Dedicated Priority Support</li>
-                  <li><i class="fa-solid fa-check"></i>Free SSL for All Clients</li>
                   <li><i class="fa-solid fa-check"></i>100 GB NVMe Disk Space</li>
                   <li><i class="fa-solid fa-check"></i>500 GB Monthly Bandwidth</li>
-                  <li><i class="fa-solid fa-check"></i>25 cPanel Accounts Supported</li>
-                  <li><i class="fa-solid fa-check"></i>Latest WHM + cPanel Access</li>
-                  <li><i class="fa-solid fa-check"></i>LiteSpeed Web Server</li>
-                  <li><i class="fa-solid fa-check"></i>CloudLinux OS Isolation</li>
-                  <li><i class="fa-solid fa-check"></i>Imunify360 Firewall Defense</li>
+                  <li><i class="fa-solid fa-check"></i>25 cPanel Accounts</li>
+                  <li><i class="fa-solid fa-check"></i>Latest WHM + cPanel</li>
+                  <li><i class="fa-solid fa-check"></i>LiteSpeed &amp; CloudLinux</li>
+                  <li><i class="fa-solid fa-check"></i>Imunify360 Firewall</li>
+                  <li><i class="fa-solid fa-check"></i>Free Setup &amp; Migration</li>
+                </ul>
+              </article>
+
+              <article class="plan-card">
+                <div class="plan-top"><span class="plan-cat">cPanel Reseller</span></div>
+                <h3 class="plan-name">Business</h3>
+                <p class="plan-desc">Maximum capacity for busy agencies and SaaS.</p>
+                <div class="plan-price"><sup>$</sup><span>32.10</span><small>/mo</small></div>
+                <p class="plan-billed">Billed monthly or $385.20/yr</p>
+                <a class="btn btn-outline plan-btn" href="reseller-hosting.html#plans">Order Now</a>
+                <ul class="plan-features">
+                  <li><i class="fa-solid fa-check"></i>200 GB NVMe Disk Space</li>
+                  <li><i class="fa-solid fa-check"></i>600 GB Monthly Bandwidth</li>
+                  <li><i class="fa-solid fa-check"></i>25 cPanel Accounts</li>
+                  <li><i class="fa-solid fa-check"></i>Latest WHM + cPanel</li>
+                  <li><i class="fa-solid fa-check"></i>LiteSpeed &amp; CloudLinux</li>
+                  <li><i class="fa-solid fa-check"></i>Imunify360 Firewall</li>
                   <li><i class="fa-solid fa-check"></i>Free Setup &amp; Migration</li>
                 </ul>
               </article>
@@ -990,30 +955,14 @@
               <article class="plan-card plan-card-cta">
                 <span class="cta-icon"><i class="fa-solid fa-cloud" aria-hidden="true"></i></span>
                 <h3 class="plan-name">More reseller platforms</h3>
-                <p class="plan-desc">Prefer root access or a different control panel? Explore our other reseller options.</p>
+                <p class="plan-desc">Need multi-level control or flexible resources? Explore our other reseller options.</p>
                 <ul class="cta-links">
-                  <li><a href="#">Cloud Root Reseller <i class="fa-solid fa-arrow-right"></i></a></li>
-                  <li><a href="#">Plesk Reseller <i class="fa-solid fa-arrow-right"></i></a></li>
-                  <li><a href="#">DirectAdmin Reseller <i class="fa-solid fa-arrow-right"></i></a></li>
-              <!-- Business Plan -->
-              <article class="plan-card">
-                <div class="plan-top"><span class="plan-cat">cPanel Reseller</span></div>
-                <h3 class="plan-name">Business</h3>
-                <p class="plan-desc">Maximum capacity for busy web design agencies and SaaS providers.</p>
-                <div class="plan-price"><sup>$</sup><span>32.10</span><small>/mo</small></div>
-                <p class="plan-billed">Billed monthly or $385.20/yr</p>
-                <a class="btn btn-outline plan-btn" href="reseller-hosting.html">Order Now</a>
-                <ul class="plan-features">
-                  <li><i class="fa-solid fa-check"></i>200 GB NVMe Disk Space</li>
-                  <li><i class="fa-solid fa-check"></i>600 GB Monthly Bandwidth</li>
-                  <li><i class="fa-solid fa-check"></i>25 cPanel Accounts Supported</li>
-                  <li><i class="fa-solid fa-check"></i>Latest WHM + cPanel Access</li>
-                  <li><i class="fa-solid fa-check"></i>LiteSpeed Web Server</li>
-                  <li><i class="fa-solid fa-check"></i>CloudLinux OS Isolation</li>
-                  <li><i class="fa-solid fa-check"></i>Imunify360 Firewall Defense</li>
-                  <li><i class="fa-solid fa-check"></i>Free Setup &amp; Migration</li>
+                  <li><a href="master-reseller.html">Master Reseller <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></li>
+                  <li><a href="alpha-reseller.html">Alpha Reseller <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></li>
+                  <li><a href="flex-reseller.html">Flex Reseller <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></li>
+                  <li><a href="reseller-hosting.html#compare">Compare reseller plans <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></li>
                 </ul>
-                <a class="btn btn-light plan-btn" href="#">Compare all plans</a>
+                <a class="btn btn-light plan-btn" href="reseller-hosting.html#compare">Compare all plans</a>
               </article>
             </div>
 
@@ -1030,98 +979,74 @@
           <div class="card-slider per-4" data-slider>
             <div class="slider-track" data-slider-track tabindex="0" aria-label="Master reseller plans">
 
-              <!-- Master Baby -->
               <article class="plan-card">
                 <div class="plan-top"><span class="plan-cat is-cloud">Master Reseller</span></div>
-                <h3 class="plan-name">Basic</h3>
-                <p class="plan-desc">Sell reseller accounts with 20 WHM panels of your own.</p>
-                <div class="plan-price"><sup>$</sup><span>159.90</span><small>/yr</small></div>
-                <p class="plan-billed">Billed per annum</p>
-                <a class="btn btn-outline plan-btn" href="https://robot.hostdivine.com/store/master-reseller-hosting/mr-basic">Order Now</a>
                 <h3 class="plan-name">Baby</h3>
-                <p class="plan-desc">Sell reseller accounts with 5 WHM panels and 100 cPanel accounts.</p>
+                <p class="plan-desc">Sell reseller accounts with 5 WHM panels.</p>
                 <div class="plan-price"><sup>$</sup><span>20.00</span><small>/mo</small></div>
                 <p class="plan-billed">Billed monthly or $240.00/yr</p>
-                <a class="btn btn-outline plan-btn" href="reseller-hosting.html#master">Order Now</a>
+                <a class="btn btn-outline plan-btn" href="master-reseller.html#plans">Order Now</a>
                 <ul class="plan-features">
-                  <li><i class="fa-solid fa-check"></i>20 WHM accounts</li>
-                  <li><i class="fa-solid fa-check"></i>150 cPanel accounts</li>
-                  <li><i class="fa-solid fa-check"></i>200 GB SSD cached storage</li>
-                  <li><i class="fa-solid fa-check"></i>Unmetered bandwidth</li>
-                  <li><i class="fa-solid fa-check"></i>WHMReseller / Zamfoo</li>
-                  <li><i class="fa-solid fa-check"></i>Semi-managed support</li>
-                  <li class="is-off"><i class="fa-solid fa-xmark"></i>Overselling</li>
                   <li><i class="fa-solid fa-check"></i>150 GB NVMe Disk Space</li>
-                  <li><i class="fa-solid fa-check"></i>Unlimited Monthly Bandwidth</li>
-                  <li><i class="fa-solid fa-check"></i>5 WHM Accounts Supported</li>
-                  <li><i class="fa-solid fa-check"></i>100 cPanel Accounts Supported</li>
-                  <li><i class="fa-solid fa-check"></i>8 GB Dedicated Memory</li>
-                  <li><i class="fa-solid fa-check"></i>Latest WHM + cPanel + WHMReseller</li>
-                  <li><i class="fa-solid fa-check"></i>LiteSpeed &amp; CloudLinux</li>
+                  <li><i class="fa-solid fa-check"></i>Unlimited Bandwidth</li>
+                  <li><i class="fa-solid fa-check"></i>5 WHM Accounts</li>
+                  <li><i class="fa-solid fa-check"></i>100 cPanel Accounts</li>
+                  <li><i class="fa-solid fa-check"></i>8 GB Memory</li>
+                  <li><i class="fa-solid fa-check"></i>Overselling Enabled</li>
                   <li><i class="fa-solid fa-check"></i>Free Setup &amp; Migration</li>
                 </ul>
               </article>
 
-              <!-- Master Economy (Recommended) -->
               <article class="plan-card is-featured">
                 <div class="plan-top"><span class="plan-cat is-cloud">Master Reseller</span><span class="plan-badge">Recommended</span></div>
-                <h3 class="plan-name">Ultra</h3>
-                <p class="plan-desc">50 WHM accounts, 1 Gbps and fully managed support.</p>
-                <div class="plan-price"><sup>$</sup><span>90.00</span><small>/6 mo</small></div>
-                <p class="plan-billed">Billed every 6 months</p>
-                <a class="btn btn-primary plan-btn" href="https://robot.hostdivine.com/store/master-reseller-hosting/mr-ultra">Order Now</a>
                 <h3 class="plan-name">Economy</h3>
-                <p class="plan-desc">Powerful master tier supporting 10 WHM panels and 150 cPanels.</p>
+                <p class="plan-desc">Powerful master tier for growing brands.</p>
                 <div class="plan-price"><sup>$</sup><span>40.15</span><small>/mo</small></div>
                 <p class="plan-billed">Billed monthly or $481.80/yr</p>
-                <a class="btn btn-primary plan-btn" href="reseller-hosting.html#master">Order Now</a>
+                <a class="btn btn-primary plan-btn" href="master-reseller.html#plans">Order Now</a>
                 <ul class="plan-features">
-                  <li><i class="fa-solid fa-check"></i>50 WHM accounts</li>
-                  <li><i class="fa-solid fa-check"></i>250 cPanel accounts</li>
-                  <li><i class="fa-solid fa-check"></i>350 GB SSD cached storage</li>
-                  <li><i class="fa-solid fa-check"></i>Unmetered bandwidth · 1 Gbps</li>
-                  <li><i class="fa-solid fa-check"></i>2.5 GB memory per cPanel</li>
-                  <li><i class="fa-solid fa-check"></i>WHMReseller / Zamfoo</li>
-                  <li><i class="fa-solid fa-check"></i>Fully managed support</li>
                   <li><i class="fa-solid fa-check"></i>300 GB NVMe Disk Space</li>
-                  <li><i class="fa-solid fa-check"></i>Unlimited Monthly Bandwidth</li>
-                  <li><i class="fa-solid fa-check"></i>10 WHM Accounts Supported</li>
-                  <li><i class="fa-solid fa-check"></i>150 cPanel Accounts Supported</li>
-                  <li><i class="fa-solid fa-check"></i>8 GB Dedicated Memory</li>
-                  <li><i class="fa-solid fa-check"></i>Latest WHM + cPanel + WHMReseller</li>
-                  <li><i class="fa-solid fa-check"></i>LiteSpeed &amp; CloudLinux</li>
+                  <li><i class="fa-solid fa-check"></i>Unlimited Bandwidth</li>
+                  <li><i class="fa-solid fa-check"></i>10 WHM Accounts</li>
+                  <li><i class="fa-solid fa-check"></i>150 cPanel Accounts</li>
+                  <li><i class="fa-solid fa-check"></i>8 GB Memory</li>
+                  <li><i class="fa-solid fa-check"></i>Overselling Enabled</li>
                   <li><i class="fa-solid fa-check"></i>Free Setup &amp; Migration</li>
                 </ul>
               </article>
 
-              <!-- Master Standard -->
               <article class="plan-card">
                 <div class="plan-top"><span class="plan-cat is-cloud">Master Reseller</span></div>
-                <h3 class="plan-name">Extreme</h3>
-                <p class="plan-desc">Unlimited WHM and cPanel accounts for large brands.</p>
-                <div class="plan-price"><sup>$</sup><span>100.00</span><small>/6 mo</small></div>
-                <p class="plan-billed">Billed every 6 months</p>
-                <a class="btn btn-outline plan-btn" href="https://robot.hostdivine.com/store/master-reseller-hosting/mr-extreme">Order Now</a>
                 <h3 class="plan-name">Standard</h3>
-                <p class="plan-desc">High volume master reseller for hosting brands &amp; growing ventures.</p>
+                <p class="plan-desc">High-volume master reseller for hosting ventures.</p>
                 <div class="plan-price"><sup>$</sup><span>64.00</span><small>/mo</small></div>
                 <p class="plan-billed">Billed monthly or $768.00/yr</p>
-                <a class="btn btn-outline plan-btn" href="reseller-hosting.html#master">Order Now</a>
+                <a class="btn btn-outline plan-btn" href="master-reseller.html#plans">Order Now</a>
                 <ul class="plan-features">
-                  <li><i class="fa-solid fa-check"></i>Unlimited WHM accounts</li>
-                  <li><i class="fa-solid fa-check"></i>Unlimited cPanel accounts</li>
-                  <li><i class="fa-solid fa-check"></i>Unlimited SSD cached storage</li>
-                  <li><i class="fa-solid fa-check"></i>Unmetered bandwidth · 1 Gbps</li>
-                  <li><i class="fa-solid fa-check"></i>3 GB memory per cPanel</li>
-                  <li><i class="fa-solid fa-check"></i>WHMReseller / WHMAMP</li>
-                  <li><i class="fa-solid fa-check"></i>Fully managed support</li>
                   <li><i class="fa-solid fa-check"></i>500 GB NVMe Disk Space</li>
-                  <li><i class="fa-solid fa-check"></i>Unlimited Monthly Bandwidth</li>
-                  <li><i class="fa-solid fa-check"></i>20 WHM Accounts Supported</li>
-                  <li><i class="fa-solid fa-check"></i>200 cPanel Accounts Supported</li>
-                  <li><i class="fa-solid fa-check"></i>16 GB Dedicated Memory</li>
-                  <li><i class="fa-solid fa-check"></i>Latest WHM + cPanel + WHMReseller</li>
-                  <li><i class="fa-solid fa-check"></i>LiteSpeed &amp; CloudLinux</li>
+                  <li><i class="fa-solid fa-check"></i>Unlimited Bandwidth</li>
+                  <li><i class="fa-solid fa-check"></i>20 WHM Accounts</li>
+                  <li><i class="fa-solid fa-check"></i>200 cPanel Accounts</li>
+                  <li><i class="fa-solid fa-check"></i>16 GB Memory</li>
+                  <li><i class="fa-solid fa-check"></i>Overselling Enabled</li>
+                  <li><i class="fa-solid fa-check"></i>Free Setup &amp; Migration</li>
+                </ul>
+              </article>
+
+              <article class="plan-card">
+                <div class="plan-top"><span class="plan-cat is-cloud">Master Reseller</span></div>
+                <h3 class="plan-name">Business</h3>
+                <p class="plan-desc">Enterprise master reseller with 1 TB storage.</p>
+                <div class="plan-price"><sup>$</sup><span>100.75</span><small>/mo</small></div>
+                <p class="plan-billed">Billed monthly or $1,209.00/yr</p>
+                <a class="btn btn-outline plan-btn" href="master-reseller.html#plans">Order Now</a>
+                <ul class="plan-features">
+                  <li><i class="fa-solid fa-check"></i>1 TB NVMe Disk Space</li>
+                  <li><i class="fa-solid fa-check"></i>Unlimited Bandwidth</li>
+                  <li><i class="fa-solid fa-check"></i>25 WHM Accounts</li>
+                  <li><i class="fa-solid fa-check"></i>350 cPanel Accounts</li>
+                  <li><i class="fa-solid fa-check"></i>16 GB Memory</li>
+                  <li><i class="fa-solid fa-check"></i>Overselling Enabled</li>
                   <li><i class="fa-solid fa-check"></i>Free Setup &amp; Migration</li>
                 </ul>
               </article>
@@ -1131,27 +1056,11 @@
                 <h3 class="plan-name">Alpha Master Reseller</h3>
                 <p class="plan-desc">Need a deeper multi-level structure? Alpha plans let you create master resellers of your own.</p>
                 <ul class="cta-links">
-                  <li><a href="#">Alpha Master Reseller <i class="fa-solid fa-arrow-right"></i></a></li>
-                  <li><a href="#">Bulletproof DMCA Reseller <i class="fa-solid fa-arrow-right"></i></a></li>
-              <!-- Master Business -->
-              <article class="plan-card">
-                <div class="plan-top"><span class="plan-cat is-cloud">Master Reseller</span></div>
-                <h3 class="plan-name">Business</h3>
-                <p class="plan-desc">Enterprise master reseller with 1 TB space and 350 cPanel capacity.</p>
-                <div class="plan-price"><sup>$</sup><span>100.75</span><small>/mo</small></div>
-                <p class="plan-billed">Billed monthly or $1,209.00/yr</p>
-                <a class="btn btn-outline plan-btn" href="reseller-hosting.html#master">Order Now</a>
-                <ul class="plan-features">
-                  <li><i class="fa-solid fa-check"></i>1 TB (1,000 GB) NVMe Disk Space</li>
-                  <li><i class="fa-solid fa-check"></i>Unlimited Monthly Bandwidth</li>
-                  <li><i class="fa-solid fa-check"></i>25 WHM Accounts Supported</li>
-                  <li><i class="fa-solid fa-check"></i>350 cPanel Accounts Supported</li>
-                  <li><i class="fa-solid fa-check"></i>16 GB Dedicated Memory</li>
-                  <li><i class="fa-solid fa-check"></i>Latest WHM + cPanel + WHMReseller</li>
-                  <li><i class="fa-solid fa-check"></i>LiteSpeed &amp; CloudLinux</li>
-                  <li><i class="fa-solid fa-check"></i>Priority 24/7 Sysadmin Support</li>
+                  <li><a href="alpha-reseller.html">Alpha Reseller <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></li>
+                  <li><a href="flex-reseller.html">Flex Reseller <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></li>
+                  <li><a href="master-reseller.html#compare">Compare master plans <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a></li>
                 </ul>
-                <a class="btn btn-light plan-btn" href="#">Compare all plans</a>
+                <a class="btn btn-light plan-btn" href="master-reseller.html#compare">Compare all plans</a>
               </article>
             </div>
 
@@ -1168,7 +1077,7 @@
     <!-- ======================================================================
          6. Hosting Features (technology stack)
          ====================================================================== -->
-    <section class="section features-section" id="features">
+    <section class="section features-section bg-hex" id="features">
       <div class="container">
         <div class="section-head reveal">
           <span class="eyebrow"><span class="eyebrow-dot"></span>Hosting Features</span>
@@ -1211,6 +1120,25 @@
           <li><i class="fa-solid fa-file-invoice-dollar" aria-hidden="true"></i>WHMCS Billing</li>
           <li><i class="fa-solid fa-headset" aria-hidden="true"></i>Round-the-Clock Support</li>
         </ul>
+
+        <!-- Language platforms (links to the language hosting pages) -->
+        <div class="platform-langs reveal">
+          <div class="platform-langs-head">
+            <div>
+              <span class="eyebrow"><span class="eyebrow-dot"></span>Language Platforms</span>
+              <h3>Run your favourite stack — every runtime is included</h3>
+            </div>
+            <a class="platform-langs-all" href="languages.html">All supported languages <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+          <div class="lang-chip-grid">
+            <a class="lang-chip is-php" href="php-hosting.html"><span class="lang-chip-icon"><i class="fa-brands fa-php" aria-hidden="true"></i></span><span class="lang-chip-text"><strong>PHP</strong><small>7.4 – 8.3 · Laravel</small></span></a>
+            <a class="lang-chip is-node" href="nodejs-hosting.html"><span class="lang-chip-icon"><i class="fa-brands fa-node-js" aria-hidden="true"></i></span><span class="lang-chip-text"><strong>Node.js</strong><small>18 – 22 LTS</small></span></a>
+            <a class="lang-chip is-python" href="python-hosting.html"><span class="lang-chip-icon"><i class="fa-brands fa-python" aria-hidden="true"></i></span><span class="lang-chip-text"><strong>Python</strong><small>3.9 – 3.13 · Django</small></span></a>
+            <a class="lang-chip is-ruby" href="ruby-hosting.html"><span class="lang-chip-icon"><i class="fa-solid fa-gem" aria-hidden="true"></i></span><span class="lang-chip-text"><strong>Ruby</strong><small>3.1 – 3.3 · Rails</small></span></a>
+            <a class="lang-chip is-java" href="java-hosting.html"><span class="lang-chip-icon"><i class="fa-brands fa-java" aria-hidden="true"></i></span><span class="lang-chip-text"><strong>Java / Tomcat</strong><small>Java 11 – 21</small></span></a>
+            <a class="lang-chip is-dotnet" href="windows-hosting.html"><span class="lang-chip-icon"><i class="fa-brands fa-microsoft" aria-hidden="true"></i></span><span class="lang-chip-text"><strong>ASP.NET</strong><small>.NET 6 – 8</small></span></a>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -1231,8 +1159,8 @@
                 <li><i class="fa-regular fa-circle-check" aria-hidden="true"></i>30-day risk-free trial</li>
               </ul>
               <div class="hero-actions">
-                <a class="btn btn-primary" href="#">Talk to an Expert <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
-                <a class="btn btn-ghost" href="#">Network Information</a>
+                <a class="btn btn-primary" href="contact.html">Talk to an Expert <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                <a class="btn btn-ghost" href="https://robot.hostdivine.com/serverstatus.php">Network Information</a>
               </div>
             </div>
 
@@ -1241,7 +1169,7 @@
                 <span class="why-icon"><i class="fa-solid fa-gauge-high" aria-hidden="true"></i></span>
                 <h3>LiteSpeed Turbo Speed</h3>
                 <p>LiteSpeed Enterprise, LSCache and SSD/NVMe storage keep pages loading fast, even during traffic spikes.</p>
-                <a href="#">Find out more <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                <a href="cpanel-hosting.html">Find out more <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
               </article>
               <article class="why-card reveal">
                 <span class="why-icon"><i class="fa-solid fa-headset" aria-hidden="true"></i></span>
@@ -1253,13 +1181,13 @@
                 <span class="why-icon"><i class="fa-solid fa-truck-fast" aria-hidden="true"></i></span>
                 <h3>Free Account Migration</h3>
                 <p>Moving from another host? Our team transfers your websites, databases and email at no cost.</p>
-                <a href="#">Find out more <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                <a href="contact.html">Find out more <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
               </article>
               <article class="why-card reveal">
                 <span class="why-icon"><i class="fa-solid fa-hand-holding-dollar" aria-hidden="true"></i></span>
                 <h3>Money-Back Guarantee</h3>
                 <p>Try any shared, cloud or reseller plan risk-free for 30 days. Not happy? Get your money back.</p>
-                <a href="#">Find out more <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                <a href="faq.html#faq-general">Find out more <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
               </article>
             </div>
           </div>
@@ -1281,7 +1209,7 @@
          NOTE: SAMPLE testimonials — replace with real, verified customer
          reviews before going live.
          ====================================================================== -->
-    <section class="section reviews-section" id="reviews">
+    <section class="section reviews-section bg-mesh" id="reviews">
       <div class="container">
         <div class="section-head reveal">
           <span class="eyebrow"><span class="eyebrow-dot"></span>Reviews</span>
@@ -1339,7 +1267,7 @@
     </section>
   </main>
 
-    <!-- Footer Section -->
+  <!-- Footer Section -->
   <footer class="site-footer">
     <div aria-hidden="true" class="footer-orbit"></div>
     <div class="container footer-hero">
@@ -1363,45 +1291,52 @@
     </div>
     <div class="container footer-grid">
       <div>
-        <h3>Hosting Services</h3>
-        <a href="cpanel-hosting.html">cPanel Hosting</a>
-        <a href="reseller-hosting.html">Reseller Web Hosting</a>
-        <a href="reseller-hosting.html#master">Master Reseller</a>
-        <a href="reseller-hosting.html#alpha">Alpha Reseller</a>
+        <h3>Hosting</h3>
+        <a href="cpanel-hosting.html">Web Hosting</a>
         <a href="windows-hosting.html">Windows Hosting</a>
+        <a href="php-hosting.html">PHP Hosting</a>
+        <a href="nodejs-hosting.html">Node.js Hosting</a>
+        <a href="python-hosting.html">Python Hosting</a>
+        <a href="languages.html">All Languages</a>
       </div>
       <div>
-        <h3>Servers</h3>
+        <h3>Reseller &amp; Servers</h3>
+        <a href="reseller-hosting.html">cPanel Reseller</a>
+        <a href="master-reseller.html">Master Reseller</a>
+        <a href="alpha-reseller.html">Alpha Reseller</a>
+        <a href="flex-reseller.html">Flex Reseller</a>
         <a href="vps-server.html">VPS Server</a>
         <a href="dedicated-server.html">Dedicated Server</a>
       </div>
       <div>
-        <h3>Domain Services</h3>
+        <h3>Domains</h3>
         <a href="domain-registration.html">Domain Registration</a>
-        <a href="bd-domain.html">.BD Domain Registration</a>
-        <a href="domain-transfer.html#renew">Domain Renew</a>
+        <a href="bd-domain.html">.BD Domain</a>
         <a href="domain-transfer.html">Domain Transfer</a>
-        <a href="domain-registration.html#search">Domain Search</a>
+        <a href="domain-renew.html">Domain Renew</a>
+        <a href="domain-pricing.html">Domain Pricing</a>
       </div>
       <div>
-        <h3>About Us</h3>
+        <h3>Services</h3>
+        <a href="ssl-certificates.html">SSL Certificates</a>
+        <a href="business-email.html">Business Email</a>
+        <a href="seo-service.html">SEO Service</a>
+      </div>
+      <div>
+        <h3>Company</h3>
         <a href="about-us.html">Company Overview</a>
-        <a href="about-us.html#timeline">Timeline</a>
+        <a href="timeline.html">Timeline</a>
         <a href="faq.html">FAQ</a>
         <a href="blog.html">Blog</a>
         <a href="contact.html">Contact Us</a>
       </div>
     </div>
     <div class="container footer-bottom">
-      <p>© 2004 – <span data-current-year="">2026</span> <a class="brand-footer-link" href="#">Host Divine™</a> — A brand label of ZELT, UAE — All Rights ® Reserved</p>
+      <p>© 2004 – <span data-current-year="">2026</span> <a class="brand-footer-link" href="index.html">Host Divine™</a> — A brand label of ZELT, UAE — All Rights ® Reserved</p>
       <div class="footer-bottom-links">
         <a href="https://robot.hostdivine.com/announcements.php"><i aria-hidden="true" class="fa-solid fa-bullhorn"></i><span>Announcements</span></a>
-        <a href="#"><i aria-hidden="true" class="fa-solid fa-file-shield"></i><span>Terms &amp; Policies</span></a>
-        <a aria-label="Host Divine Facebook" class="footer-social-link" href="#" rel="noopener noreferrer" target="_blank"><i aria-hidden="true" class="fa-brands fa-facebook-f"></i></a>
-        <a aria-label="Host Divine X" class="footer-social-link" href="#" rel="noopener noreferrer" target="_blank"><i aria-hidden="true" class="fa-brands fa-x-twitter"></i></a>
-        <a aria-label="Host Divine WhatsApp" class="footer-social-link" href="#" rel="noopener noreferrer" target="_blank"><i aria-hidden="true" class="fa-brands fa-whatsapp"></i></a>
-        <a aria-label="Host Divine Telegram" class="footer-social-link" href="#" rel="noopener noreferrer" target="_blank"><i aria-hidden="true" class="fa-brands fa-telegram"></i></a>
-        <a aria-label="Host Divine IMO" class="footer-social-link" href="#"><i aria-hidden="true" class="fa-solid fa-comment-dots"></i></a>
+        <a href="faq.html"><i aria-hidden="true" class="fa-solid fa-file-shield"></i><span>Terms &amp; Policies</span></a>
+        <a href="https://robot.hostdivine.com/serverstatus.php"><i aria-hidden="true" class="fa-solid fa-signal"></i><span>Network Status</span></a>
       </div>
     </div>
   </footer>
@@ -1410,6 +1345,7 @@
   <aside class="quick-dock" aria-label="Quick contact and navigation">
     <a class="dock-btn dock-top" href="#top" aria-label="Scroll to top of page" title="Scroll to Top">
       <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+      <span class="dock-tooltip">Scroll to Top</span>
     </a>
     <a class="dock-btn dock-support" href="https://robot.hostdivine.com/submitticket.php" target="_blank" rel="noopener noreferrer" aria-label="24/7 Support Desk" title="24/7 Support Desk">
       <i class="fa-solid fa-headset" aria-hidden="true"></i>

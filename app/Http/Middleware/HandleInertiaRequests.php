@@ -2,6 +2,8 @@
 
 namespace App\Http\Middleware;
 
+use App\Models\Inquiry;
+use App\Models\Setting;
 use Illuminate\Http\Request;
 use Inertia\Middleware;
 
@@ -37,7 +39,25 @@ class HandleInertiaRequests extends Middleware
     {
         return [
             ...parent::share($request),
-            //
+            'auth' => [
+                'user' => $request->user() ? [
+                    'id' => $request->user()->id,
+                    'name' => $request->user()->name,
+                    'email' => $request->user()->email,
+                    'role' => $request->user()->role ?? 'admin',
+                    'profile_photo_url' => $request->user()->profile_photo_url,
+                ] : null,
+            ],
+            'unreadInquiriesCount' => $request->user() ? Inquiry::where('status', 'new')->count() : 0,
+            'flash' => [
+                'success' => fn () => $request->session()->get('success'),
+                'error' => fn () => $request->session()->get('error'),
+                'message' => fn () => $request->session()->get('message'),
+            ],
+            'siteConfig' => [
+                'site_name' => Setting::get('site_name', 'Host Divine™ Cloud Hosting'),
+                'site_logo' => Setting::get('site_logo', 'assets/img/logo.svg'),
+            ],
         ];
     }
 }

@@ -1,0 +1,167 @@
+{
+    "shared-0": {
+        "type": "specs",
+        "name": "Technical specifications — Enterprise reseller infrastructure",
+        "data": {
+            "background": "bg-circuit",
+            "eyebrow": "Server Specification",
+            "title": "Enterprise reseller infrastructure",
+            "groups": [
+                {
+                    "icon": "fa-solid fa-server",
+                    "title": "Server & Hardware",
+                    "rows": [
+                        {
+                            "label": "Web Server",
+                            "value": "LiteSpeed"
+                        },
+                        {
+                            "label": "Processor",
+                            "value": "Intel Xeon E3-1270 v6 @ 3.80GHz"
+                        },
+                        {
+                            "label": "CPU Cores",
+                            "value": "8x"
+                        },
+                        {
+                            "label": "Operating System",
+                            "value": "CloudLinux OS"
+                        },
+                        {
+                            "label": "Control Panel",
+                            "value": "Latest WHM + cPanel"
+                        }
+                    ]
+                },
+                {
+                    "icon": "fa-solid fa-code",
+                    "title": "Software & Features",
+                    "rows": [
+                        {
+                            "label": "NodeJS, Python",
+                            "value": "Yes"
+                        },
+                        {
+                            "label": "MultiPHP",
+                            "value": "Yes"
+                        },
+                        {
+                            "label": "Cloudflare CDN",
+                            "value": "Yes"
+                        },
+                        {
+                            "label": "Backup",
+                            "value": "JetBackup"
+                        },
+                        {
+                            "label": "Domain Reseller",
+                            "value": "Free"
+                        }
+                    ]
+                },
+                {
+                    "icon": "fa-solid fa-shield-halved",
+                    "title": "Security & Network",
+                    "rows": [
+                        {
+                            "label": "Protection",
+                            "value": "Imunify360 Firewall"
+                        },
+                        {
+                            "label": "DDoS Protection",
+                            "value": "Included"
+                        },
+                        {
+                            "label": "Network Speed",
+                            "value": "1 Gbit/s"
+                        },
+                        {
+                            "label": "Network Uptime",
+                            "value": "99.9%"
+                        },
+                        {
+                            "label": "Data Center",
+                            "value": "Singapore / Finland"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "customer-reviews": {
+        "type": "reviews",
+        "name": "Customer reviews — What our customers are saying",
+        "data": {
+            "background": "bg-mesh",
+            "css_class": "reviews-section",
+            "anchor": "reviews",
+            "eyebrow": "Reviews",
+            "title": "What our customers are saying",
+            "subtitle": "Agencies, store owners and resellers who run their business on Host Divine.",
+            "slider_label": "Customer reviews",
+            "nav_label": "reviews",
+            "items": [
+                {
+                    "rating": 5,
+                    "title": "\"Migration was done overnight\"",
+                    "text": "Support moved all 14 of our client sites, email included, without a minute of downtime. Pages load noticeably faster on LiteSpeed.",
+                    "initials": "AR",
+                    "avatar_color": "blue",
+                    "name": "Ayesha R.",
+                    "role": "Digital agency owner",
+                    "tag": "Reseller"
+                },
+                {
+                    "rating": 5,
+                    "title": "\"Real people answer at 3 a.m.\"",
+                    "text": "Our WooCommerce store had a plugin conflict during a sale. A support engineer replied within minutes and helped us roll back from JetBackup.",
+                    "initials": "MD",
+                    "avatar_color": "blue",
+                    "name": "Mark D.",
+                    "role": "Online store owner",
+                    "tag": "Web Hosting"
+                },
+                {
+                    "rating": 5,
+                    "title": "\"Perfect base for my hosting brand\"",
+                    "text": "White-label WHM, private nameservers and billing software made it easy to launch. My clients never see anything but my own brand.",
+                    "initials": "RU",
+                    "avatar_color": "green",
+                    "name": "Rahim U.",
+                    "role": "Hosting entrepreneur",
+                    "tag": "Master Reseller"
+                },
+                {
+                    "rating": 5,
+                    "title": "\"Stable VPS, zero surprises\"",
+                    "text": "We run our SaaS API on a managed VPS. Uptime has been rock solid and the DDoS protection quietly handled an attack we didn't even notice.",
+                    "initials": "SL",
+                    "avatar_color": "purple",
+                    "name": "Sofia L.",
+                    "role": "CTO, SaaS startup",
+                    "tag": "VPS"
+                },
+                {
+                    "rating": 4,
+                    "title": "\"Domains, hosting and email in one place\"",
+                    "text": "I manage domains, SSL and business email from one client area. Renewals and invoices are simple and the prices are fair.",
+                    "initials": "OK",
+                    "avatar_color": "cyan",
+                    "name": "Omar K.",
+                    "role": "Freelance developer",
+                    "tag": "Domains"
+                },
+                {
+                    "rating": 5,
+                    "title": "\"Imunify360 saved our sites\"",
+                    "text": "After a bad experience elsewhere, security was our priority. Malware scanning and the firewall have kept every site clean since we moved.",
+                    "initials": "DP",
+                    "avatar_color": "pink",
+                    "name": "Daniel P.",
+                    "role": "Web studio founder",
+                    "tag": "Cloud SSD"
+                }
+            ]
+        }
+    }
+}

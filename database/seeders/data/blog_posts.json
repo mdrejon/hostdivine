@@ -1,0 +1,79 @@
+[
+    {
+        "icon": "fa-solid fa-gauge-high",
+        "category": "Performance",
+        "title": "How LiteSpeed + NVMe deliver up to 4x faster WordPress TTFB",
+        "excerpt": "How we configure LiteSpeed Web Server, LSCache and enterprise NVMe hardware to cut server response times and pass Core Web Vitals.",
+        "date": "Nov 08, 2026",
+        "read_time": "7 min read",
+        "slug": "how-litespeed-nvme-deliver-up-to-4x-faster-wordpress-ttfb",
+        "content": "<p>Time to First Byte (TTFB) is one of the most critical metrics impacting both user experience and search rankings in Google's Core Web Vitals algorithm. When visitors request a page from a WordPress site, Apache or generic Nginx proxies often take 400ms to 750ms just to execute PHP scripts, query the database, and deliver the initial byte.</p><h3>Why LiteSpeed Outperforms Apache and Nginx</h3><p>LiteSpeed Enterprise features direct, native integration with the Linux kernel and replaces Apache without requiring configuration changes. Combined with the LSCache plugin, full HTML pages are served directly from server-level memory cache, completely bypassing PHP execution and MySQL bottlenecks.</p><h3>The NVMe Difference</h3><p>Enterprise PCIe 4.0 NVMe drives deliver over 1,000,000 IOPS compared to standard SATA SSDs (capped at 90,000 IOPS). For WooCommerce stores and database-heavy WordPress blogs, this means instant query execution even during high-traffic sales events.</p>",
+        "published_at": "2026-11-08 09:00:00"
+    },
+    {
+        "icon": "fa-solid fa-globe",
+        "category": "Domain Guide",
+        "title": "How to register a .BD domain with BTCL in 2026",
+        "excerpt": "BTCL policies, required documents, DNS setup and the registration timeline explained step by step.",
+        "date": "Nov 04, 2026",
+        "read_time": "6 min read",
+        "slug": "how-to-register-a-bd-domain-with-btcl-in-2026",
+        "content": "<p>Registering a .BD (Bangladeshi Top-Level Domain) is essential for local branding, trust, and search engine optimization in Bangladesh. However, because .BD is managed by Bangladesh Telecommunications Company Limited (BTCL), the process requires specific governmental documentation.</p><h3>Required Documents for .BD</h3><ul><li><strong>For Individuals:</strong> National Identity Card (NID) copy or Passport scan.</li><li><strong>For Companies (.com.bd):</strong> Valid Trade License copy and Tax Identification Number (TIN).</li><li><strong>For Educational Institutions (.edu.bd):</strong> Official approval letter from the Ministry of Education or UGC.</li></ul><p>Host Divine offers paperless .BD verification so you don't have to visit BTCL offices physically. Simply submit your documents through our support portal after booking.</p>",
+        "published_at": "2026-11-04 09:00:00"
+    },
+    {
+        "icon": "fa-solid fa-users-gear",
+        "category": "Reseller",
+        "title": "Scaling a white-label reseller hosting business",
+        "excerpt": "How agencies configure WHM packages, private nameservers and billing to build recurring revenue.",
+        "date": "Oct 28, 2026",
+        "read_time": "8 min read",
+        "slug": "scaling-a-white-label-reseller-hosting-business",
+        "content": "<p>Web design agencies often make the mistake of handing their completed client sites over to third-party web hosts, missing out on predictable, high-margin monthly recurring revenue (MRR). With white-label cPanel/WHM reseller hosting, you can package website hosting, email maintenance, and daily backups together into your monthly retainer fees.</p><h3>Best Practices for Resellers</h3><ol><li>Set up private nameservers (ns1.yourdomain.com and ns2.yourdomain.com) for 100% brand anonymity.</li><li>Use tiered cPanel package quotas (Starter, Pro, eCommerce) to enforce fair resource distribution.</li><li>Automate invoicing using WHMCS or ClientExec.</li></ol>",
+        "published_at": "2026-10-28 09:00:00"
+    },
+    {
+        "icon": "fa-solid fa-hard-drive",
+        "category": "Infrastructure",
+        "title": "NVMe vs SATA SSD: why disk IOPS decide app speed",
+        "excerpt": "Random read/write latency, queue depth and why NVMe removes MySQL bottlenecks under load.",
+        "date": "Oct 19, 2026",
+        "read_time": "5 min read",
+        "slug": "nvme-vs-sata-ssd-why-disk-iops-decide-app-speed",
+        "content": "<p>Traditional web hosting companies frequently advertise \"SSD Hosting,\" but fail to specify that they are using legacy SATA SSD drives connected via 6 Gbps SATA buses originally engineered for mechanical spinning disks. Host Divine utilizes enterprise U.2 PCIe NVMe solid-state storage connected directly to CPU lanes.</p>",
+        "published_at": "2026-10-19 09:00:00"
+    },
+    {
+        "icon": "fa-solid fa-shield-halved",
+        "category": "Security",
+        "title": "Hardening Linux cloud servers: SSH and firewall essentials",
+        "excerpt": "ED25519 keys, CSF firewall policies and automated Imunify360 protection for production servers.",
+        "date": "Oct 12, 2026",
+        "read_time": "9 min read",
+        "slug": "hardening-linux-cloud-servers-ssh-and-firewall-essentials",
+        "content": "<p>Securing a production Linux cloud server requires multiple defensive perimeters. In this tutorial, our systems engineering team covers disabling root password logins, enforcing modern ED25519 SSH keypairs, locking unused ports with ConfigServer Security & Firewall (CSF), and configuring automated brute-force IP bans.</p>",
+        "published_at": "2026-10-12 09:00:00"
+    },
+    {
+        "icon": "fa-brands fa-wordpress",
+        "category": "WordPress",
+        "title": "LiteSpeed Cache vs generic plugins for Core Web Vitals",
+        "excerpt": "How server-level caching skips PHP to serve WooCommerce and blog pages instantly.",
+        "date": "Sep 29, 2026",
+        "read_time": "7 min read",
+        "slug": "litespeed-cache-vs-generic-plugins-for-core-web-vitals",
+        "content": "<p>How server-level caching skips PHP to serve WooCommerce and blog pages instantly.</p>",
+        "published_at": "2026-09-29 09:00:00"
+    },
+    {
+        "icon": "fa-solid fa-server",
+        "category": "Servers",
+        "title": "KVM VPS vs dedicated bare metal: choosing the right tier",
+        "excerpt": "CPU scaling, RAM, compliance and budget — how to choose between VPS and dedicated.",
+        "date": "Sep 15, 2026",
+        "read_time": "6 min read",
+        "slug": "kvm-vps-vs-dedicated-bare-metal-choosing-the-right-tier",
+        "content": "<p>CPU scaling, RAM, compliance and budget — how to choose between VPS and dedicated.</p>",
+        "published_at": "2026-09-15 09:00:00"
+    }
+]

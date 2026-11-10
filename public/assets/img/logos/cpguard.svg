@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="96" viewBox="0 0 360 96" fill="none">
+  <rect x="0.5" y="0.5" width="359" height="95" rx="22" fill="url(#bg)" stroke="rgba(255,255,255,0.12)"/>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="360" y2="96" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#122B58"/>
+      <stop offset="1" stop-color="#0C2146"/>
+    </linearGradient>
+    <filter id="g" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+  </defs>
+  <circle cx="50" cy="48" r="26" fill="#FFB449" fill-opacity="0.18" filter="url(#g)"/>
+  <g transform="translate(22 20)"><rect x="0" y="0" width="56" height="56" rx="18" fill="#FFB449"/><path d="M28 11 42 16v11c0 9.1-5.6 14.8-14 19-8.4-4.2-14-9.9-14-19V16l14-5Z" fill="white"/><rect x="22" y="25" width="12" height="10" rx="2.5" fill="#FFB449"/><path d="M24 24a4 4 0 1 1 8 0" stroke="#FFB449" stroke-width="3" stroke-linecap="round"/></g>
+  <text x="92" y="42" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="800">CPGuard</text>
+  <text x="92" y="66" fill="#8FA2BE" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700">cPanel-focused security layer</text>
+</svg>

@@ -1,0 +1,538 @@
+{
+    "layout_header": {
+        "strip_brand": "Host Divine Networks",
+        "strip_text": "Managed cloud, VPS, and reseller hosting solutions from the world's top co-locations",
+        "strip_links": [
+            {
+                "label": "Network Status",
+                "url": "https://robot.hostdivine.com/serverstatus.php"
+            },
+            {
+                "label": "Knowledge Base",
+                "url": "https://robot.hostdivine.com/knowledgebase.php"
+            },
+            {
+                "label": "Submit Ticket",
+                "url": "https://robot.hostdivine.com/submitticket.php"
+            }
+        ],
+        "actions": [
+            {
+                "label": "Sales Contact",
+                "url": "/contact",
+                "style": "nav-phone"
+            },
+            {
+                "label": "Domain Login",
+                "url": "https://panel.hostdivine.com/",
+                "style": "nav-login"
+            },
+            {
+                "label": "Client Area",
+                "url": "https://robot.hostdivine.com/clientarea.php",
+                "style": "nav-cta"
+            }
+        ]
+    },
+    "social_links": [
+        {
+            "label": "Host Divine on Facebook",
+            "icon": "fa-brands fa-facebook-f",
+            "url": "#"
+        },
+        {
+            "label": "Host Divine on X",
+            "icon": "fa-brands fa-x-twitter",
+            "url": "#"
+        },
+        {
+            "label": "Host Divine on WhatsApp",
+            "icon": "fa-brands fa-whatsapp",
+            "url": "https://wa.me/",
+            "new_tab": true
+        },
+        {
+            "label": "Host Divine on Telegram",
+            "icon": "fa-brands fa-telegram",
+            "url": "#"
+        },
+        {
+            "label": "Host Divine on IMO",
+            "icon": "fa-solid fa-comment-dots",
+            "url": "#"
+        }
+    ],
+    "menu_primary": [
+        {
+            "label": "Company",
+            "layout": "compact-menu",
+            "columns": [
+                {
+                    "title": "About Host Divine",
+                    "links": [
+                        {
+                            "label": "Company Overview",
+                            "description": "Our infrastructure and mission",
+                            "url": "/about-us"
+                        },
+                        {
+                            "label": "Timeline",
+                            "description": "Milestones since 2004",
+                            "url": "/timeline"
+                        },
+                        {
+                            "label": "FAQ",
+                            "description": "Answers to common questions",
+                            "url": "/faq"
+                        },
+                        {
+                            "label": "Blog",
+                            "description": "Hosting, cloud and server guides",
+                            "url": "/blog"
+                        },
+                        {
+                            "label": "Contact Us",
+                            "description": "Sales, support and migration",
+                            "url": "/contact"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "label": "Hosting",
+            "layout": "mega-wide",
+            "intro_eyebrow": "Web & Cloud Hosting",
+            "intro_title": "High-speed NVMe hosting tailored for growth.",
+            "intro_text": "cPanel and Windows hosting plus developer platforms for PHP, Node.js, Python, Ruby and Java — all on LiteSpeed and pure NVMe.",
+            "columns": [
+                {
+                    "title": "Web Hosting",
+                    "links": [
+                        {
+                            "label": "Web Hosting",
+                            "description": "Fast cPanel hosting on LiteSpeed & NVMe",
+                            "url": "/cpanel-hosting"
+                        },
+                        {
+                            "label": "Windows Hosting",
+                            "description": "ASP.NET, .NET Core, IIS & MSSQL",
+                            "url": "/windows-hosting"
+                        }
+                    ],
+                    "promo_icon": "fa-solid fa-code",
+                    "promo_title": "Developer friendly",
+                    "promo_text": "SSH, Git, MultiPHP, Node.js and Python selectors on every plan."
+                },
+                {
+                    "title": "Language Platforms",
+                    "links": [
+                        {
+                            "label": "PHP Hosting",
+                            "description": "PHP 7.4 – 8.3 with Laravel & WordPress",
+                            "url": "/php-hosting"
+                        },
+                        {
+                            "label": "Node.js Hosting",
+                            "description": "Express, Next.js & NestJS apps",
+                            "url": "/nodejs-hosting"
+                        },
+                        {
+                            "label": "Python Hosting",
+                            "description": "Django, Flask & FastAPI apps",
+                            "url": "/python-hosting"
+                        },
+                        {
+                            "label": "Ruby Hosting",
+                            "description": "Rails & Sinatra on Passenger",
+                            "url": "/ruby-hosting"
+                        },
+                        {
+                            "label": "Java / Tomcat Hosting",
+                            "description": "JSP, Servlets & Spring Boot",
+                            "url": "/java-hosting"
+                        },
+                        {
+                            "label": "All Supported Languages",
+                            "description": "Compare every runtime we support",
+                            "url": "/languages"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "label": "Reseller",
+            "layout": "compact-menu",
+            "columns": [
+                {
+                    "title": "cPanel Powered Reseller",
+                    "links": [
+                        {
+                            "label": "cPanel Reseller",
+                            "description": "White-label WHM reseller plans",
+                            "url": "/reseller-hosting"
+                        },
+                        {
+                            "label": "Master Reseller",
+                            "description": "Create and sell reseller accounts",
+                            "url": "/master-reseller"
+                        },
+                        {
+                            "label": "Alpha Reseller",
+                            "description": "Top-tier multi-level reseller control",
+                            "url": "/alpha-reseller"
+                        },
+                        {
+                            "label": "Flex Reseller",
+                            "description": "Pay-as-you-grow reseller resources",
+                            "url": "/flex-reseller"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "label": "Server",
+            "layout": "compact-menu",
+            "columns": [
+                {
+                    "title": "Managed Servers",
+                    "links": [
+                        {
+                            "label": "VPS Server",
+                            "description": "KVM cloud servers with full root access",
+                            "url": "/vps-server"
+                        },
+                        {
+                            "label": "Dedicated Server",
+                            "description": "Bare metal servers for production",
+                            "url": "/dedicated-server"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "label": "Domain",
+            "layout": "mega-two",
+            "columns": [
+                {
+                    "title": "Register",
+                    "links": [
+                        {
+                            "label": "Domain Registration",
+                            "description": "Register from 400+ extensions",
+                            "url": "/domain-registration"
+                        },
+                        {
+                            "label": "Domain Search",
+                            "description": "Instant name & price lookup",
+                            "url": "/domain-registration#search"
+                        },
+                        {
+                            "label": ".BD Domain",
+                            "description": "Official BTCL .bd registration",
+                            "url": "/bd-domain"
+                        }
+                    ]
+                },
+                {
+                    "title": "Manage",
+                    "links": [
+                        {
+                            "label": "Domain Transfer",
+                            "description": "Move domains with zero downtime",
+                            "url": "/domain-transfer"
+                        },
+                        {
+                            "label": "Domain Renew",
+                            "description": "Renew early, keep your brand safe",
+                            "url": "/domain-renew"
+                        },
+                        {
+                            "label": "Domain Pricing",
+                            "description": "Full TLD price list in BDT",
+                            "url": "/domain-pricing"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "label": "Services",
+            "layout": "compact-menu",
+            "columns": [
+                {
+                    "title": "Business Services",
+                    "links": [
+                        {
+                            "label": "SSL Certificates",
+                            "description": "DV, OV, EV & wildcard SSL",
+                            "url": "/ssl-certificates"
+                        },
+                        {
+                            "label": "Business Email",
+                            "description": "Professional email with spam defense",
+                            "url": "/business-email"
+                        },
+                        {
+                            "label": "SEO Service",
+                            "description": "Technical SEO & growth campaigns",
+                            "url": "/seo-service"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "layout_footer": {
+        "description": "High-performance hosting for agencies, ecommerce, business & side-hustlers. Powering 240,000+ websites with unmatched speed, reliability and 24x7 expert support.",
+        "command_eyebrow": "ROBOT CONTROL CENTER",
+        "command_title": "Manage domains, hosting, invoices and support tickets.",
+        "command_label": "Open Client Area",
+        "command_url": "https://robot.hostdivine.com/clientarea.php",
+        "stats": [
+            {
+                "value": "2004",
+                "label": "Established"
+            },
+            {
+                "value": "SSD",
+                "label": "Cloud Hosting"
+            },
+            {
+                "value": "24/7",
+                "label": "Support Access"
+            },
+            {
+                "value": "DDoS",
+                "label": "Protection Layer"
+            }
+        ],
+        "copyright_prefix": "© 2004 –",
+        "copyright_brand": "Host Divine™",
+        "copyright_suffix": "— A brand label of ZELT, UAE — All Rights ® Reserved",
+        "bottom_links": [
+            {
+                "icon": "fa-solid fa-bullhorn",
+                "label": "Announcements",
+                "url": "https://robot.hostdivine.com/announcements.php"
+            },
+            {
+                "icon": "fa-solid fa-file-shield",
+                "label": "Terms & Policies",
+                "url": "/faq"
+            },
+            {
+                "icon": "fa-solid fa-signal",
+                "label": "Network Status",
+                "url": "https://robot.hostdivine.com/serverstatus.php"
+            }
+        ]
+    },
+    "menu_footer": [
+        {
+            "title": "Hosting",
+            "links": [
+                {
+                    "label": "Web Hosting",
+                    "url": "/cpanel-hosting"
+                },
+                {
+                    "label": "Windows Hosting",
+                    "url": "/windows-hosting"
+                },
+                {
+                    "label": "PHP Hosting",
+                    "url": "/php-hosting"
+                },
+                {
+                    "label": "Node.js Hosting",
+                    "url": "/nodejs-hosting"
+                },
+                {
+                    "label": "Python Hosting",
+                    "url": "/python-hosting"
+                },
+                {
+                    "label": "All Languages",
+                    "url": "/languages"
+                }
+            ]
+        },
+        {
+            "title": "Reseller & Servers",
+            "links": [
+                {
+                    "label": "cPanel Reseller",
+                    "url": "/reseller-hosting"
+                },
+                {
+                    "label": "Master Reseller",
+                    "url": "/master-reseller"
+                },
+                {
+                    "label": "Alpha Reseller",
+                    "url": "/alpha-reseller"
+                },
+                {
+                    "label": "Flex Reseller",
+                    "url": "/flex-reseller"
+                },
+                {
+                    "label": "VPS Server",
+                    "url": "/vps-server"
+                },
+                {
+                    "label": "Dedicated Server",
+                    "url": "/dedicated-server"
+                }
+            ]
+        },
+        {
+            "title": "Domains",
+            "links": [
+                {
+                    "label": "Domain Registration",
+                    "url": "/domain-registration"
+                },
+                {
+                    "label": ".BD Domain",
+                    "url": "/bd-domain"
+                },
+                {
+                    "label": "Domain Transfer",
+                    "url": "/domain-transfer"
+                },
+                {
+                    "label": "Domain Renew",
+                    "url": "/domain-renew"
+                },
+                {
+                    "label": "Domain Pricing",
+                    "url": "/domain-pricing"
+                }
+            ]
+        },
+        {
+            "title": "Services",
+            "links": [
+                {
+                    "label": "SSL Certificates",
+                    "url": "/ssl-certificates"
+                },
+                {
+                    "label": "Business Email",
+                    "url": "/business-email"
+                },
+                {
+                    "label": "SEO Service",
+                    "url": "/seo-service"
+                }
+            ]
+        },
+        {
+            "title": "Company",
+            "links": [
+                {
+                    "label": "Company Overview",
+                    "url": "/about-us"
+                },
+                {
+                    "label": "Timeline",
+                    "url": "/timeline"
+                },
+                {
+                    "label": "FAQ",
+                    "url": "/faq"
+                },
+                {
+                    "label": "Blog",
+                    "url": "/blog"
+                },
+                {
+                    "label": "Contact Us",
+                    "url": "/contact"
+                }
+            ]
+        }
+    ],
+    "widget_quick_dock": {
+        "buttons": [
+            {
+                "style": "dock-support",
+                "icon": "fa-solid fa-headset",
+                "url": "https://robot.hostdivine.com/submitticket.php",
+                "label": "24/7 Support Desk",
+                "title": "24/7 Support Desk",
+                "tooltip": "24/7 Support",
+                "new_tab": true
+            },
+            {
+                "style": "dock-chat",
+                "icon": "fa-solid fa-comments",
+                "url": "https://robot.hostdivine.com/clientarea.php",
+                "label": "Live Chat",
+                "title": "Live Chat",
+                "tooltip": "Live Chat"
+            },
+            {
+                "style": "dock-wa",
+                "icon": "fa-brands fa-whatsapp",
+                "url": "https://wa.me/",
+                "label": "Chat with us on WhatsApp",
+                "title": "WhatsApp Chat",
+                "tooltip": "WhatsApp",
+                "new_tab": true
+            }
+        ]
+    },
+    "widget_faq_help": {
+        "icon": "fa-solid fa-headset",
+        "title": "Still have questions?",
+        "text": "Our engineers reply in under 15 minutes, 24/7.",
+        "button_label": "Contact support",
+        "button_url": "/contact"
+    },
+    "widget_domain_search": {
+        "register_placeholder": "Find your perfect domain name…",
+        "transfer_placeholder": "Enter the domain you want to transfer",
+        "extensions": [
+            ".com",
+            ".net",
+            ".org",
+            ".info",
+            ".xyz",
+            ".co",
+            ".biz",
+            ".io",
+            ".online",
+            ".store",
+            ".tech",
+            ".app",
+            ".dev",
+            ".ai",
+            ".me",
+            ".asia",
+            ".us",
+            ".uk"
+        ],
+        "perks": [
+            "Free DNS management",
+            "Domain theft protection",
+            "Instant activation",
+            "24/7 expert support"
+        ],
+        "links": [
+            {
+                "label": "All 400+ extensions",
+                "url": "/domain-pricing"
+            },
+            {
+                "label": ".BD domain",
+                "url": "/bd-domain"
+            }
+        ]
+    }
+}
